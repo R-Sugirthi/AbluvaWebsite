@@ -1,22 +1,29 @@
 export const metadata = {
-  title: 'Home - Open PRO',
+  title: 'Abluva',
   description: 'Page description',
 }
 
-import Hero from '@/components/hero'
-import Features from '@/components/features'
-import Newsletter from '@/components/newsletter'
-import Zigzag from '@/components/zigzag'
-import Testimonials from '@/components/testimonials'
+import LandingPage from '@/components/pages/LandingPage'
+import Layers from '@/components/pages/second page/layers'
+import Parallax from '@/components/pages/parallax/parallax'
+import TopHeader from '@/components/Layout/TopHeader'
+import Header from '@/components/Layout/Header'
+import Card from '@/components/pages/card'
+import MobileHeader from '@/components/Layout/MobileMenu'
+
+
+
+
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Features />
-      <Zigzag />
-      <Testimonials />
-      <Newsletter />
+    <TopHeader/>
+    <Header/>
+    <LandingPage/>
+    <Layers/>
+    <Card/>
+    <Parallax/>
     </>
   )
 }

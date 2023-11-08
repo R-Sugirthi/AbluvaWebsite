@@ -1,0 +1,51 @@
+@import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+@import url(https://db.onlinewebfonts.com/c/9d18fe9288338af4d47207a94320a88c?family=MarkPro);
+@import url(https://db.onlinewebfonts.com/c/363df8f171afbf83e5aac11fcf6f06f6?family=Founders+Grotesk);
+@import url(https://db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro+Bold);
+
+header {
+  font-family: "Mark Pro";
+  position: sticky;
+  font-size: 15px;
+}
+
+.top {
+  font-size: 12px;
+  border-bottom: 1px solid rgb(51, 50, 50);
+}
+
+.para {
+  font-family: "Mark Pro";
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.head {
+  font-family: "Founders Grotesk";
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+
+.item {
+  position: relative;
+}
+
+.item:before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, rgb(89, 42, 146), rgb(186, 57, 184));
+  border-radius: 8px 8px 0 0;
+  opacity: 0;
+  transition: 0.1s;
+}
+
+.item:not(.is-active):hover:before {
+  opacity: 1;
+  bottom: 0;
+}

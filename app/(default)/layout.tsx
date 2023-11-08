@@ -5,8 +5,9 @@ import { useEffect } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import PageIllustration from '@/components/page-illustration'
-import Footer from '@/components/ui/footer'
+
+import Footer from '@/components/Layout/Footer'
+import Header from '@/components/Layout/Header'
 
 export default function DefaultLayout({
   children,
@@ -26,9 +27,8 @@ export default function DefaultLayout({
   return (
     <>
       <main className="grow">
-
-        <PageIllustration />
-
+{/* 
+        <PageIllustration /> */}
         {children}
 
       </main>

@@ -1,0 +1,129 @@
+@import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+@import url(https://db.onlinewebfonts.com/c/363df8f171afbf83e5aac11fcf6f06f6?family=Founders+Grotesk);
+@import url(https://db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy);
+@import url(https://db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro+Bold);
+@import url(https://db.onlinewebfonts.com/c/1fc9855554fb3b6b013fc8786b2f2f69?family=FoundersGroteskRegular);
+@import url(https://db.onlinewebfonts.com/c/2a34803e470cf60381ef14806bc84ab7?family=FoundersGroteskLight);
+
+.mark {
+  font-family: "Mark Pro";
+}
+
+.markBold {
+  font-family: "Mark Pro Bold";
+}
+
+.founder {
+  font-family: "FoundersGroteskLight";
+}
+
+.img1,
+.img2 {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgb(89, 42, 146, 0.5), rgb(186, 57, 184, 0.5));
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.gradient-text:hover {
+  background: linear-gradient(to right, rgb(89, 42, 146), rgb(186, 57, 184));
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.link {
+  background-color: rgb(144, 96, 188, 0.3);
+  color: rgb(203, 172, 233);
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.link:hover {
+  background: linear-gradient(to right, rgb(43, 18, 74), rgb(115, 57, 186));
+  color: white;
+  box-shadow: 0 0 20px rgba(161, 130, 200, 0.3);
+}
+
+.all-insights {
+  font-family: "Mark Pro Bold";
+}
+
+.mark {
+  font-family: "Mark Pro";
+}
+
+.allsightlink {
+  background-color: rgb(144, 96, 188, 0.3);
+  color: rgb(48, 11, 85);
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.allsightlink:hover {
+  background: linear-gradient(to right, rgb(43, 18, 74), rgb(115, 57, 186));
+  color: white;
+  box-shadow: 0 0 20px rgba(58, 16, 110, 0.3);
+}
+
+.btn-md:hover {
+  background: linear-gradient(to right, rgb(89, 42, 146), rgb(186, 57, 184));
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(19, 19, 24, 1) 0%, rgba(19, 19, 24, 0) 100%);
+}
+
+@media (max-width: 640px) {
+  .mq {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

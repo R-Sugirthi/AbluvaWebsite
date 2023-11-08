@@ -1,9 +1,27 @@
 import React from 'react'
 import Link from 'next/link'
+import "./style.css"
 
 export default function Footer() {
   return (
     <footer>
+
+      <section>
+        <div className="p-5 lg:p-28">
+          <h1 className="lg:text-4xl xl:text-4xl font-bold">
+            Reach out Abluva to proceed with the next step
+          </h1>
+          <p className="lg:text-xl xl:text-2xl pb-6 xl:pb-10">
+            Learn more about Abluva's potential benefits for your business
+          </p>
+          <Link
+            href="/"
+            className="lg:text-lg xl:text-xl text-white bg-gray-500 hover:bg-gray-600 p-2 lg:p-3 xl:p-4 rounded-md font-bold"
+          >
+            Contact us
+          </Link>
+        </div>
+      </section>
       <div className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
@@ -90,10 +108,8 @@ export default function Footer() {
 
           </div>
 
-          {/* Bottom area */}
           <div className="md:flex md:items-center md:justify-between">
 
-            {/* Social links */}
             <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
               <li>
                 <Link href="/" className="flex justify-center items-center text-purple-600 bg-gray-800 hover:text-gray-100 hover:bg-purple-600 rounded-full transition duration-150 ease-in-out" aria-label="Twitter">
@@ -134,9 +150,7 @@ export default function Footer() {
               </li>
             </ul>
 
-            {/* Copyrights note */}
             <div className="text-gray-400 text-sm mr-4">&copy; Cruip.com. All rights reserved.</div>
-
           </div>
 
         </div>
