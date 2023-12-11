@@ -1,11 +1,6 @@
 import './css/style.css'
 
 import { Inter, Architects_Daughter } from 'next/font/google'
-
-import Header from '@/components/Layout/Header'
-import Banner from '@/components/banner'
-import TopHeader from '@/components/Layout/TopHeader'
-
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
@@ -31,11 +26,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${architects_daughter.variable} font-inter antialiased bg-[#131318] text-white tracking-tight`}>
+      <body className={`${inter.variable} ${architects_daughter.variable} antialiased bg-[#131318] text-white`}>
         <div className="flex flex-col min-h-screen">
 
           {children}
-          {/* <Banner /> */}
+         
         </div>
       </body>
     </html>

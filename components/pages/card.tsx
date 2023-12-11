@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import '../style.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 
 interface CardProps {
   imageSrc: string;
@@ -11,6 +13,7 @@ interface CardProps {
 }
 
 function Card({ imageSrc, title, section, date, link, description }: CardProps) {
+  
   return (
     <div>
       <div className='image-container'>
@@ -39,25 +42,25 @@ export default function BlogPage() {
     <section className='mt-30 px-4 md:px-60 py-20'>
       <div>
         <div className='flex flex-col md:flex-row justify-between md:items-center py-5'>
-          <div className='text-3xl mark'>Latest Blogs</div>
-          <div><a href="/allinsights" className='text-md all-insights'>All insights</a></div>
+          <div className='text-3xl mark'>Latest</div>
+          <div><Link href="/insights" className='text-md all-insights mark'>All insights<span className='text-sm text-white'> <FontAwesomeIcon icon={faAngleRight}/> </span></Link></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center">
           <Card
-            imageSrc="https://img.freepik.com/free-photo/young-person-during-intership_23-2149315587.jpg?w=740&t=st=1698914857~exp=1698915457~hmac=b357f0fe422e3d77e3416b021aba47f8d540341acf11cd305afb6304c69367a4"
+            imageSrc="https://img.freepik.com/premium-photo/discussion-young-caucasian-business-woman-modern-office-with-team-meeting-tasks-giving-women-front-office-working-concept-finance-business-girl-power-inclusion-diversity-feminism_155003-39900.jpg?w=740"
             title="Data Security"
             section="Blog"
             description="Changing Paradigms in Data Security"
             date="02 Nov 2023"
-            link="/blog"
+            link="changing-paradigms-data-security"
           />
           <Card
-            imageSrc="https://img.freepik.com/free-photo/medium-shot-people-working-together_23-2149313756.jpg?w=740&t=st=1698914818~exp=1698915418~hmac=d982a9b44a6ae2c3c4ed9d93b555481b42a7ea7418bb7ccf390e0b531b4d58c5"
+            imageSrc="https://img.freepik.com/free-photo/group-people-with-laptops_23-2147993343.jpg?w=740&t=st=1701942478~exp=1701943078~hmac=be64ef6d595dc662a8486c06cdea82c3fb4e24dbc7d8cd71017eb3a87b14eb63"
             title="Data Security"
             section="Blog"
             description="Selecting Right Data Protection Technologies"
             date="03 Nov 2023"
-            link="/blog2"
+            link="selecting-right-data-protection-technologies"
           />
         </div>
       </div>

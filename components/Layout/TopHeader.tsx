@@ -11,7 +11,7 @@ export default function TopHeader() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/"
+                  href="/about"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
                   About
@@ -19,23 +19,24 @@ export default function TopHeader() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/news"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
-                  Our Partners
+                  News & Events
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/careers"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
-                  Career
+                  Careers
                 </Link>
               </li>
+              
               <li>
                 <Link
-                  href="/"
+                  href="https://abluva.freshdesk.com/support/home"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
                   Support
@@ -43,7 +44,7 @@ export default function TopHeader() {
               </li>
               <li>
                 <Link
-                  href="/"
+                  href="/contact"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
                   Contact

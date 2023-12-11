@@ -1,5 +1,6 @@
-import PageIllustration from '@/components/page-illustration'
-
+import Header from "@/components/Layout/Header";
+import "../(default)/globals.css";
+import Footer from "@/components/Layout/Footer";
 export default function AuthLayout({
   children,
 }: {
@@ -7,11 +8,9 @@ export default function AuthLayout({
 }) {  
   return (
     <main className="grow">
-
-      {/* <PageIllustration /> */}
-
+      <Header/>
       {children}
-
+      <Footer/>
     </main>
   )
 }

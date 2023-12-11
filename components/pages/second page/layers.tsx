@@ -1,9 +1,11 @@
 "use client"
 import MobileLayers from "./MobileLayers";
-import "./style.css"
-import React, { useEffect } from 'react';
+import "./style.css";
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
 const Layers: React.FC = () => {
+
   useEffect(() => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
@@ -39,6 +41,9 @@ const Layers: React.FC = () => {
             document.querySelectorAll('.image3').forEach((img) => {
               (img as HTMLElement).style.display = 'none';
             });
+            document.querySelectorAll('.image4').forEach((img) => {
+              (img as HTMLElement).style.display = 'none';
+            });
 
             if (currentSectionId === 'section1') {
               document.querySelectorAll('.image1').forEach((img) => {
@@ -52,9 +57,13 @@ const Layers: React.FC = () => {
               document.querySelectorAll('.image3').forEach((img) => {
                 (img as HTMLElement).style.display = 'block';
               });
+            } else if (currentSectionId === 'section4') {
+              document.querySelectorAll('.image4').forEach((img) => {
+                (img as HTMLElement).style.display = 'block';
+              });
             }
 
-            if (currentSectionId === 'section3' && imagesContainer) {
+            if (currentSectionId === 'section4' && imagesContainer) {
               imagesContainer.classList.add('fixed-container');
             } else if (imagesContainer) {
               imagesContainer.classList.remove('fixed-container');
@@ -70,17 +79,17 @@ const Layers: React.FC = () => {
   }, []);
 
   const handleScrollImages = () => {
-    const section3 = document.getElementById('section3');
+    const section4 = document.getElementById('section4');
     const images = document.querySelectorAll('.fixed');
     const imagesContainer = document.querySelector('.images-container');
 
-    if (section3) {
-      const section3Top = section3.getBoundingClientRect().top;
-      if (section3Top < 0) {
+    if (section4) {
+      const section4Top = section4.getBoundingClientRect().top;
+      if (section4Top < 0) {
         images.forEach((img) => {
           (img as HTMLElement).style.position = 'absolute';
           (img as HTMLElement).style.top = '100%';
-          (img as HTMLElement).style.transform = 'translateY(-130%)';
+          (img as HTMLElement).style.transform = 'translateY(-120%)';
         });
 
         if (imagesContainer) {
@@ -107,7 +116,10 @@ const Layers: React.FC = () => {
     };
   }, []);
 
+
+
   const isMobileScreen = window.innerWidth <= 768;
+
 
   return (
     <>
@@ -115,55 +127,99 @@ const Layers: React.FC = () => {
         <MobileLayers />
       ) : (
         <div className="flex relative index">
-          <div className="w-1/5">
-            <nav className="nav fixed p-40">
+          <div className="w-1/6">
+            <nav className="nav fixed py-40 mark">
               <ul>
                 <li className="nav-item">
-                  <a href="#section1">Section 1</a>
+                  <Link href="#section1">Discover</Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#section2">Section 2</a>
+                  <Link href="#section2">Protect</Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#section3">Section 3</a>
+                  <Link href="#section3">Monitor</Link>
+                </li>
+                <li className="nav-item">
+                  <Link href="#section4">Extend</Link>
                 </li>
               </ul>
+              
             </nav>
           </div>
-          <div className="w-1/3">
-            <main>
+          <div className="w-1/3 p-10">
+            <main className="founder">
               <section id="section1">
                 {/* Content for Section 1 */}
                 <div>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Uncover strategic insights and actionable intelligence through thorough data and behaviour discovery.<br />
+                  <div className="py-5">
+                    <Link href="/discover" className="btn-md text-lg text-white bg-violet-950 p-3 rounded-md">
+                      Learn More
+                    </Link>
+                  </div>
                 </div>
               </section>
               <section id="section2">
                 {/* Content for Section 2 */}
                 <div>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Secure your data with fine-grain access controls, dynamic masking, and advanced safeguards for unmatched protection with no performance penalty.<br />
+                  <div className="py-5">
+                    <Link href="/protect"
+                      className="btn-md text-lg text-white bg-violet-950 p-3 rounded-md">
+                      Learn More
+                    </Link>
+                  </div>
                 </div>
               </section>
               <section id="section3">
                 {/* Content for Section 3 */}
                 <div>
-                  Lorem ipsum dolor sit,  amet consectetur adipisicingamet consectetur elit.
+                Comprehensive oversight, real-time reporting, and intuitive dashboards for regulatory adherence and peace of mind.
+                  <br />
+                  <div className="py-5">
+                    <Link href="graphene-compliance-enablement" className="btn-md text-lg text-white bg-violet-950 p-3 rounded-md">
+                      Learn More
+                    </Link>
+                  </div>
+                </div>
+              </section>
+              <section id="section4">
+
+                <div>
+                Uncover new revenue streams, optimize processes, and foster collaboration for unparalleled value extraction from every byte.<br />
+                  <div className="py-5">
+                    <Link href="/extend" className="btn-md text-lg text-white bg-violet-950 p-3 rounded-md">
+                      Learn More
+                    </Link>
+                  </div>
                 </div>
               </section>
             </main>
           </div>
-          <div className="w-1/2 pt-30 pr-10">
-            <div
-              className='bg-[url("https://img.freepik.com/free-photo/medium-shot-man-working-late-night_23-2150170834.jpg?w=740&t=st=1698926421~exp=1698927021~hmac=75fffe9125abbef6e81d23b4c9697be49c88ebc5c5c0d1d0475219417c54c72b")] fixed image1 rounded-3xl'>
-              <div className="text-white description text-md"><span className="text-xs font-bold">Section 1</span><br></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, magnam quo</div>
+          <div className="w-1/2 pr-10">
+            <div className='bg-[url("https://img.freepik.com/free-photo/metaverse-avatar-collage-concept_52683-96425.jpg?w=740&t=st=1701764690~exp=1701765290~hmac=16c8db539b66322b9084e469a2ac3bab74f76edc4db24f6fa4ae86ac050fd04d")] fixed image1 rounded-3xl transition-opacity'>
+              <div className="text-white description text-md">
+                <span className="text-xs font-bold">Discover</span><br></br>
+                Transform data into strategy with Graphene, unlocking insights for decisive action.
+              </div>
             </div>
-            <div
-              className='bg-[url("https://img.freepik.com/premium-photo/young-business-people-group-have-meeting-working-modern-bright-office-indoor_530697-11140.jpg?w=740")] h-96 fixed image2 rounded-3xl'>
-              <div className="text-white description text-md"><span className="text-xs font-bold">Section 2</span><br></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, magnam quo</div>
+            <div className='bg-[url("https://img.freepik.com/premium-photo/access-personal-financial-data-with-futuristic-biometric-fingerprint-scanner-smartphone-surveillance-security-scanning-digital-programs-cyber-applications-future-secure-identity_143683-12503.jpg?w=740")] h-96 fixed image2 rounded-3xl transition-opacity'>
+              <div className="text-white description text-md">
+                <span className="text-xs font-bold">Protect</span><br></br>
+                Guardian of Data: Graphene shields your information with precision and strength. 
+              </div>
             </div>
-            <div
-              className='bg-[url("https://img.freepik.com/premium-photo/photo-group-people-working-out-business-plan-office_812426-66910.jpg?w=740")] h-96 fixed image3 rounded-3xl'>
-              <div className="text-white description text-md"><span className="text-xs font-bold">Section 3</span><br></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, magnam quo</div>
+            <div className='bg-[url("https://img.freepik.com/premium-photo/attractive-young-woman-working-home-night_688382-1477.jpg?w=740")] h-96 fixed image3 rounded-3xl transition-opacity'>
+              <div className="text-white description text-md">
+                <span className="text-xs font-bold">Monitor</span><br></br>
+                Navigate Compliance effortlessly: Graphene's real-time insights, your peace of mind.
+              </div>
+            </div>
+            <div className='bg-[url("https://img.freepik.com/premium-photo/beautiful-blonde-girl-pinkblue-lighting-presses-checkmark-button-virtual-display-with-neon-purple-hologram-air_136863-3535.jpg?w=740")] h-96 fixed image4 rounded-3xl transition-opacity'>
+              <div className="text-white description text-md">
+                <span className="text-xs font-bold">Extend</span><br></br>
+                Graphene - Elevate your data game, turning insights into opportunities.
+              </div>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 "use client"
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const MobileLayers: React.FC = () => {
@@ -35,13 +36,13 @@ const MobileLayers: React.FC = () => {
         <nav className="nav">
           <ul className="navItems">
             <li className={`navItem ${activeSection === 'sec1' ? 'act' : ''}`}>
-              <a href="#sec1">Section 1</a>
+              <Link href="#sec1">Section 1</Link>
             </li>
             <li className={`navItem ${activeSection === 'sec2' ? 'act' : ''}`}>
-              <a href="#sec2">Section 2</a>
+              <Link href="#sec2">Section 2</Link>
             </li>
             <li className={`navItem ${activeSection === 'sec3' ? 'act' : ''}`}>
-              <a href="#sec3">Section 3</a>
+              <Link href="#sec3">Section 3</Link>
             </li>
           </ul>
         </nav>

@@ -1,0 +1,19 @@
+
+.list {
+  list-style: none;
+}
+
+.list li::before {
+  content: "\2022";
+  color: #351c75;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.white-shadow {
+  box-shadow: 0 4px 10px -1px rgba(255, 255, 255, 0.2), 0 2px 4px -1px rgba(255, 255, 255, 0.06);
+  /* Add any other styles you need */
+}
+

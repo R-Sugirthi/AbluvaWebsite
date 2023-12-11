@@ -75,13 +75,13 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
+            <Link href="/career" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
               Career
             </Link>
           </li>
           <hr></hr>
           <li>
-            <Link href="/" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
+            <Link href="/about" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
               About
             </Link>
           </li>
@@ -101,8 +101,23 @@ export default function MobileMenu() {
             </Link>
           </li>
           <li>
-            <Link href="/" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
+            <Link href="/contact" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link href="/GrapheneOverview" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
+            GrapheneOverview
+            </Link>
+          </li>
+          <li>
+            <Link href="/contactAccessControl" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
+            Data Access Control
+            </Link>
+          </li>
+          <li>
+            <Link href="/GrapheneDepersonalization" className="flex font-medium w-full text-white py-3" onClick={() => setMobileNavOpen(false)}>
+            GrapheneDepersonalization
             </Link>
           </li>
         </ul>

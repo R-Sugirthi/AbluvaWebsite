@@ -1,9 +1,21 @@
-@import url(https://db.onlinewebfonts.com/c/363df8f171afbf83e5aac11fcf6f06f6?family=Founders+Grotesk);
+@import url(https://db.onlinewebfonts.com/c/2a34803e470cf60381ef14806bc84ab7?family=FoundersGroteskLight);
+@import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+@import url(https://db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro+Bold);
 
+.mark {
+  font-family: "Mark Pro";
+}
+
+.markBold {
+  font-family: "Mark Pro Bold";
+}
+
+.founder{
+  font-family: "FoundersGroteskLight";
+}
 .nav {
-  text-align: center;
   padding-left: 100px;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 nav ul {
@@ -46,27 +58,32 @@ nav a {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  padding-top: 300px;
+  padding-top: 290px;
   font-size: 25px;
-  font-family: "Founders Grotesk";
 }
 
 #section2 {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  padding-top: 300px;
+  padding-top: 290px;
   font-size: 25px;
-  font-family: "Founders Grotesk";
 }
 
 #section3 {
   height: 100vh;
   justify-content: center;
   align-items: center;
-  padding-top: 300px;
+  padding-top: 290px;
   font-size: 25px;
-  font-family: "Founders Grotesk";
+}
+
+#section4 {
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding-top: 290px;
+  font-size: 25px;
 }
 
 .image-text {
@@ -83,7 +100,7 @@ nav a {
 .image2,
 .image3,
 .image4 {
-  height: 400px;
+  height: 450px;
   width: 620px;
 }
 
@@ -104,9 +121,9 @@ nav a {
 .description {
   width: 94%;
   height: 100px;
-  margin-top: 280px;
-  margin-left: 15px;
-  background: rgba(53, 53, 53, 0.4);
+  margin-top: 335px;
+  margin-left: 18px;
+  background: rgba(225, 225, 225, 0.1);
   border-radius: 10px;
   z-index: 2;
   overflow: hidden;
@@ -122,7 +139,7 @@ nav a {
 .mobile-nav {
   position: sticky;
   top: 50px;
-  z-index: +999;
+  z-index: +1;
   padding: 10px;
 }
 
@@ -133,7 +150,7 @@ nav a {
 .section {
   margin: 0 auto;
   max-width: 600px;
-  padding: 10px;
+  padding: 0px;
 }
 
 .navItems {

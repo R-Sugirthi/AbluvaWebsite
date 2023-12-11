@@ -1,0 +1,26 @@
+@import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
+@import url(https://db.onlinewebfonts.com/c/363df8f171afbf83e5aac11fcf6f06f6?family=Founders+Grotesk);
+@import url(https://db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy);
+@import url(https://db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro+Bold);
+@import url(https://db.onlinewebfonts.com/c/1fc9855554fb3b6b013fc8786b2f2f69?family=FoundersGroteskRegular);
+@import url(https://db.onlinewebfonts.com/c/2a34803e470cf60381ef14806bc84ab7?family=FoundersGroteskLight);
+
+.text-gradient {
+    background: linear-gradient(to right,rgb(124, 88, 168),rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+.mark{
+    font-family:"Mark Pro";
+}
+.founder{
+    font-family: "FoundersGroteskLight";
+}
+.latestimage{
+    height:500px;
+    
+}
+.arrow{
+    background-color: black;
+}

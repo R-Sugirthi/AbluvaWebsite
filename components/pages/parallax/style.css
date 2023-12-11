@@ -1,17 +1,15 @@
 @import url(https://db.onlinewebfonts.com/c/7200c6dd8ac604abe09f5159e53a40c0?family=Mark+Pro);
-@import url(https://db.onlinewebfonts.com/c/363df8f171afbf83e5aac11fcf6f06f6?family=Founders+Grotesk);
-@import url(https://db.onlinewebfonts.com/c/72112afab388987941068c3f7a741a53?family=Mark+Pro+Heavy);
-@import url(https://db.onlinewebfonts.com/c/01d273202731e44f0f1187f3afcaf156?family=Mark+Pro+Bold);
+@import url(https://db.onlinewebfonts.com/c/2a34803e470cf60381ef14806bc84ab7?family=FoundersGroteskLight);
 
 #parallax p {
-  font-family: "Founders Grotesk";
+  font-family: "FoundersGroteskLight";
   font-weight: 400;
   font-size: 28px;
   line-height: 40px;
 }
 
 #parallax h1 {
-  font-family: "Founders Grotesk";
+  font-family: "FoundersGroteskLight";
   font-weight: 600;
   font-size: 52px;
   line-height: 40px;
@@ -28,25 +26,26 @@
 
 /* Section - Parallax */
 #parallax .parallax-one {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url(https://img.freepik.com/premium-photo/abstract-technology-background-connection-structure-big-data-visualization-business_371307-89.jpg?w=900);
+  background-image: linear-gradient(to right, rgb(0, 0, 0) 40%, transparent), url(https://img.freepik.com/free-photo/3d-render-modern-network-communications-with-low-poly-design_1048-13802.jpg?w=740&t=st=1701994759~exp=1701995359~hmac=c1e2ff3a6b560fd6c70768449480905143d4d95d4a1a00c716b4139330281d90);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
 }
 
+
 #parallax .parallax-two {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   overflow: hidden;
   position: relative;
   width: 100%;
-  background-image: url(https://img.freepik.com/free-vector/futuristic-halftone-background_53876-90595.jpg?w=740&t=st=1698305940~exp=1698306540~hmac=345211e7fd0d7e6b65276d815b98eb898e1aee26b4084861bc348f9db2bcd121);
+  background-image:linear-gradient(to right, rgb(0, 0, 0) 40%, transparent), url(https://img.freepik.com/free-photo/3d-abstract-soundwaves-background-with-flowing-lines_1048-15842.jpg?w=740&t=st=1701837854~exp=1701838454~hmac=6f5b049f0d25760907780336bc180db2cd54c13bc949a823ffebc642b4c3a308);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,4 +84,8 @@
     padding: 30px 15px;
     width: 290px;
   }
+}
+
+.grayscale{
+  filter: grayscale(40%);
 }

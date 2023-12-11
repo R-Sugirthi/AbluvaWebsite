@@ -1,0 +1,31 @@
+/* eBook.css */
+
+/* Style for the input box */
+input[type='email'] {
+    width: 30%;
+    padding: 8px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: black;
+  }
+  
+  /* Style for the button */
+  .ebookbutton {
+    background-color:rgb(94, 35, 177);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Hover effect for the button */
+  .ebookbutton:hover {
+    background-color:rgb(94, 35, 177);
+  }
+  

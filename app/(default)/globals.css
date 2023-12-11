@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Mark Pro';
+    src: url('/Mark Pro.woff') format('woff'),
+  }
+  @font-face {
+    font-family: "FoundersGroteskLight";
+    src: url('/FoundersGroteskLight.woff') format('woff'),
+  }
+  
+.mark {
+  font-family: "Mark Pro";
+}
+
+.founder{
+  font-family: "FoundersGroteskLight";
+}
+  .text-gradient {
+    background: linear-gradient(to right,rgb(214, 140, 197),rgb(96, 27, 186));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .text-gradient-light {
+    background: linear-gradient(to right,rgb(129, 80, 192),rgb(16, 0, 40));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .image-container img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(89, 42, 146, 0.5), rgb(186, 57, 184, 0.5));
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .gradient-text:hover {
+    background: linear-gradient(to right,rgb(214, 140, 197),rgb(96, 27, 186));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text-light:hover {
+    background: linear-gradient(to right,rgb(129, 80, 192),rgb(16, 0, 40));
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .link {
+    background-color: rgb(144, 96, 188, 0.3);
+    color: rgb(203, 172, 233);
+    padding: 4px;
+    border-radius: 3px;
+  }
+  .link1 {
+    background-color: rgb(203, 172, 233);
+    color: rgb(70, 20, 118);
+    padding: 4px;
+    border-radius: 3px;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    background: linear-gradient(to right, rgb(43, 18, 74), rgb(115, 57, 186));
+    color: white;
+    box-shadow: 0 0 20px rgba(161, 130, 200, 0.3);
+  }
+  
+  .link1:hover {
+    background: linear-gradient(to right, rgb(43, 18, 74), rgb(115, 57, 186));
+    color: white;
+    box-shadow: 0 0 20px rgba(161, 130, 200, 0.3);
+  }
+
+  .btn-md:hover {
+    background: linear-gradient(to right, rgb(212, 110, 210,0.6), rgb(37, 1, 80));
+  }
+
+  .darkText{
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 40px;
+  }
+
+  .link-wrapper {
+    position: relative;
+    display: block;
+    padding: 20px 0;
+  }
+  
+  .hover-2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    background: linear-gradient(to right,rgb(16, 0, 40),rgb(167, 132, 213));
+    transition: transform 0.3s;
+  
+  }
+  .hover-2:hover:after {
+    transform: scaleX(1);
+  }
+  
+.letterspace{
+  letter-spacing: 7px;
+}
+
+.lineht{
+  line-height: 60px;
+}
+
+.violetFilter {
+  filter: hue-rotate(270deg);
+}
+
+.awsFilter {
+  filter: hue-rotate(60deg);
+}
+
+.isoFilter {
+  filter: hue-rotate(270deg);
+}
+
+.list-circle{
+  list-style-type:circle;
+}
+
+.videoHeight{
+  height:500px;
+}
+
+.videoposter {
+  filter: grayscale(45%);
+}
+
+.custom-border {
+  border-top: 7px solid #6e6e6e; /* Adjust color and size as needed */
+}
+
+.mainText {
+  font-family: "FoundersGroteskLight";
+  font-size: 32px;
+  color: #131318;
+  font-weight: 400;
+  line-height: 35px;
+}
+
+.mainSubText {
+  font-family: "FoundersGroteskLight";
+  font-size: 23px;
+  color: #232630;
+  /* font-weight: 600; */
+  line-height: 35px;
+}
+
+.subText {
+  font-family: "FoundersGroteskLight";
+  font-size: 21px;
+  color: #232630;
+  font-weight: 300;
+  line-height: 29px;
+}
