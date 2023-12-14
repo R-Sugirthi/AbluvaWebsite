@@ -8,7 +8,7 @@ export default function Legal() {
   return (
     <>
       
-      <section className='sm:px-10 p-10 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+      <section className='p-5  md:px-72 md:pb-10  bg-[#f2f3f5] text-justify'>
       <div>
           <p className='text-gray-700 py-5 border-b border-gray-500 mark text-3xl'>Legal</p>
         </div>

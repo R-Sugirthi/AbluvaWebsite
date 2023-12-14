@@ -12,7 +12,7 @@ export default function TermsOfService() {
     <>
 
 
-      <section className='sm:px-10 p-10 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+      <section className=' p-5 md:px-72 md:pb-10 bg-[#f2f3f5] text-justify'>
         <div>
           <p className='text-gray-700 py-5 border-b border-gray-500 mark text-3xl'>Terms of Service</p>
         </div>
@@ -25,7 +25,7 @@ export default function TermsOfService() {
           </p><br />
           <p className='subText'>Permission is granted to temporarily download one copy of the materials (information or software) on Abluva’s website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
           </p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>modify or copy the materials;
               </li><br />

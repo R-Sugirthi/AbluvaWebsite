@@ -15,7 +15,7 @@ function News({ imageSrc, title1, title2,  section, date, link, description }: C
   const isisoImage = imageSrc === "https://img.freepik.com/premium-photo/hand-using-electronic-signature-document-virtual-screen-document-online-approve-paperless-quality-assurance-erp-management-concept_50039-3900.jpg?w=740";
   
   return (
-    <div className='bg-[#f2f3f5]'> 
+    <div className='bg-[#f2f3f5] py-5'> 
       <div className='image-container'>
         <img
           className={`rounded-md  w-full ${isisoImage ? 'isoFilter ' : ' '}`}
@@ -49,7 +49,7 @@ export default function NewsPage() {
             title2="Security Community"
             section="News"
             description="Abluva Initiates ‘AWS Security UG-APAC’"
-            date="08 Dec 2023"
+            date="04 Dec 2023"
             link="abluva-initiates-aws-security-ug-apac"
           /> 
            <News
@@ -59,7 +59,7 @@ export default function NewsPage() {
             Security"
             section="News"
             description="Abluva Attains ISO 27001 Certification"
-            date="08 Dec 2023"
+            date="15 Oct 2023"
             link="abluva-attains-iso-27001-certification"
           /> 
         </div>

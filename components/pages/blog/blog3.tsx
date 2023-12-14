@@ -1,7 +1,7 @@
 
 export default function Blog3() {
   return (
-    <section className='sm:px-10 p-10 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+    <section className='p-5 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
       <div>
         <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Explore</p>
       </div>
@@ -129,7 +129,7 @@ export default function Blog3() {
         <p className='subText'>These are just a few examples of real-world cloud security incidents in the last 2-3 years. These incidents highlight the importance of cloud security and the need for businesses to implement strong security controls. Businesses should also regularly review their security posture and make changes as needed to mitigate new threats.</p><br />
 
         <p className='subText'>Here are some additional lessons that businesses can learn from these incidents:</p><br />
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
           <ul className='list-disc'>
             <li>The importance of multi-factor authentication (MFA). MFA adds an extra layer of security to user accounts by requiring users to provide two or more factors of authentication, such as a password and a one-time code from their phone.
             </li><br />
@@ -173,8 +173,8 @@ export default function Blog3() {
         <p className='subText'><span className='font-bold'>Data residency and sovereignty </span>issues dictate where data can be stored and processed. Understanding and complying with these regulations is vital to avoid legal complications.</p><br />
         <p className='subText'>In the cloud, compliance is a non-negotiable aspect of security. Organizations must meticulously adhere to these regulations, safeguarding both their data and their reputation.</p><br />
 
-        <p className='SubmainText'>Future Outlook for Cloud Security</p><br />
-        <p className='SubmainText'>A Glimpse Into Tomorrow: Cloud Security on the Horizon</p><br />
+        <p className='mainSubText'>Future Outlook for Cloud Security</p><br />
+        <p className='mainSubText'>A Glimpse Into Tomorrow: Cloud Security on the Horizon</p><br />
         <p className='subText'>As the digital landscape evolves, so do the threats that permeate it. The future of cloud security holds both challenges and opportunities:</p><br />
 
         <p className='subText'>1. Predictions for Evolving Threats</p><br />
@@ -189,7 +189,7 @@ export default function Blog3() {
 
         <p className='mainText'>Conclusion: Fortifying Your Digital Sky</p><br />
         <p className='subText'>In the vast expanse of the digital sky, where innovation knows no bounds, your organization's success hinges on the strength of your cloud security. As we conclude this comprehensive exploration of cloud security, remember these critical takeaways:</p><br />
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
           <ul className='list-disc'>
             <li><span className='font-bold'>Security Is Non-Negotiable: </span>In the cloud era, security is not a luxury but a necessity. Your data, operations, and reputation are at stake.
             </li><br />

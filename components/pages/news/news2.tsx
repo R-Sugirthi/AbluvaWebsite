@@ -2,9 +2,8 @@ import "./news.css"
 
 export default function News2() {
   return (
-    <section className='sm:px-10 p-10 md:px-72 md:pb-20 sm:py-8 bg-[#f2f3f5] text-justify'>
+    <section className='p-5 md:px-72 md:pb-20 sm:py-8 bg-[#f2f3f5] text-justify'>
       <div>
-      
         <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Know more</p>
       </div>
       <div>
@@ -26,7 +25,7 @@ export default function News2() {
         <div className="">
         {/* <hr className="w-24 border-t-2 border-violet-900 "></hr> */}
         <div className="flex justify-end">
-        <img src="/images/AmitGautam.jpg" className="h-12 pr-5 rounded-sm pt-2"/>
+        {/* <img src="/images/AmitGautam.jpg" className="h-12 pr-5 rounded-sm pt-2"/> */}
         <p className='subText  pt-2'><span className="">Amit Gautam - CEO, Abluva</span>
         </p>
         </div>

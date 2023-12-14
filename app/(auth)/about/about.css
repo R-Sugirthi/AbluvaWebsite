@@ -32,9 +32,21 @@ height:500px;
     font-size:45px;
 }
 .location{
-    height:80px;
-    width:80px;
-    position: absolute;
-    top:0px;
-    right:80px;
+   border-radius: 10px;
 }
+
+.image-location {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-location.zoomed img {
+    transform: scale(2); /* Adjust the scale factor as needed for zoom level */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    cursor: zoom-out;
+  }
+  
+  .image-location img {
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+    cursor: pointer;
+  }

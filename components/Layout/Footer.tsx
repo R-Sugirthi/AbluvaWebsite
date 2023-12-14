@@ -16,7 +16,7 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
     <footer className='bg-[#131318] text-white'>
       <section>
         <div className="p-5 lg:p-28">
-        <h1 className="text-3xl  md:text-5xl font-bold founder text-gradient-footer" >
+        <h1 className="text-3xl  md:text-5xl font-bold founder text-gradient" >
             {customMainText || defaultMainText}
           </h1>
           <p className="md:text-2xl text-xl pb-6 founder">
@@ -24,9 +24,9 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
           </p>
           <Link
             href="/contact"
-            className="btn-md md:text-xl text-md text-white bg-violet-950 font-bold p-3 rounded-md mark"
+            className="btn-md md:text-xl text-lg text-white bg-violet-950 font-bold font-bold py-4 p-3 rounded-md mark"
           >
-            Contact us
+            Contact Us
           </Link>
         </div>
       </section>
@@ -109,7 +109,7 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
 
           {/* social media links */}
           <div className="md:flex md:items-center md:justify-between">
-            <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
+            <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0 mt-5">
               <li>
                 <Link href="https://twitter.com/abluvaInc" className="flex justify-center items-center text-gray-300 bg-gray-800 hover:text-gray-100 hover:bg-violet-950 rounded-full " aria-label="Twitter">
                   <svg className="w-8 h-8 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
@@ -143,9 +143,9 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
               </li>
             </ul>
             {/* copyRight */}
-            <div className="text-gray-300 text-sm md:text-md mr-4 mark">&copy; {currentYear} Abluva. All rights reserved.</div>
+            <div className="text-gray-300 text-sm md:text-md mr-4 mt-5 mark">&copy; {currentYear} Abluva. All rights reserved.</div>
             {/* support */}
-            <div className="text-gray-300 text-sm md:text-md mr-4 mark">
+            <div className="text-gray-300 text-sm md:text-md mr-4 mt-5 mark">
               <Link href="/legal" className="text-gray-300 hover:text-gray-100 ">
                 Legal
               </Link>

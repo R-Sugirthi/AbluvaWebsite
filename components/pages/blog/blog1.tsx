@@ -1,7 +1,7 @@
-
+import Link from 'next/link';
 export default function Blog1() {
   return (
-    <section className='sm:px-10 p-10 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+    <section className='p-5 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
       <div>
         <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Explore</p>
       </div>
@@ -30,7 +30,7 @@ export default function Blog1() {
         <p className='subText'>The changing nature of data is creating new challenges for data security professionals. Organizations need to develop and implement new security strategies to protect their data in the changing landscape.</p><br></br><br></br>
         <p className='mainSubText'>Here are some of the key challenges to data security in the changing landscape:</p><br></br>
         <p className='subText'>
-          <ul className='list-disc ml-10'>
+          <ul className='list-disc md:ml-10 ml-5'>
             <li>The increasing volume and complexity of data: Organizations are collecting and storing more data than ever before. This data is often complex and unstructured, making it more difficult to protect.</li><br />
             <li>The proliferation of data sources: Data is now being collected from a wider variety of sources than ever before, including IoT devices, social media, and public data sources. This makes it more challenging to implement and manage security controls across all of the different data sources.</li><br />
             <li>The rise of new technologies: New technologies, such as AI and ML, are being used to collect, store, and process data. These new technologies can introduce new security risks.</li><br />
@@ -44,7 +44,7 @@ export default function Blog1() {
         <p className='mainSubText'>Here are some key best practices for securing data in the changing landscape:
         </p><br></br>
         <p className='subText'>
-          <ul className='list-decimal ml-10'>
+          <ul className='list-decimal md:ml-10 ml-5'>
             <li>Adopt a zero trust security architecture. Zero trust security is a security model that assumes that no user or device can be trusted by default. All users and devices must be verified and authorized before they can access any data or resources. This is in contrast to the traditional perimeter-based security model, which assumes that all users and devices inside the perimeter are trusted. <br></br>
           Zero trust security is a more effective way to protect data in the changing landscape because it takes into account the fact that data is now being stored and accessed from a variety of locations, including on-premises, cloud, and hybrid environments. Zero trust security also takes into account the fact that cybercriminals are increasingly sophisticated and are using new techniques to attack data.</li><br />
             <li>Use AI and ML to detect and respond to threats. Artificial intelligence (AI) and machine learning (ML) can be used to analyze security data and identify potential threats before they can cause damage. AI and ML can also be used to automate security tasks, such as incident response and threat hunting.
@@ -62,7 +62,7 @@ export default function Blog1() {
           </ul><br></br>
           <p className='text-violet-900 italic text-xl'>
             "Security is not a cost centre, it's an investment" - Robert Gates</p><br></br>
-          <span className='mainSubText'>Abluva’s Graphene provides a comprehensive set of solutions to protect organisation’s data from breaches and protect it even after a breach. For more information on graphene, its capabilities and how it can help you against malicious data breaches, drop us a line at contact@abluva.com</span></p>
+          <span className='mainSubText'>Abluva’s Graphene provides a comprehensive set of solutions to protect organisation’s data from breaches and protect it even after a breach. For more information on graphene, its capabilities and how it can help you against malicious data breaches, drop us a line at <Link href='mailto:connect@abluva.com' className='text-violet-800 underline'>connect@abluva.com</Link></span></p>
       </div>
     </section>
   )

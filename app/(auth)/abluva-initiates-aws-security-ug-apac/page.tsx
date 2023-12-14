@@ -22,7 +22,7 @@ export default function News() {
             </div>
             <p className="text-4xl md:text-5xl founder">Abluva Initiates<br></br> ‘AWS Security UG-APAC’</p>
             <p className="text-xl md:text-2xl founder pt-2">We are proud to announce the launch of the AWS Security APAC User Group. This community-driven initiative aims to bring together security enthusiasts, professionals, and experts across the Asia-Pacific region to foster collaboration, knowledge sharing, and the advancement of security practices within the AWS ecosystem.</p>
-            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 06 11 2023</p>
+            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 04 Dec 2023</p>
           </div>
         </div>
       </div>

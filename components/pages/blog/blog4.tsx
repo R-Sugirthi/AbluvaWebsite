@@ -1,7 +1,7 @@
 
 export default function Blog4() {
   return (
-    <section className='sm:px-10 p-10 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+    <section className='p-5 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
       <div>
         <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Explore</p>
       </div>
@@ -27,7 +27,7 @@ export default function Blog4() {
         </p><br />
         <p className='subText'>Your security posture entails an evaluation of critical dimensions:
         </p><br />
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
           <ul className='list-disc'>
             <li>The extent of visibility into your attack surface and asset inventory.
             </li><br />
@@ -45,7 +45,7 @@ export default function Blog4() {
           Picture it as a fortress fortified on four critical pillars, each essential to the whole:
         </p><br />
 
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
           <ul className='list-disc'>
             <li><span className='font-bold'>Protection: </span>The first pillar, protection, is your digital armor. It involves deploying a robust array of measures, technologies, and policies to prevent unauthorized access and secure sensitive information. It's the first line of defense against the relentless tide of cyber threats.
             </li><br />

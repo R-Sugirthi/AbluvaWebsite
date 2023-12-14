@@ -24,7 +24,7 @@ export default function Blog() {
             </div>
             <p className="text-4xl md:text-5xl founder text-gradient">A Comprehensive Guide to <br></br>Cloud Security</p>
             <p className="text-xl md:text-2xl founder pt-2 darkText">Data protection technologies are essential for protecting data from unauthorized access, use, disclosure, disruption, modification, or destruction.</p>
-            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 06 11 2023</p>
+            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 03 Dec 2023</p>
           </div>
         </div>
       </div>

@@ -37,4 +37,25 @@ background-size: 100% 100%, 100% 100%;
   font-weight: bold;
 }
 
-/* research.css */
+.link-wrapper {
+  position: relative;
+  display: block;
+  padding: 10px;
+}
+
+.hover:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  background: linear-gradient(to right,rgb(22, 22, 23),rgb(255, 255, 255));
+  transition: transform 0.3s;
+
+}
+.hover:hover:after {
+  transform: scaleX(1);
+}

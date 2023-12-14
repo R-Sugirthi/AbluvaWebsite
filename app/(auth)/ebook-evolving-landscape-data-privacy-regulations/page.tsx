@@ -22,7 +22,7 @@ export default function Product() {
             </div>
             <p className="text-4xl md:text-5xl founder text-gradient">The Evolving Landscape of Data Privacy Regulations</p>
             <p className="text-xl md:text-2xl founder pt-2">Complex web of data privacy regulations has emerged, designed to safeguard the interests of individuals and organizations alike.</p>
-            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 06 11 2023</p>
+            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 14 Dec 2023</p>
 
             {/* View and Download Links */}
             <p className="text-2xl text-violet-300 mt-4 founder">

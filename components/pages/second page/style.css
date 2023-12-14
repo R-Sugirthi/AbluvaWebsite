@@ -136,40 +136,58 @@ nav a {
   background: linear-gradient(to right, rgb(39, 13, 72), rgb(186, 57, 184, 0.5));
 }
 
+.mobile-description {
+  position: absolute;
+  top:145px;
+  width: 96%;
+  height: 100px;
+  background: rgba(225, 225, 225, 0.1);
+  border-radius: 5px;
+  z-index: 2;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  padding: 10px; 
+}
+
+.mobile-description:hover {
+  background: linear-gradient(to right, rgb(39, 13, 72), rgb(186, 57, 184, 0.5));
+}
+
 .mobile-nav {
   position: sticky;
   top: 50px;
-  z-index: +1;
-  padding: 10px;
+  z-index: 10;
+  padding: 5px;
 }
 
 .mobile-content {
   padding-top: 10px;
 }
 
-.section {
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 0px;
-}
-
 .navItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
 }
 
-.navItem {
-  padding-right: 5px;
-  padding-left: 5px;
-  font-size: 14px;
+.navItem{
+  padding: 5px;
+  font-weight: bold;
 }
 
-.section#sec3+.mobile-nav {
+
+.section#sec4+.mobile-nav {
   position: relative;
 }
 
-.act {
-  border-bottom: 3px solid rgb(116, 57, 168);
+/* .navItem.act {
+  border-bottom: 1px solid rgb(116, 57, 168);
+} */
+
+.navItem.act{
+  color: blue;
 }

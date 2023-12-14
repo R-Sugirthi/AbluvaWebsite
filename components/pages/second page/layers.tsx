@@ -4,8 +4,21 @@ import "./style.css";
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
-const Layers: React.FC = () => {
-
+  const Layers: React.FC = () => {
+    const [hasScrolled, setHasScrolled] = useState(true);
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setHasScrolled(false);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+  
   useEffect(() => {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('nav a');
@@ -78,6 +91,10 @@ const Layers: React.FC = () => {
     });
   }, []);
 
+
+
+  
+
   const handleScrollImages = () => {
     const section4 = document.getElementById('section4');
     const images = document.querySelectorAll('.fixed');
@@ -120,13 +137,18 @@ const Layers: React.FC = () => {
 
   const isMobileScreen = window.innerWidth <= 768;
 
+  const containerStyle = {
+    opacity: hasScrolled ? 0 : 1,
+    transition: 'opacity 0.5s ease',
+  };
+
 
   return (
     <>
       {isMobileScreen ? (
         <MobileLayers />
       ) : (
-        <div className="flex relative index">
+         <div className="flex relative index h-full" style={containerStyle}>
           <div className="w-1/6">
             <nav className="nav fixed py-40 mark">
               <ul>
@@ -153,7 +175,7 @@ const Layers: React.FC = () => {
                 <div>
                 Uncover strategic insights and actionable intelligence through thorough data and behaviour discovery.<br />
                   <div className="py-5">
-                    <Link href="/discover" className="btn-md text-lg text-white bg-violet-950 p-3 rounded-md">
+                    <Link href="/discover" className="btn-md text-lg text-white bg-violet-950  font-bold py-4 p-3 rounded-md mark">
                       Learn More
                     </Link>
                   </div>
@@ -165,7 +187,7 @@ const Layers: React.FC = () => {
                 Secure your data with fine-grain access controls, dynamic masking, and advanced safeguards for unmatched protection with no performance penalty.<br />
                   <div className="py-5">
                     <Link href="/protect"
-                      className="btn-md text-lg text-white bg-violet-950 p-3 rounded-md">
+                      className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
                       Learn More
                     </Link>
                   </div>
@@ -177,7 +199,7 @@ const Layers: React.FC = () => {
                 Comprehensive oversight, real-time reporting, and intuitive dashboards for regulatory adherence and peace of mind.
                   <br />
                   <div className="py-5">
-                    <Link href="graphene-compliance-enablement" className="btn-md text-lg text-white bg-violet-950 p-3 rounded-md">
+                    <Link href="graphene-compliance-enablement" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
                       Learn More
                     </Link>
                   </div>
@@ -188,7 +210,7 @@ const Layers: React.FC = () => {
                 <div>
                 Uncover new revenue streams, optimize processes, and foster collaboration for unparalleled value extraction from every byte.<br />
                   <div className="py-5">
-                    <Link href="/extend" className="btn-md text-lg text-white bg-violet-950 p-3 rounded-md">
+                    <Link href="/extend" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
                       Learn More
                     </Link>
                   </div>

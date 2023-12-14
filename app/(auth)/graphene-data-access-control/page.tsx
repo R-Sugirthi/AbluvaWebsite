@@ -12,8 +12,8 @@ export default function GrapheneAccessControl() {
       <section className='founder'>
         <div className="bg-black text-black text-center py-20">
           <div className="px-4 sm:px-8 lg:px-16 xl:px-20">
-            <h1 className="text-5xl sm:text-5xl text-gradient lineht">Unlock hidden potential
-              of your data</h1>
+            <h1 className="text-5xl sm:text-5xl text-gradient lineht">Unlock Hidden Potential
+              of Your Data</h1>
 
             <p className="mb-4 md:px-20 text-2xl py-10 text-gray-300 darkText ">
               Graphene streamlines data security and access control, allowing organizations to safeguard their data without compromising performance. Its intuitive policy creation interface, seamless orchestration, scalable access controls, and dynamic data masking ensure data protection without slowing down operations.
@@ -23,14 +23,12 @@ export default function GrapheneAccessControl() {
                 Request to Demo
               </Link>
             </div>
-            <video className="w-full  h-auto rounded-2xl" controls poster="https://img.freepik.com/free-photo/3d-abstract-network-communications-background-with-plexus-design_1048-16800.jpg?w=740&t=st=1702039731~exp=1702040331~hmac=3b1359f0f3459256ee38e54299a93d6cd33835ed21b9db2f71e1ebaea89fe042" >
-              <source src="/videos/Graphene.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <img src="/videos/DataAccessControl.gif" className="w-full  h-auto rounded-2xl pb-20"  />
+          
           </div>
         </div>
         <div className='bg-[#f2f3f5] px-4 lg:px-28 py-20 '>
-          <h1 className="text-5xl  text-center text-gradient-light lineht">Democratize Data with <br></br>
+          <h1 className="text-5xl  text-center text-gradient-light lineht">Democratize Data with <br className="hidden md:block"></br>
             Graphene’s Breathing Security™</h1>
           <div>
             <p className="mb-4 md:px-64 text-2xl py-10 text-gray-700 text-center">
@@ -39,45 +37,46 @@ export default function GrapheneAccessControl() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-  <div className="max-w-xl p-10 border-b border-gray-300 flex flex-col justify-center items-center">
+  <div className="max-w-xl p-10 md:border-b border-gray-300 flex flex-col justify-center items-center">
     <ul>
-      <li className='py-3'><img src="/icons/dynamic.png" className='h-8 mx-auto' /></li>
-      <li className="mb-2 text-2xl text-gray-900 text-center">Dynamic Data Masking. Eliminate the need for Data Duplication</li>
+      <li className='py-3'><img src="/icons/policy.png" className='h-8 mx-auto' /></li>
+      <li className="mb-2 text-2xl text-gray-900 text-center">Minimize the data access policies</li>
     </ul>
   </div>
 
-  <div className="max-w-xl p-10 border-l border-r border-b border-gray-300 flex flex-col justify-center items-center">
+  <div className="max-w-xl p-10 md:border-l md:border-r md:border-b border-gray-300 flex flex-col justify-center items-center">
     <ul>
-      <li className='py-3'><img src="/icons/encryption.png" className='h-8 mx-auto' /></li>
-      <li className="mb-2 text-2xl text-gray-900 text-center">Fine Grained Masking and Encryption</li>
+      <li className='py-3'><img src="/icons/RealTime.png" className='h-8 mx-auto' /></li>
+      <li className="mb-2 text-2xl text-gray-900 text-center">Implement near real time data access rights</li>
     </ul>
   </div>
 
-  <div className="max-w-xl p-10 border-b border-gray-300 flex flex-col justify-center items-center">
+  <div className="max-w-xl p-10 md:border-b border-gray-300 flex flex-col justify-center items-center">
     <ul>
-      <li className='py-3'><img src="/icons/skills.png" className='h-8 mx-auto' /></li>
-      <li className="mb-2 text-2xl text-gray-900 text-center">No specialized skills needed to implement advanced masking controls</li>
+      <li className='py-3'><img src="/icons/reduceDependency.png" className='h-8 mx-auto' /></li>
+      <li className="mb-2 text-2xl text-gray-900 text-center">Reduce dependency on technical staff to implement policies</li>
     </ul>
   </div>
 
   <div className="max-w-xl p-10 flex flex-col justify-center items-center">
     <ul>
-      <li className='py-3'><img src="/icons/solution.png" className='h-8 mx-auto' /></li>
-      <li className="mb-2 text-2xl text-gray-900 text-center">Sophisticated masking solutions tailored to diverse security and compliance requirements</li>
+      <li className='py-3'><img src="/icons/multipleSystem.png" className='h-8 mx-auto' /></li>
+      <li className="mb-2 text-2xl text-gray-900 text-center">Control Access polices for all systems from single Interface
+</li>
     </ul>
   </div>
 
-  <div className="max-w-xl p-10  border-r border-l border-gray-300 flex flex-col justify-center items-center">
+  <div className="max-w-xl p-10  md:border-r md:border-l border-gray-300 flex flex-col justify-center items-center">
     <ul>
       <li className='py-3'><img src="/icons/security.png" className='h-8 mx-auto' /></li>
-      <li className="mb-2 text-2xl text-gray-900 text-center">Demonstrate Compliance and Perform Security Audits, effrotlessly.</li>
+      <li className="mb-2 text-2xl text-gray-900 text-center">Implement Fine Grain Access in multiple dimensions</li>
     </ul>
   </div>
 
   <div className="max-w-xl p-10 flex flex-col justify-center items-center">
     <ul>
-      <li className='py-3'><img src="/icons/securedData.png" className='h-8 mx-auto' /></li>
-      <li className="mb-2 text-2xl text-gray-900 text-center">Achieve the full potential of data collaborations with secure data</li>
+      <li className='py-3'><img src="/icons/valueFromData.png" className='h-8 mx-auto' /></li>
+      <li className="mb-2 text-2xl text-gray-900 text-center">Extract value from data, securely</li>
     </ul>
   </div>
 </div>
@@ -91,7 +90,7 @@ export default function GrapheneAccessControl() {
 </div>
         </div>
 
-        <div className='bg-[#f2f3f5] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-28 pb-20'>
+        <div className='bg-[#f2f3f5] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:px-28 px-5 md:pb-20 pb-10'>
           <div className="flex flex-col justify-center">
             <h5 className="text-4xl text-gradient-light">Fine Grain Access
 </h5>
@@ -103,31 +102,28 @@ and risk bask restriction.
             </p>
           </div>
           <div className='image-container flex items-center'>
-            <img src="https://img.freepik.com/free-photo/3d-rendering-abstract-black-white-background_23-2150914053.jpg?t=st=1700496337~exp=1700499937~hmac=1f8f1b94f5d3aabd4fe4eb6a12e37235458b02c73474bce1cb48050e309064f3&w=826" className='rounded-lg' />
+            <img src="https://img.freepik.com/premium-photo/businessman-holding-shield-protect-icon-protection-network-security-computer-safe-your-data-concept-lock-symbol-concept-about-security-cybersecurity-protection-against-dangers_184421-914.jpg?w=900" className='rounded-lg' />
             <div className='image-overlay rounded-lg'></div>
           </div>
         </div>
 
-        <div className='bg-[#f2f3f5] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-28 py-10'>
-        <div className=' flex items-center'>
-          <div className='image-container'>
-            <img src="https://img.freepik.com/free-photo/3d-rendering-abstract-black-white-background_23-2150914053.jpg?t=st=1700496337~exp=1700499937~hmac=1f8f1b94f5d3aabd4fe4eb6a12e37235458b02c73474bce1cb48050e309064f3&w=826" className='rounded-lg' />
-            <div className='image-overlay rounded-lg'></div>
-          </div>
-          </div>
-          <div className="flex flex-col justify-center">
-            <h5 className="text-4xl text-gradient-light">Intuitive Policy Editor
+        <div className='bg-[#f2f3f5] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:px-28 px-5 md:py-10 py-5'>
+  <div className='flex items-center order-2 md:order-1'>
+    <div className='image-container'>
+      <img src="https://img.freepik.com/premium-photo/cloud-computing-technology-online-data-storage-global-data-sharing_31965-22550.jpg?w=900" className='rounded-lg' />
+      <div className='image-overlay rounded-lg'></div>
+    </div>
+  </div>
+  <div className="flex flex-col justify-center order-1 md:order-2">
+    <h5 className="text-4xl text-gradient-light">Intuitive Policy Editor</h5>
+    <p className='mb-4 text-2xl text-gray-700'>
+      Create, inherit, and deploy policies effortlessly without any technical coding requirement. Graphene converts your click-based instructions into code and implements the access controls seamlessly across all the integrated systems.
+    </p>
+  </div>
+</div>
 
-</h5>
-            <p className='mb-4 text-2xl text-gray-700'>
-            
-            Create, inherit, and deploy policies effortlessly without any technical coding requirement. Graphene converts your click based instructions into code and implements the access controls seamlessly across all the integrated systems.
 
-            </p>
-          </div>  
-        </div>
-
-        <div className='bg-[#f2f3f5] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 px-28 py-20'>
+        <div className='bg-[#f2f3f5] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:px-28 px-5 md:py-20 pt-10 pb-20'>
           <div className="flex flex-col justify-center">
             <h5 className="text-4xl text-gradient-light">Simplified Database Access Management</h5>
             <p className='mb-4 text-2xl text-gray-700'>
@@ -135,7 +131,7 @@ and risk bask restriction.
             </p>
           </div>
           <div className='image-container flex items-center'>
-            <img src="https://img.freepik.com/free-photo/3d-rendering-abstract-black-white-background_23-2150914053.jpg?t=st=1700496337~exp=1700499937~hmac=1f8f1b94f5d3aabd4fe4eb6a12e37235458b02c73474bce1cb48050e309064f3&w=826" className='rounded-lg' />
+            <img src="https://img.freepik.com/premium-photo/businessman-holding-shield-protect-icon-protection-network-security-computer-safe-your-data-concept-lock-symbol-concept-about-security-cybersecurity-protection-against-dangers_184421-1281.jpg?w=900" className='rounded-lg' />
             <div className='image-overlay rounded-lg'></div>
           </div>
         </div>

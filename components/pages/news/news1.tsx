@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function News1() {
   return (
-    <section className='sm:px-10 p-10 md:px-72 md:pb-20 sm:py-8 bg-[#f2f3f5] text-justify'>
+    <section className='p-5 md:px-72 md:pb-20 sm:py-8 bg-[#f2f3f5] text-justify'>
       <div>
         <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Know more</p>
       </div>
@@ -14,7 +14,7 @@ export default function News1() {
 
         <p className='mainText'>The key objectives of the community are:
         </p><br />
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10'>
           <ul className='list-disc'>
             <li><span className="font-semibold">Knowledge Exchange : </span>Gain insights from industry experts and share your own experiences to enhance collective knowledge in AWS security.
             </li><br />

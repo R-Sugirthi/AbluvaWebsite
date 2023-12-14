@@ -32,7 +32,7 @@ export default function Blog() {
             </div>
             <p className="text-4xl md:text-5xl founder text-gradient">Understanding Security Posture: Strengthening Your <br></br>Cybersecurity Defences</p>
             <p className="text-xl md:text-2xl founder pt-2 darkText">In an era where digital vulnerabilities are a pervasive threat, one undeniable truth remains: Cybersecurity isn't a matter of choice; it's an indispensable necessity.</p>
-            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 06 11 2023</p>
+            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 28 Nov 2023</p>
           </div>
         </div>
       </div>

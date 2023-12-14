@@ -12,12 +12,12 @@ export default function News() {
 
   return (
     <>
-      <div className='bg-black h-full px:5 md:px-52 py-20'>
+      <div className='bg-black h-full sm:px:10 md:px-52 py-20'>
 
         <div>
-          <p className='text-3xl text-gradient'>Latest News</p>
+          <p className='text-3xl text-gradient px-5'>Latest News</p>
         </div>
-        <div className='container mx-auto flex flex-col sm:flex-row items-center py-12'>
+        <div className='container mx-auto flex flex-col sm:flex-row items-center py-12 px-5'>
           <div className='w-full sm:w-1/2'>
             <img
               src='https://img.freepik.com/free-photo/cloud-technology-with-futuristic-hologram-smartwatch_53876-124625.jpg?w=740&t=st=1702108318~exp=1702108918~hmac=1453116006523a8359bd00dcb684252a83d313350bfd5409a9c7da733977940a'
@@ -38,7 +38,7 @@ export default function News() {
               </div>
             </div>
             <p className='text-2xl sm:text-4xl founder gradient-text'><Link href="abluva-initiates-aws-security-ug-apac">Abluva Initiates ‘AWS Security UG-APAC’</Link></p>
-            <p className='mt-2 sm:mt-12 text-base sm:text-sm text-gray-500'>Abluva . Dec 08 2023</p>
+            <p className='mt-2 sm:mt-12 text-base sm:text-sm text-gray-500'>Abluva . 04 Dec 2023</p>
           </div>
         </div>
       </div>

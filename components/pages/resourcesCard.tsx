@@ -15,7 +15,7 @@ interface CardProps {
 function Allinsight({ imageSrc, tag1,tag2,tag3, section, date, link, description }: CardProps) {
  
   return (
-    <div className='bg-[#f2f3f5]'>
+    <div className='bg-[#f2f3f5] py-5'>
       
       <div className='image-container'>
         <img
@@ -63,7 +63,7 @@ export default function Allinsights() {
             tag2="Compliance"          
             section="eBook"
             description="The Evolving Landscape of Data Privacy Regulations"
-            date="03 Nov 2023"
+            date="14 Dec 2023"
             link="ebook-evolving-landscape-data-privacy-regulations"
           />
           <Allinsight
@@ -72,7 +72,7 @@ export default function Allinsights() {
             tag2="Compliance"
             section="Blog"
             description="Changing Paradigms in Data Security"
-            date="02 Nov 2023"
+            date="14 Dec 2023"
             link="changing-paradigms-data-security"
           />
           <Allinsight
@@ -82,7 +82,7 @@ export default function Allinsights() {
             tag3="Governance"
             section="Blog"
             description="Selecting Right Data Protection Technologies"
-            date="03 Nov 2023"
+            date="10 Dec 2023"
             link="selecting-right-data-protection-technologies"
           />
            <Allinsight
@@ -91,7 +91,7 @@ export default function Allinsights() {
             tag2="Access"
             section="Blog"
             description="A Comprehensive Guide to Cloud Security"
-            date="03 Nov 2023"
+            date="03 Dec 2023"
             link="comprehensive-guide-cloud-security"
           />
            <Allinsight
@@ -101,7 +101,7 @@ export default function Allinsights() {
             tag3="Governance"
             section="Blog"
             description="Understanding Security Posture: Strengthening Your Cybersecurity Defences"
-            date="03 Nov 2023"
+            date="28 Nov 2023"
             link="understanding-security-posture"
           />
         </div>

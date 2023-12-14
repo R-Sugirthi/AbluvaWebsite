@@ -1,8 +1,7 @@
-
-
+import Link from 'next/link';
 export default function Blog2() {
   return (
-    <section className='sm:px-10 p-10 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+    <section className='p-5 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
       <div>
         <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Explore</p>
       </div>
@@ -12,7 +11,7 @@ export default function Blog2() {
         <p className='subText'>
         Data protection technologies are a wide range of tools and software that can be used to protect data from unauthorized access, use, disclosure, disruption, modification, or destruction. Some of the most common data protection technologies include:
         </p><br/>
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Access control systems: Access control systems restrict access to data and resources to authorized users. This can be done at the network level, host level, and application level.
               </li><br />
@@ -41,7 +40,7 @@ export default function Blog2() {
         <p className='subText'>
         There are a number of benefits to using data protection technologies. These benefits include:
         </p><br/>
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Reduced risk of data breaches: Data protection technologies can help organizations to reduce the risk of data breaches by restricting access to data to authorized users and encrypting data at rest and in transit.
               </li><br />
@@ -56,7 +55,7 @@ export default function Blog2() {
         <p className='subText'>
         There are a number of challenges that organizations face when implementing data protection technologies. These challenges include:
         </p><br/>
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Cost: Data protection technologies can be expensive to purchase and implement.
               </li><br />
@@ -74,7 +73,7 @@ export default function Blog2() {
         <p className='subText'>
         When implementing data protection technologies, organizations should follow these best practices:
         </p><br/>
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Conduct a risk assessment: Organizations should conduct a risk assessment to identify their data protection needs. This assessment should consider the type of data that the organization collects and stores, the threats that the organization faces, and the organization's budget.
               </li><br />
@@ -94,7 +93,7 @@ export default function Blog2() {
         <p className='subText'>
         To select data protection technologies, you should consider the following factors:
         </p><br/>
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>The type of data you need to protect: This includes structured data (such as customer records and financial data), unstructured data (such as emails, documents, and images), and semi-structured data (such as XML and JSON files).
               </li><br />
@@ -113,7 +112,7 @@ export default function Blog2() {
         <p className='subText'>
         Once you have considered these factors, you can start to evaluate different data protection technologies. Here are some of the most common types of data protection technologies:
         </p><br/>
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Encryption: Encryption converts data into an unreadable format that can only be decrypted with a special key. This is one of the most effective ways to protect data at rest and in transit.
               </li><br />
@@ -136,7 +135,7 @@ export default function Blog2() {
         <p className='subText'>
         Here are some additional tips for choosing data protection technologies:
         </p><br/>
-        <p className='subText ml-10'>
+        <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Start by conducting a risk assessment. This will help you to identify the threats to your data and the risks they pose.
               </li><br />
@@ -154,7 +153,7 @@ export default function Blog2() {
           By following these tips, you can choose data protection technologies that will help you to protect your data from unauthorized access, use, disclosure, disruption, modification, or destruction.
         </p><br/>
         <p className='subText'>
-        Abluva’s Graphene provides a comprehensive set of tools for data protection across various data storage solutions. Graphene makes data protection natural and compliance and gives control of data security back in the hands of data owners and custodians removing the IT as middleman.  Graphene is developed with built in AI models to assist in Intrusion based on proprietary research and proven models. For more information on Graphene contact us at contact@abluva.com
+        Abluva’s Graphene provides a comprehensive set of tools for data protection across various data storage solutions. Graphene makes data protection natural and compliance and gives control of data security back in the hands of data owners and custodians removing the IT as middleman.  Graphene is developed with built in AI models to assist in Intrusion based on proprietary research and proven models. For more information on Graphene connect us at <Link href='mailto:connect@abluva.com' className='text-violet-800 underline'>connect@abluva.com</Link>
         </p><br/><br/>
       </div>
     </section>

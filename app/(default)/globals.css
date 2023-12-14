@@ -97,6 +97,10 @@
   .btn-md:hover {
     background: linear-gradient(to right, rgb(212, 110, 210,0.6), rgb(37, 1, 80));
   }
+  .btn-sm:hover {
+    background: linear-gradient(to right, rgb(212, 110, 210,0.6), rgb(37, 1, 80));
+  }
+
 
   .darkText{
     letter-spacing: 1px;
@@ -152,7 +156,7 @@
 }
 
 .videoHeight{
-  height:500px;
+  height:400px;
 }
 
 .videoposter {
@@ -185,4 +189,26 @@
   color: #232630;
   font-weight: 300;
   line-height: 29px;
+}
+.bg {
+  animation: fadeUp 3s ease-in-out;
+}
+
+@keyframes fadeUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.landing {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0)),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+                    url("https://img.freepik.com/premium-photo/abstract-wave-with-blue-light-black-background-science-background-with-moving-dots-network-connection-technology-digital-structure-with-particles-3d-rendering_1005891-52.jpg?w=900");
+  background-size: 100% 100%;
+  animation: fadeUp 3s ease-in-out;
 }

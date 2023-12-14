@@ -24,9 +24,9 @@ export default function Insights() {
 </p>
         </div> */}
         <div>
-          <p className='text-3xl text-gradient'>Latest insights</p>
+          <p className='text-3xl text-gradient px-5'>Latest insights</p>
         </div>
-        <div className='container mx-auto flex flex-col sm:flex-row items-center py-12'>
+        <div className='container mx-auto flex flex-col sm:flex-row items-center py-12 px-5'>
           <div className='w-full sm:w-1/2'>
             <img
               src='https://img.freepik.com/premium-photo/discussion-young-caucasian-business-woman-modern-office-with-team-meeting-tasks-giving-women-front-office-working-concept-finance-business-girl-power-inclusion-diversity-feminism_155003-39900.jpg?w=740'
@@ -48,7 +48,7 @@ export default function Insights() {
               </div>
             </div>
             <p className='text-2xl sm:text-4xl founder gradient-text'><Link href="changing-paradigms-data-security">Changing Paradigms in Data Security</Link></p>
-            <p className='mt-2 sm:mt-12 text-base sm:text-sm text-gray-500'>Abluva . Nov 17 2023</p>
+            <p className='mt-2 sm:mt-12 text-base sm:text-sm text-gray-500'>Abluva . 14 Dec 2023</p>
           </div>
         </div>
       </div>

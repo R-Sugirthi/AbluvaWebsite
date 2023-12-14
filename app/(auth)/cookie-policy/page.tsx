@@ -10,12 +10,12 @@ export default function Cookie() {
   return (
     <>
       
-      <section className='sm:px-10 p-10 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+      <section className=' p-5 md:px-72 md:pb-10 bg-[#f2f3f5] text-justify'>
         <div>
           <p className='text-gray-700 py-5 border-b border-gray-500 mark text-3xl'>Cookie Policy</p>
         </div>
         <div>
-          <p className='subText pt-5'>Abluva, Inc. (“Abluva,” “we,” “our,” or “us”) is committed to transparency with respect to its data collection and use practices. This Cookie Policy (“Cookie Policy”) explains how we use cookies and related technologies throughout our Websites and your related choices. Please note that this Cookie Policy is provided as a statement about privacy and Abluva’s use of cookies and similar technologies. Capitalized terms used in this Cookie Policy but not defined herein will have the meanings given to them in Abluva’s <Link href='/PrivacyPolicy' rel='noopener noreferrer' className='text-violet-800 underline'>Privacy Policy</Link>.
+          <p className='subText pt-5'>Abluva, Inc. (“Abluva,” “we,” “our,” or “us”) is committed to transparency with respect to its data collection and use practices. This Cookie Policy (“Cookie Policy”) explains how we use cookies and related technologies throughout our Websites and your related choices. Please note that this Cookie Policy is provided as a statement about privacy and Abluva’s use of cookies and similar technologies. Capitalized terms used in this Cookie Policy but not defined herein will have the meanings given to them in Abluva’s <Link href='/privacy-policy' rel='noopener noreferrer' className='text-violet-800 underline'>Privacy Policy</Link>.
           </p><br /><br />
           <p className='mainText'>“Cookies” Explained and Why They are Used</p><br />
           <p className='subText'>A cookie is a small piece of data (text file) that a website – when visited by a user – asks your browser to store on your computer or device in order to remember information about you, such as your IP address, device identifier, language and/or currency preference or login information. You can find more information about cookies at: www.allaboutcookies.org or www.youronlinechoices.eu.</p><br />
@@ -23,7 +23,7 @@ export default function Cookie() {
           <p className='subText'>We’ll use the term “cookie” throughout this Cookie Policy to cover all of these technologies, but we’ll make sure we provide you with clear details about them all so that you can make informed choices about your cookie settings.</p><br />
           <p className='mainSubText'>Types of Cookies</p><br />
           <p className='subText'>Session and Persistent Cookies</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Session Cookies – these are cookies which expire once you close your web browser; and
               </li><br />
@@ -31,7 +31,7 @@ export default function Cookie() {
             </ul>
           </p><br />
           <p className='mainSubText'>First and Third Party Cookies</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>First-party cookies – First-party cookies are directly stored by the website (or domain) you visit. These cookies allow website owners to collect analytics data, remember language settings, and perform other useful functions that provide a good user experience.
               </li><br />
@@ -42,7 +42,7 @@ export default function Cookie() {
           <p className='mainText'>The Categories of Cookies Used by Abluva</p><br />
           <p className='subText'>Abluva, or our service providers acting on our behalf, uses the types of cookies identified above in the following ways:</p><br />
           <p className='subText'>Strictly Necessary – These cookies are necessary for our Websites to function and cannot be switched off in our systems. They are usually only set or placed in response to actions made by you, which amount to a request for services from us, such as setting your privacy preferences, logging in, or filling in forms. For example, Strictly Necessary cookies are used by us to:</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Remember information that you fill in when performing certain activities while accessing or using our Websites.
               </li><br />
@@ -55,7 +55,7 @@ export default function Cookie() {
             </ul>
           </p><br />
           <p className='subText'>Performance/Analytics Cookies - These cookies collect information about how visitors use our Websites, for instance which pages visitors go to most often, and if they get error messages from web pages or in interactions with our Websites. These cookies collect anonymous information on the pages visited. All information these cookies collect is aggregated and therefore anonymous. It is only used to improve how our Websites perform. Web analytics that use cookies to gather data to enhance the performance of a website fall into this category. For example, they may be used for testing designs and ensuring a consistent look and feel is maintained for the user. This category does not include cookies used for behavioral/targeted advertising networks. For example, Performance/Analytics cookies are used by us to:</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Maintain, operate, and continually improve our Websites.
               </li><br />
@@ -70,21 +70,21 @@ export default function Cookie() {
           </p><br />
           <p className='subText'>
             Please refer to the privacy policies linked below of the third party analytic providers currently utilized through our Websites:</p><br />
-          <p className='subText ml-10'>
-            <ul className='list-disc'>
-              <li>Google (Google Analytics): <Link href="https://www.google.com/policies/privacy/partners/" className='underline text-violet-800'>https://www.google.com/policies/privacy/partners/</Link></li><br />
-              <li>Optimizely: <Link href="https://www.optimizely.com/legal/privacy-policy/" className='underline text-violet-800'>https://www.optimizely.com/legal/privacy-policy/</Link></li><br />
-              <li>Facebook: <Link href="facebook.com/about/privacy" className='underline text-violet-800'>facebook.com/about/privacy</Link></li><br />
-              <li>Matomo: <Link href="https://matomo.org/matomo-cloud-privacy-policy/" className='underline text-violet-800'>https://matomo.org/matomo-cloud-privacy-policy/</Link></li><br />
-              <li>Full Story: <Link href="https://www.fullstory.com/legal/privacy-policy/" className='underline text-violet-800'>https://www.fullstory.com/legal/privacy-policy/</Link></li><br />
-              <li>Hubspot: <Link href="https://legal.hubspot.com/privacy-policy" className='underline text-violet-800'>https://legal.hubspot.com/privacy-policy</Link></li><br />
-              <li>6Sense: <Link href="https://6sense.com/privacy-policy/" className='underline text-violet-800'>https://6sense.com/privacy-policy/</Link></li><br />
-              <li>Crazy Egg: <Link href="https://www.crazyegg.com/privacy" className='underline text-violet-800'>https://www.crazyegg.com/privacy</Link></li><br />
-              <li>Poptin: <Link href="https://www.poptin.com/privacy-policy/" className='underline text-violet-800'>https://www.poptin.com/privacy-policy/</Link></li>
+          <p className='subText md:ml-10 ml-5'>
+            <ul className='list-disc text-left'>
+              <li>Google (Google Analytics): <Link href="https://www.google.com/policies/privacy/partners/" rel='noopener noreferrer' className='underline text-violet-800'>https://www.google.com/policies/privacy/partners/</Link></li><br />
+              <li>Optimizely: <Link href="https://www.optimizely.com/legal/privacy-policy/" className='underline text-violet-800 ' rel='noopener noreferrer'>https://www.optimizely.com/legal/privacy-policy/</Link></li><br />
+              <li>Facebook: <Link href="facebook.com/about/privacy" className='underline text-violet-800' rel='noopener noreferrer'>facebook.com/about/privacy</Link></li><br />
+              <li>Matomo: <Link href="https://matomo.org/matomo-cloud-privacy-policy/" className='underline text-violet-800' rel='noopener noreferrer'>https://matomo.org/matomo-cloud-privacy-policy/</Link></li><br />
+              <li>Full Story: <Link href="https://www.fullstory.com/legal/privacy-policy/" className='underline text-violet-800' rel='noopener noreferrer'>https://www.fullstory.com/legal/privacy-policy/</Link></li><br />
+              <li>Hubspot: <Link href="https://legal.hubspot.com/privacy-policy" className='underline text-violet-800' rel='noopener noreferrer'>https://legal.hubspot.com/privacy-policy</Link></li><br />
+              <li>6Sense: <Link href="https://6sense.com/privacy-policy/" className='underline text-violet-800' rel='noopener noreferrer'>https://6sense.com/privacy-policy/</Link></li><br />
+              <li>Crazy Egg: <Link href="https://www.crazyegg.com/privacy" className='underline text-violet-800' rel='noopener noreferrer'>https://www.crazyegg.com/privacy</Link></li><br />
+              <li>Poptin: <Link href="https://www.poptin.com/privacy-policy/" className='underline text-violet-800' rel='noopener noreferrer'>https://www.poptin.com/privacy-policy/</Link></li>
             </ul>
           </p><br />
           <p className='subText'>Functionality Cookies — These cookies allow the website to remember choices you make (such as your username, language or the region you are in) and provide enhanced, more personal features. These cookies can also be used to remember changes you have made to text size, fonts and other parts of web pages that you can customize. The information these cookies collect may be anonymized and they cannot track your browsing activity on other websites. For example, we use Functionality cookies to:</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Remember information that you fill in when performing certain activities in connection with your use of our Websites.
               </li><br />
@@ -92,7 +92,7 @@ export default function Cookie() {
             </ul>
           </p><br />
           <p className='subText'>Targeting/Advertising Cookies – These cookies are designed to gather information from you and used to deliver advertisements more relevant to you and your interests. They are also used to limit the number of times you see an advertisement as well as help measure the effectiveness of the advertising campaigns. They are usually placed by advertising networks with the website operator’s permission. They remember that you have visited a website and this information is shared with other organizations such as advertisers. Targeting or advertising cookies are almost always third party cookies, which means, the cookies follow the user as they visit other websites. Abluva uses the third party service providers listed below that use these cookies to:</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Advertise Abluva and is products and services across the Internet.
               </li><br />
@@ -101,41 +101,41 @@ export default function Cookie() {
             </ul>
           </p><br />
           <p className='subText'>Please refer to the privacy policies linked below of the third party advertising services currently utilized through our Websites:</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
-              <li>Google (DoubleClick Digital Marketing): <Link href=" www.google.com/policies/privacy/partners/" className='underline text-violet-800'> www.google.com/policies/privacy/partners/</Link></li>
+              <li>Google (DoubleClick Digital Marketing): <Link href=" www.google.com/policies/privacy/partners/" className='underline text-violet-800' rel='noopener noreferrer'> www.google.com/policies/privacy/partners/</Link></li>
             </ul>
           </p><br /><br />
 
           <p className='mainText'>How to Manage Your Cookie Preferences</p><br />
           <p className='subText'>Where required by applicable law, we will obtain your consent prior to setting cookies (except for strictly necessary cookies). Most web and mobile device browsers automatically accept cookies, but if you prefer, you can change your browser to prevent that or to notify you each time a cookie is set.</p><br />
           <p className='subText'>In order to manage your cookie preferences, you may alter the cookie settings in your browser settings at any time. You may accept all, or certain, cookies. If you do disable our cookies in your browser settings, you may find that certain features and/or functionality of our Websites will not work.</p><br />
-          <p className='subText'>To learn more about cookies, including how to manage cookies and opt-out of cookies being placed on your device, please visit <Link href="http://www.allaboutcookies.org/manage-cookies/index.html" className='underline text-violet-800'> http://www.allaboutcookies.org/manage-cookies/index.html</Link> tracking is widespread over the internet, there are things you can do to minimize these activities with respect to browser cookies.</p><br />
+          <p className='subText'>To learn more about cookies, including how to manage cookies and opt-out of cookies being placed on your device, please visit <Link href="http://www.allaboutcookies.org/manage-cookies/index.html" className='underline text-violet-800' rel='noopener noreferrer'> http://www.allaboutcookies.org/manage-cookies/index.html</Link> tracking is widespread over the internet, there are things you can do to minimize these activities with respect to browser cookies.</p><br />
           <p className='subText'>Do Not Track Settings</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
-              <li>You may turn on the Do Not Track (“DNT”) setting in your browser, which will enable your browser to send a special signal to websites, analytics companies, plug in providers, and other web services you encounter while browsing to stop tracking your activity. To turn on your DNT signal, please visit <Link href="https://allaboutdnt.com/#adjust-settings" className='underline text-violet-800'> https://allaboutdnt.com/#adjust-settings</Link>. Please note that not all companies will respond to or honor DNT signals.
+              <li>You may turn on the Do Not Track (“DNT”) setting in your browser, which will enable your browser to send a special signal to websites, analytics companies, plug in providers, and other web services you encounter while browsing to stop tracking your activity. To turn on your DNT signal, please visit <Link href="https://allaboutdnt.com/#adjust-settings" className='underline text-violet-800' rel='noopener noreferrer'> https://allaboutdnt.com/#adjust-settings</Link>. Please note that not all companies will respond to or honor DNT signals.
               </li><br />
               <li>Note that Abluva does not process or respond to web browsers’ “do not track” signals or other similar transmissions that indicate a request to disable online tracking of users who use our Websites.</li>
             </ul>
           </p><br />
           <p className='subText'>Targeting/Advertising Cookies</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>You can opt out of targeted advertising by:
-                <p className='subText ml-10'>
+                <p className='subText md:ml-10 ml-5 text-left'>
                   <ul className='list-disc'>
-                    <li>Facebook - <Link href="https://www.facebook.com/settings/?tab=ads" className='underline text-violet-800'>  https://www.facebook.com/settings/?tab=ads</Link></li><br />
-                    <li>Google - <Link href="https://www.google.com/settings/ads/anonymous" className='underline text-violet-800'> https://www.google.com/settings/ads/anonymous</Link></li><br />
-                    <li>Bing - <Link href=" https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads" className='underline text-violet-800'> https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads</Link></li>
+                    <li>Facebook : <Link href="https://www.facebook.com/settings/?tab=ads" className='underline text-violet-800' rel='noopener noreferrer'>  https://www.facebook.com/settings/?tab=ads</Link></li><br />
+                    <li>Google : <Link href="https://www.google.com/settings/ads/anonymous" className='underline text-violet-800' rel='noopener noreferrer'> https://www.google.com/settings/ads/anonymous</Link></li><br />
+                    <li>Bing : <Link href=" https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads" className='underline text-violet-800' rel='noopener noreferrer'> https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads</Link></li>
                   </ul>
                 </p></li><br />
-              <li>In addition, some of our third party analytics and/or advertising/targeting partners may be members of the Network Advertising Initiative (“NAI”) or Digital Advertising Alliance (“DAA”) Self-Regulatory Program for Online Behavioral Advertising. NAI and DAA each provide information regarding procedures for opting-out of targeted online advertising from participating companies.
-                <p className='subText ml-10'>
-                  <ul className='list-disc'>
-                    <li>For information from NAI about opting out, click<Link href="https://optout.networkadvertising.org/?c=1" className='underline text-violet-800'> here</Link></li><br />
-                    <li>For information from DAA about opting out, click<Link href="https://youradchoices.com/control" className='underline text-violet-800'> here</Link> or visit: <Link href="http://optout.aboutads.info/." className='underline text-violet-800'> http://optout.aboutads.info/.</Link></li><br />
-                    <li>For information about DAA’s AppChoices application, click<Link href="https://youradchoices.com/appchoices" className='underline text-violet-800'> here</Link></li>
+              <li>In addition, some of our third party analytics and/or advertising/targeting partners may be members of the Network Advertising Initiative (“NAI”) or Digital Advertising Alliance (“DAA”) Self-Regulatory Program for Online Behavioral Advertising. NAI and DAA each provide information regarding procedures for opting-out of targeted online advertising from participating companies.<br />
+                <p className='subText md:ml-10 ml-5'>
+                  <ul className='list-disc text-left' >
+                    <li>For information from NAI about opting out,<Link href="https://optout.networkadvertising.org/?c=1" className='underline text-violet-800' rel='noopener noreferrer'> click here</Link></li><br />
+                    <li>For information from DAA about opting out, <Link href="https://youradchoices.com/control" className='underline text-violet-800' rel='noopener noreferrer'> click here</Link> or visit: <Link href="http://optout.aboutads.info/." className='underline text-violet-800' rel='noopener noreferrer'> http://optout.aboutads.info/.</Link></li><br />
+                    <li>For information about DAA’s AppChoices application, <Link href="https://youradchoices.com/appchoices" className='underline text-violet-800' rel='noopener noreferrer'>click here</Link></li>
                   </ul>
                 </p>
               </li>

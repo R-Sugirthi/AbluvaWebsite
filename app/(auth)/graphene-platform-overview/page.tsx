@@ -13,8 +13,8 @@ export default function Overview() {
         <div className="bg-black text-white text-center py-20">
           <div className=" px-4 sm:px-8 lg:px-16 xl:px-20">
             <h1 className="text-5xl sm:text-7xl "><span className='text-gradient'>Graphene</span> <br></br></h1>
-            <p className='text-2xl text-gray-600 letterspace'> Strong <span className='text-gradient'> &#183; </span>  Flexible <span className='text-gradient'> &#183; </span> Impenetrable</p>
-            <p className=" md:px-20 text-4xl py-10 text-gray-300 mark font-semibold">
+            <p className='md:text-2xl text-gray-600 letterspace'> Strong <span className='text-gradient'> &#183; </span>  Flexible <span className='text-gradient'> &#183; </span> Impenetrable</p>
+            <p className=" md:px-20 md:text-4xl text-3xl py-10 text-gray-300 mark font-semibold">
                Abluva’s Data Protection Platform
               For Identification, Protection and Propagation Control of Data.
             </p>
@@ -26,7 +26,7 @@ export default function Overview() {
               discover new revenue streams.
             </p>
 
-            <video className="w-full  h-auto rounded-2xl videoposter" controls poster="https://img.freepik.com/free-photo/abstract-blue-pattern-wet-drops-glass-reflects-light-generated-by-artificial-intelligence_24877-80938.jpg?t=st=1700477560~exp=1700481160~hmac=12d435a8f5aee076939605243327eb210c825032b0c84252bb41f5d81295f414&w=826" >
+            <video className="w-full rounded-2xl videoposter" controls poster="https://img.freepik.com/free-photo/abstract-blue-pattern-wet-drops-glass-reflects-light-generated-by-artificial-intelligence_24877-80938.jpg?t=st=1700477560~exp=1700481160~hmac=12d435a8f5aee076939605243327eb210c825032b0c84252bb41f5d81295f414&w=826" loop>
               <source src="/videos/Graphene.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -38,20 +38,20 @@ export default function Overview() {
           <h1 className="text-5xl  text-center text-gradient-light pb-10">Graphene Benefits</h1>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-            <div className="max-w-xl p-10 md:border-b md:border-r lg:border-b lg:border-r border-gray-300">
+            <div className="max-w-xl md:p-10 p-5 md:border-b md:border-r lg:border-b lg:border-r border-gray-300">
               <h5 className="mb-2 text-4xl text-gray-900">Breathing</h5>
               <p className="text-2xl text-gray-700">
-                Every Evolving Security as against Static Access control flags:
+                Every Evolving Security as Against Static Access Control Flags:
                 <ul className='list ml-10'>
                   <li className="text-2xl text-gray-700 "> Dynamic Access Control</li>
                   <li className="text-2xl text-gray-700 "> Environment Based Access Control</li>
                 </ul>
               </p>
             </div>
-            <div className="max-w-xl p-10 md:border-b lg:border-b border-gray-300">
+            <div className="max-w-xl md:p-10 p-5 md:border-b lg:border-b border-gray-300">
               <h5 className="mb-2 text-4xl text-gray-900">Observable</h5>
               <p className="text-2xl text-gray-700">
-              Real time Policy Status :
+              Real-time Policy Status :
                 <ul className='list ml-10'>
                   <li className="text-2xl text-gray-700 ">Well established Metrics </li>
                   <li className="text-2xl text-gray-700 "> Auditable Policies </li>
@@ -59,7 +59,7 @@ export default function Overview() {
                 </ul>
               </p>
             </div>
-            <div className="max-w-xl p-10 md:border-r lg:border-r border-gray-300">
+            <div className="max-w-xl md:p-10 p-5 md:border-r lg:border-r border-gray-300">
               <h5 className="mb-2 text-4xl text-gray-900">Centralized</h5>
               <p className="text-2xl text-gray-700">
                 Single Easy to Manage UI for:
@@ -70,10 +70,10 @@ export default function Overview() {
                 </ul>
               </p>
             </div>
-            <div className="max-w-xl px-10 pt-10 pb-20">
+            <div className="max-w-xl md:p-10 p-5 pb-20">
               <h5 className="mb-2 text-4xl text-gray-900">Comprehensive</h5>
               <p className="text-2xl text-gray-700">
-              Fine Grain Access Control Tools for deepest level of control : 
+              Fine Grain Access Control Tools for Deepest Level of Control : 
                 <ul className='list ml-10'>
                   <li className="text-2xl text-gray-700 "> Comprehensive Access Management</li>
                   <li className="text-2xl text-gray-700 "> Elaborate Data Depersonalization Controls</li>
@@ -93,53 +93,45 @@ export default function Overview() {
             minimal disruptions to your business operations.
           </p>
           <div className='pb-10'>
-          <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#f2f3f5] md:rounded-tl-full
-          md:rounded-br-full lg:rounded-tl-full
-          lg:rounded-br-full white-shadow p-5'>
+          <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#f2f3f5] rounded-tl-3xl rounded-br-3xl white-shadow p-5'>
             <div className='flex justify-center items-center md:border-r border-gray-300'>
             <p className="text-4xl text-center text-gradient-light">Data Discovery</p>
             </div>
             <div>
-              <p className="text-2xl text-gray-700 text-left p-5">Locate and categorize sensitive data across your entire data infrastructure using advanced algorithms for streamlined and comprehensive data Protection.</p>
+              <p className="text-xl text-gray-900 text-left p-5 text-justify">Locate and categorize sensitive data across your entire data infrastructure using advanced algorithms for streamlined and comprehensive data Protection.</p>
             </div>
           </div>
           </div>
 
           <div className='pb-10'>
-          <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#f2f3f5] md:rounded-tr-full
-          md:rounded-bl-full lg:rounded-tr-full
-          lg:rounded-bl-full white-shadow p-5'>
+          <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#f2f3f5] rounded-tl-3xl rounded-br-3xl white-shadow p-5'>
             <div className='flex justify-center items-center md:border-r border-gray-300'>
             <p className="text-4xl text-center text-gradient-light">Data Protection</p>
             </div>
             <div>
-              <p className="text-2xl text-gray-700 text-left p-5">Extensive Data Depersonalization options such as Encryption, Masking and advanced Anonymization algorithms ensure private data is always scrambled.</p>
+              <p className="text-xl text-gray-900 text-left p-5 text-justify">Extensive Data Depersonalization options such as Encryption, Masking and advanced Anonymization algorithms ensure private data is always scrambled.</p>
             </div>
           </div>
           </div>
 
           <div className='pb-10'>
-          <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#f2f3f5] md:rounded-tl-full
-          md:rounded-br-full lg:rounded-tl-full
-          lg:rounded-br-full white-shadow p-5'>
+          <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#f2f3f5] rounded-tl-3xl rounded-br-3xl white-shadow p-5'>
             <div className='flex justify-center items-center md:border-r border-gray-300'>
             <p className="text-4xl text-center text-gradient-light">Data Access Control</p>
             </div>
             <div>
-              <p className="text-2xl text-gray-700 text-left p-5">Elaborate Fine Grain Access Control Options with intuitive Access Control Management interface. Consolidated Interface solution for Access Control for Hybrid Cloud Applications.</p>
+              <p className="text-xl text-gray-900 text-left p-5 text-justify">Elaborate Fine Grain Access Control Options with intuitive Access Control Management interface. Consolidated Interface solution for Access Control for Hybrid Cloud Applications.</p>
             </div>
           </div>
           </div>
 
           <div className='pb-20'>
-          <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#f2f3f5] md:rounded-tr-full
-          md:rounded-bl-full lg:rounded-tr-full
-          lg:rounded-bl-full white-shadow p-5'>
+          <div  className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 bg-[#f2f3f5] rounded-tl-3xl rounded-br-3xl white-shadow p-5'>
             <div className='flex justify-center items-center md:border-r border-gray-300'>
-            <p className="text-4xl text-center text-gradient-light">Data Audit & <br></br>Compliance Reporting</p>
+            <p className="text-4xl text-center text-gradient-light">Data Audit & <br className='md:block hidden'></br>Compliance Reporting</p>
             </div>
             <div>
-              <p className="text-2xl text-gray-700 text-left p-5">Detailed Audit Reports on Data Location and Access for Smooth Audits and Compliance Reporting.</p>
+              <p className="text-xl text-gray-900 text-left p-5 text-justify">Detailed Audit Reports on Data Location and Access for Smooth Audits and Compliance Reporting.</p>
             </div>
           </div>
           </div>

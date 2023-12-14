@@ -23,7 +23,7 @@ export default function Blog() {
             </div>
             <p className="text-4xl md:text-5xl founder text-gradient">Changing Paradigms<br></br>in Data Security</p>
             <p className="text-xl md:text-2xl founder pt-2  darkText">Data security is a critical concern for organizations of all sizes, but the landscape is constantly evolving. New technologies, new threats, and new regulations are all driving changes in the way that organizations protect their data.</p>
-            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 06 11 2023</p>
+            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 14 Dec 2023</p>
           </div>
         </div>
       </div>

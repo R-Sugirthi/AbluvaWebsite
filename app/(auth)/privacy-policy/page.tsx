@@ -10,7 +10,7 @@ export default function privacyPolicy() {
   return (
     <>
       
-      <section className='sm:px-10 p-10 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+      <section className='p-5 md:px-72 md:pb-10 bg-[#f2f3f5] text-justify'>
         <div>
           <p className='text-gray-700 py-5 border-b border-gray-500 mark text-3xl'>Abluva Privacy Policy</p>
         </div>
@@ -18,7 +18,7 @@ export default function privacyPolicy() {
           <p className='subText pt-5'>
             At Abluva, we take the privacy and security of your information seriously. This privacy statement (“Privacy Statement”) will explain how Abluva, Inc. ("Abluva", "we", "our", "us") handle your personal data. "Personal Data," as used in this Privacy Statement, is information that identifies or can reasonably be linked directly or indirectly to an identifiable person. The privacy practices and standards detailed in this Privacy Statement apply to all data subjects globally, unless specifically noted otherwise. In particular, this Privacy Statement will touch on the following sections:
           </p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>What Personal Data does Abluva collect?</li><br />
               <li>What Personal Data is Not Collected?</li><br />
@@ -37,7 +37,7 @@ export default function privacyPolicy() {
           <p className='mainSubText'>Personal Data
           </p>
           <p className='subText'>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:
-            <ul className='list-disc ml-10'>
+            <ul className='list-disc md:ml-10 ml-5'>
               <li>Email address</li>
               <li>First name and last name</li>
               <li>Phone number</li>
@@ -55,7 +55,7 @@ export default function privacyPolicy() {
           <p className='mainSubText'>Tracking Technologies and Cookies
           </p>
           <p className='subText'>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:</p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li><span className='font-bold'>Cookies or Browser Cookies.</span> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse cookies, our Service may use Cookies.</li><br />
               <li><span className='font-bold'>Web Beacons.</span> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
@@ -74,7 +74,7 @@ export default function privacyPolicy() {
           <p className='subText'>
             Abluva  may use Personal Data for the following purposes:
           </p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li><span className='font-bold'>To provide and maintain our Service,</span>including monitoring the usage of our Service.</li><br />
               <li><span className='font-bold'>To manage Your Account: </span>to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</li><br />
@@ -91,7 +91,7 @@ export default function privacyPolicy() {
           </p><br />
           <p className='subText'>We may share Your personal information in the following situations:
           </p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li><span className='font-bold'>Sharing with Service Providers: </span>We share your Personal Data with our service providers. These are companies who provide services on our behalf, such as hosting our Services, marketing, advertising, social, analytics, support ticketing, Cloud Service providers, security, and other similar services. These companies are subject to contractual requirements that govern the security and confidentiality of your information.
                 For example, we use analytics providers, such as Google Analytics, to help us understand the operation and performance of our Services. To learn about how Google uses and shares data it collects through its services, please visit <Link href="https://www.google.com/policies/privacy/partners/"  className='underline text-violet-800'>https://www.google.com/policies/privacy/partners/</Link>.
@@ -141,14 +141,14 @@ export default function privacyPolicy() {
           </p><br />
           <p className='subText'><span className='font-bold'>Complaints: </span>If you believe that we have breached a relevant data protection law and wish to make a complaint, please contact us using the details below and provide us with full details of the alleged breach. We will promptly investigate your complaint and respond to you, in writing, setting out the outcome of our investigation and the steps we will take to deal with your complaint. You also have the right to contact a regulatory body or data protection authority in relation to your complaint.
           </p><br />
-          <p className='subText'><span className='font-bold'>nsubscribe: </span>To unsubscribe from our e-mail database or opt-out of marketing communications, please contact us using the details below or opt-out using the opt-out facilities provided in the communication. We will use commercially reasonable efforts to process such requests in a timely manner. Note that you cannot opt out of receiving service-related communications relating to your use of the Websites (for e.g., updates regarding changes to this Privacy Policy).
+          <p className='subText'><span className='font-bold'>unsubscribe: </span>To unsubscribe from our e-mail database or opt-out of marketing communications, please contact us using the details below or opt-out using the opt-out facilities provided in the communication. We will use commercially reasonable efforts to process such requests in a timely manner. Note that you cannot opt out of receiving service-related communications relating to your use of the Websites (for e.g., updates regarding changes to this Privacy Policy).
           </p><br /><br />
 
           <p className='mainText'>With Whom does Abluva share my Personal Data?<br />How does Abluva Secure my Personal Data?
           </p><br />
           <p className='subText'>At Abluva, we take the protection of your personal information very seriously. We take reasonable measures to protect your personal information from unauthorized access, use, disclosure, alteration, or destruction. These measures include:
           </p><br />
-          <p className='subText ml-10'>
+          <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
               <li>Encrypting your personal information at rest and in transit. We use industry-standard encryption algorithms to protect your personal information from unauthorized access, both while it is stored on our servers and while it is being transmitted over the internet.
               </li><br />

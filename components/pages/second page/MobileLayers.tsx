@@ -1,19 +1,20 @@
 "use client"
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import "./style.css";
 
 const MobileLayers: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   useEffect(() => {
-    // Function to handle scroll event and update the active section
     const handleScroll = () => {
       const sections = document.querySelectorAll('.section');
       let currentSectionId: string | null = null;
 
+      // Logic to determine the current active section
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= 130 && rect.bottom > 0) {
+        if (rect.top <= 70 && rect.bottom >= 70) {
           currentSectionId = section.id;
         }
       });
@@ -21,66 +22,110 @@ const MobileLayers: React.FC = () => {
       setActiveSection(currentSectionId);
     };
 
-    // Attach the scroll event listener
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
+  const scrollToSection = (sectionId: string) => {
+    const targetSection = document.getElementById(sectionId);
+
+    if (targetSection) {
+      window.scrollTo({
+        top: targetSection.offsetTop - 70,
+        behavior: 'smooth',
+      });
+    }
+  };
+
+
   return (
-    <div className="mobile-layout">
-      <div className="mobile-nav bg-[#232630]">
-        <nav className="nav">
+    <div className="mobile-layout founder">
+      <div className="mobile-nav bg-[#131318]">
+        <nav className="">
           <ul className="navItems">
-            <li className={`navItem ${activeSection === 'sec1' ? 'act' : ''}`}>
-              <Link href="#sec1">Section 1</Link>
+          <li
+              style={{ color: activeSection === 'sec1' ? '#6d28d9' : '' }}
+              className="navItem cursor-pointer"
+              onClick={() => scrollToSection('sec1')}
+            >
+              <span>Discover</span>
             </li>
-            <li className={`navItem ${activeSection === 'sec2' ? 'act' : ''}`}>
-              <Link href="#sec2">Section 2</Link>
+            <li
+              style={{ color: activeSection === 'sec2' ? '#6d28d9' : '' }}
+              className="navItem cursor-pointer"
+              onClick={() => scrollToSection('sec2')}
+            >
+              <span>Protect</span>
             </li>
-            <li className={`navItem ${activeSection === 'sec3' ? 'act' : ''}`}>
-              <Link href="#sec3">Section 3</Link>
+            <li
+              style={{ color: activeSection === 'sec3' ? '#6d28d9' : '' }}
+              className="navItem cursor-pointer"
+              onClick={() => scrollToSection('sec3')}
+            >
+              <span>Monitor</span>
+            </li>
+            <li
+              style={{ color: activeSection === 'sec4' ? '#6d28d9' : '' }}
+              className="navItem cursor-pointer"
+              onClick={() => scrollToSection('sec4')}
+            >
+              <span>Extend</span>
             </li>
           </ul>
         </nav>
       </div>
-      <div className="mobile-content">
+      <div className="mobile-content px-5 founder">
         <main>
-          <section id="sec1" className="section">
-            <div className="content">
-              {/* Content for Section 1 */}
-              <h2 className='text-2xl'>Section 1 Content</h2>
-              <p className='text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <section id="sec1" className="section py-5">
+            <div className="py-5">
+            <p className='text-2xl font-semibold'>Discover</p>
+              <p className='text-xl text-justify'>Uncover strategic insights and actionable intelligence through thorough data and behaviour discovery.</p>
+              <Link href="/discover" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+                Learn more
+              </Link>
             </div>
-            <div className="rounded-2xl">
-              {/* Image for Section 1 */}
-              <img src="https://img.freepik.com/free-photo/medium-shot-man-working-late-night_23-2150170834.jpg?w=740&t=st=1698926421~exp=1698927021~hmac=75fffe9125abbef6e81d23b4c9697be49c88ebc5c5c0d1d0475219417c54c72b" alt="Section 1 Image" className='py-5' />
-            </div>
+           <div>
+            <img src="https://img.freepik.com/free-photo/metaverse-avatar-collage-concept_52683-96425.jpg?w=740&t=st=1701764690~exp=1701765290~hmac=16c8db539b66322b9084e469a2ac3bab74f76edc4db24f6fa4ae86ac050fd04d" className='rounded-2xl'/>
+           </div> 
           </section>
-          <section id="sec2" className="section">
-            <div className="content">
-              {/* Content for Section 2 */}
-              <h2 className='text-2xl'>Section 2 Content</h2>
-              <p className='text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <section id="sec2" className="section py-5">
+          <div className="py-5">
+          <p className='text-2xl font-semibold'>Protect</p>
+              <p className='text-xl text-justify'>Secure your data with fine-grain access controls, dynamic masking, and advanced safeguards for unmatched protection with no performance penalty.</p>
+              <Link href="/protect" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+                Learn more
+              </Link>
             </div>
-            <div className="rounded-2xl">
-              {/* Image for Section 2 */}
-              <img src="https://img.freepik.com/premium-photo/young-business-people-group-have-meeting-working-modern-bright-office-indoor_530697-11140.jpg?w=740" alt="Section 2 Image" className='py-5' />
-            </div>
+            <div>
+            <img src="https://img.freepik.com/premium-photo/access-personal-financial-data-with-futuristic-biometric-fingerprint-scanner-smartphone-surveillance-security-scanning-digital-programs-cyber-applications-future-secure-identity_143683-12503.jpg?w=740" className='rounded-2xl'/>
+           </div> 
           </section>
-          <section id="sec3" className="section">
-            <div className="content">
-              {/* Content for Section 3 */}
-              <h2 className='text-2xl'>Section 3 Content</h2>
-              <p className='text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <section id="sec3" className="section py-5">
+          <div className="py-5">
+          <p className='text-2xl font-semibold'>Monitor</p>
+              <p className='text-xl text-justify'>Comprehensive oversight, real-time reporting, and intuitive dashboards for regulatory adherence and peace of mind.</p>
+              <Link href="/graphene-compliance-enablement" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+                Learn more
+              </Link>
             </div>
-            <div className="rounded-2xl">
-              {/* Image for Section 3 */}
-              <img src="https://img.freepik.com/premium-photo/photo-group-people-working-out-business-plan-office_812426-66910.jpg?w=740" alt="Section 3 Image" className='py-5' />
+            <div>
+            <img src="https://img.freepik.com/premium-photo/attractive-young-woman-working-home-night_688382-1477.jpg?w=740" className='rounded-2xl'/>
+           </div> 
+          </section>
+          <section id="sec4" className="section py-5">
+          <div className="py-5">
+          <p className='text-2xl font-semibold'>Extend</p>
+              <p className='text-xl text-justify'>Uncover new revenue streams, optimize processes, and foster collaboration for unparalleled value extraction from every byte.</p>
+              <Link href="/extend" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+                Learn more
+              </Link>
             </div>
+            <div>
+            <img src="https://img.freepik.com/premium-photo/beautiful-blonde-girl-pinkblue-lighting-presses-checkmark-button-virtual-display-with-neon-purple-hologram-air_136863-3535.jpg?w=740" className='rounded-2xl'/>
+           </div> 
           </section>
         </main>
       </div>

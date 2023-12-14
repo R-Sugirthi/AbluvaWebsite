@@ -12,10 +12,10 @@ export default function Discover() {
       
       <section className='founder'>
        
-<div className='bg-[#f2f3f5] md:px-28 py-20 text-2xl text-gray-900'>
-        <h1 className="md:text-5xl text:3xl text-gradient-light text-center">Unlock The Power of Discovery in Data Security</h1>
+<div className='bg-[#f2f3f5] md:px-28 px-5 py-20 text-2xl text-gray-900'>
+        <h1 className="text-5xl text-gradient-light text-center">Unlock The Power of Discovery in Data Security</h1>
         <p className='text-2xl text-gray-700 letterspace text-center'> Explore <span className='text-gradient-light'> &#183; </span> Understand  <span className='text-gradient-light'> &#183; </span> Fortify</p>
-        <p className='pt-20'>
+        <p className='pt-20 text-justify'>
         Graphene's foundational discovery capabilities underscore our commitment to bolstering data protection strategies. Through seamless integration, we empower organizations to proactively identify potential threats, glean insights into user behaviors, and safeguard sensitive information.
         </p>
         
@@ -27,7 +27,7 @@ export default function Discover() {
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Uncover patterns, anomalies, and trends that offer invaluable insights into user interactions within your data ecosystem.</p>
             </div>
-            <div className="max-w-xl p-3 border-l border-r border-gray-300 flex flex-col text-center">
+            <div className="max-w-xl p-3 md:border-l md:border-r border-gray-300 flex flex-col text-center">
                 <img src="/icons/defense.png" className='h-10 mx-auto' />
                 <div className='py-5'>
               <Link href="incubators-attack-vector-discovery" ><span className='underline text-violet-950'>Attack Vector Discovery</span></Link>

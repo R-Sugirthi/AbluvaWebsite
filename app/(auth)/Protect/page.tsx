@@ -14,10 +14,10 @@ export default function Protect() {
   
       <section className='founder'>
        
-<div className='bg-[#f2f3f5] md:px-28 py-20 text-2xl text-gray-900'>
-        <h1 className="md:text-5xl text:3xl text-gradient-light text-center">Data Security Essentials</h1>
+<div className='bg-[#f2f3f5] md:px-28 px-5 py-20 text-2xl text-gray-900'>
+        <h1 className="text-5xl text-gradient-light text-center">Data Security Essentials</h1>
         <p className='text-2xl text-gray-700 letterspace text-center'> Shield <span className='text-gradient-light'> &#183; </span> Conceal  <span className='text-gradient-light'> &#183; </span> Alert</p>
-        <p className='pt-20'>
+        <p className='pt-20 text-justify'>
         Safeguard your data with a quiet assurance, utilizing strategies that operate subtly yet effectively. From unobtrusive data access controls to the delicate art of depersonalization and the discreet vigilance of intrusion detection, Graphene’s focus is on implementing measures that speak softly and carry a robust shield. Welcome to a space where security is a silent, steadfast presence.
         </p>
         
@@ -29,7 +29,7 @@ export default function Protect() {
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Define and enforce access policies, ensuring that only authorized individuals can interact with sensitive information.</p>
             </div>
-            <div className="max-w-xl p-3 border-l border-r border-gray-300 flex flex-col text-center">
+            <div className="max-w-xl p-3 md:border-l md:border-r border-gray-300 flex flex-col text-center">
                 <img src="/icons/depersonalization.png" className='h-10 mx-auto' />
                 <div className='py-5'>
               <Link href="graphene-depersonalization" ><span className='underline text-violet-950'>Data Depersonalization</span></Link>

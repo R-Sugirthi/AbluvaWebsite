@@ -4,7 +4,6 @@ import News1 from '@/components/pages/news/news1';
 
 export const metadata = {
   title: 'Abluva Attains ISO 27001 Certification | ABLUVA',
-  // description: 'Page description',
 }
 export default function News() {
   return (
@@ -20,7 +19,7 @@ export default function News() {
             </div>
             <p className="text-4xl md:text-5xl founder">Abluva Attains ISO 27001 Certification, Reinforcing Commitment to Data Security Excellence.</p>
             <p className="text-xl md:text-2xl founder pt-2">Abluva, a pioneer in data security solutions, proudly announces its achievement of the ISO 27001 certification, a globally recognized standard for information security management systems. This accreditation underscores Abluva's unwavering commitment to ensuring the highest standards of data security across its operations.</p>
-            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 06 11 2023</p>
+            <p className="mark pt-7 text-sm text-[#d9dbe2]">Abluva . 15 Oct 2023</p>
           </div>
         </div>
       </div>

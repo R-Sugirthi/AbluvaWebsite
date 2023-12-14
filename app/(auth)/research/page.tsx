@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import Footer from '@/components/Layout/Footer';
-import Header from '@/components/Layout/Header';
 import './research.css';
 
 
@@ -22,42 +20,55 @@ export default function Research() {
           </div>
         </div>
       </div>
-      <div className='bg-black text-center pb-20'>
+      <div className='bg-black text-center pt-10'>
         <div className="container mx-auto md:px-20">
           <div className='grid md:grid-cols-4 text-lg text-gray-200 pb-20'>
 
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pb-5'>
               <img src="/icons/leaderboard.png" className='h-8' />
-              <div className='link-wrapper'>
-                <Link
-                  href="#leaderboards" className='hover'>Leaderboards <span className='text-sm'>&#11167;</span>
+              <div className='link-wrapper' >
+                <Link href="#leaderboards" className='hover'>
+                  <div className='flex'>
+                    <p>Leaderboards</p>
+                    <img src="/icons/downArrow.png" className='h-4 mt-2 mx-1' alt="Down Arrow" />
+                  </div>
                 </Link>
               </div>
+
             </div>
 
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pb-5'>
               <img src="/icons/dataset.png" className='h-8' />
               <div className='link-wrapper'>
-                <Link
-                  href="#datasets" className='hover'>DataSets <span className='text-sm'>&#11167;</span>
+              <Link href="#datasets" className='hover'>
+                  <div className='flex'>
+                    <p>Synthetic Datasets</p>
+                    <img src="/icons/downArrow.png" className='h-4 mt-2 mx-1' alt="Down Arrow" />
+                  </div>
                 </Link>
               </div>
             </div>
 
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pb-5'>
               <img src="/icons/research.png" className='h-8' />
               <div className='link-wrapper'>
                 <Link
-                  href="#research" className='hover'>Research Papers<span className='text-sm'>&#11167;</span>
+                  href="#research-papers" className='hover'>  <div className='flex'>
+                  <p>Research Papers</p>
+                  <img src="/icons/downArrow.png" className='h-4 mt-2 mx-1' alt="Down Arrow" />
+                </div>
                 </Link>
               </div>
             </div>
 
-            <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center pb-5'>
               <img src="/icons/patent.png" className='h-8' />
               <div className='link-wrapper'>
                 <Link
-                  href="#patents" className='hover'>Patents <span className='text-sm'>&#11167;</span>
+                  href="#patents" className='hover'><div className='flex'>
+                  <p>Patents</p>
+                  <img src="/icons/downArrow.png" className='h-4 mt-2 mx-1' alt="Down Arrow" />
+                </div>
                 </Link>
               </div>
             </div>
@@ -69,19 +80,19 @@ export default function Research() {
       <div className='bg-[#f2f3f5]  pt-20' id="leaderboards">
         <div className="container mx-auto md:px-20">
           <p className="text-4xl md:text-5xl founder text-gradient-light py-5 text-center">Leaderboards</p>
-          <div>
+          <div className='px-5' >
             <p className="text-2xl md:text-2xl founder text-gray-900 text-justify"> <span className='font-semibold md:text-4xl'>Ranked #1 on Leaderboard on 5 AI Tasks</span><br></br> State of the Art Model with F1 above 99% for Sherlock Dataset
             </p>
           </div>
-          <div>
+          <div className='px-5'>
             <img src="/images/Leaderboard.png" className='w-full pt-10' />
           </div>
-          <div id="paps" className='pt-28'>
+          <div id="paps" className='pt-28 px-5'>
             <p className="text-2xl md:text-2xl founder text-gray-900 text-justify"> <span className='font-semibold md:text-4xl'>PaPS Ensemble leads the Security Intrusion Detection Models</span><br></br>Top Performance in Zero-Day Intrusion Detection tasks
             </p>
           </div>
-          <div className='pt-5 pb-20' >
-            <table className="table-auto text-gray-900 founder text-xl ">
+          <div className='pt-5 pb-20 ' >
+            <table className="table-auto text-gray-900 founder md:text-xl text-lg ">
               <thead>
                 <tr className='darkCell text-2xl'>
                   <td className="border">Dataset</td>
@@ -245,11 +256,11 @@ export default function Research() {
           </div>
         </div>
       </div>
-      <div className='bg-black py-20 founder' id="datasets">
+      <div className='bg-black py-20 founder text-justify' id="datasets" >
         <div className="container mx-auto">
           <p className="text-3xl md:text-5xl founder text-gradient md:px-20 text-center">Synthetic Datasets</p>
-          <p className="text-2xl md:text-2xl founder text-gray-200 darkText md:px-20 py-5">These datasets were created by extending the world’s most acknowledged and popular datasets used for Intrusion detection, experiments and Proofs. You are welcome to use them for your experiments and extend them.</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:px-20 py-10">
+          <p className="text-2xl md:text-2xl founder text-gray-200 darkText md:px-20 px-5 py-5 text-justify">These datasets were created by extending the world’s most acknowledged and popular datasets used for Intrusion detection, experiments and Proofs. You are welcome to use them for your experiments and extend them.</p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 md:px-20 px-5 py-10">
             <div className="max-w-xl p-10 bg-white">
               <ul className='text-gray-900'>
                 <li className=' font-semibold text-3xl'>CSE-CIC-IDS2018 V3</li>
@@ -285,17 +296,17 @@ export default function Research() {
           </div>
         </div>
       </div>
-      <div className='bg-[#f2f3f5] pt-20 founder' id="research">
+      <div className='bg-[#f2f3f5] pt-20 founder text-justify' id="research-papers">
         <div className="container mx-auto">
-          <p className="text-3xl md:text-5xl founder text-gradient md:px-20 text-center">Research Papers</p>
-          <p className="text-2xl md:text-3xl founder text-gray-900 md:px-20 font-semibold">Submitted Research Papers</p>
-          <div className="md:px-20 py-10">
+          <p className="text-3xl md:text-5xl founder text-gradient md:px-20 px-5 text-center pb-10">Research Papers</p>
+          <p className="text-2xl md:text-3xl founder text-gray-900 md:px-20 px-5 font-semibold">Submitted Research Papers</p>
+          <div className="md:px-20 px-5 py-10">
 
             <div className="max-w-full bg-white mb-10">
               <div className='p-10'>
                 <div className='grid md:grid-cols-3 gap-8 flex items-center justify-center'>
                   <img src="https://cdn.dribbble.com/users/1913706/screenshots/4117171/dribbble__1_.gif" className='h-full' />
-                  <ul className='text-gray-900 col-span-2'>
+                  <ul className='text-gray-900 md:col-span-2'>
                     <li className=' font-semibold text-2xl'>Partitioned Problem Space (PaPS) Ensemble For Zero-day Intrusion Detection</li>
                     <li className="mb-2 text-xl "><span className='font-semibold'>Published in: </span> Security and Communication Networks Journal</li>
                     <li className='text-xl'><span className='font-semibold'>Synopsis: </span> The ubiquity of low-cost cloud data storage has exponentially increased data generation, posing significant challenges to data security. Traditional intrusion detection systems struggle with the volume and speed of cloud data. This work introduces a novel partitioned problem space deep-learning ensemble approach, outperforming existing methods in zero-day intrusion detection tasks.Keywords: deep learning, neural learners, malware, intrusion detection, zero-day attack, ensemble, CIC IDS, UNSW NB-15, BODMAS, UNR IDD, cybersecurity.</li>
@@ -308,7 +319,7 @@ export default function Research() {
               <div className='p-10'>
                 <div className='grid md:grid-cols-3 gap-8 flex items-center justify-center'>
                   <img src="https://i.pinimg.com/originals/8b/fd/01/8bfd01c18be1b5059bc0d7770d9dabf1.gif" className='h-full' />
-                  <ul className='text-gray-900 col-span-2'>
+                  <ul className='text-gray-900 md:col-span-2'>
                     <li className=' font-semibold text-2xl'>Blender-GAN: Multi-target conditional Generative Adversarial Network for novel class synthetic data generation</li>
                     <li className="mb-2 text-xl "><span className='font-semibold'>Published in: </span> ACM Transactions on Privacy and Security</li>
                     <li className='text-xl'><span className='font-semibold'>Synopsis: </span>  The global increase in computer network usage necessitates robust intrusion detection systems, prompting the application of machine learning and deep learning models. Limited training data for deep neural networks is addressed by synthetic data generation, with Blender-GAN proposed as a novel approach allowing the creation of new data by blending multiple class labels. The architecture demonstrates success in generating realistic synthetic network intrusion data with varied attack classes.</li>
@@ -321,7 +332,7 @@ export default function Research() {
               <div className='p-10'>
                 <div className='grid md:grid-cols-3 gap-8 flex items-center justify-center'>
                   <img src="https://datasysbd.com/wp-content/uploads/2018/07/cs-an.gif" className='h-full' />
-                  <ul className='text-gray-900 col-span-2'>
+                  <ul className='text-gray-900 md:col-span-2'>
                     <li className=' font-semibold text-2xl'>Securing from Unseen: Connected Pattern Kernels (CoPaK) for Zero-day Intrusion Detection</li>
                     <li className="mb-2 text-xl "><span className='font-semibold'>Published in: </span> Computers & Security</li>
                     <li className='text-xl'><span className='font-semibold'>Synopsis: </span>  The surge in data from digitization and cloud adoption requires advanced intrusion detection. Classic systems struggle with complexity, necessitating a proposed deep learning connected pattern kernel architecture. This model excels in zero-day intrusion detection, demonstrating superior performance and generalisation in monitoring network traffic.</li>
@@ -333,11 +344,11 @@ export default function Research() {
 
             <p className="text-2xl md:text-3xl founder text-gray-900 font-semibold">On-going Research </p>
             <div className="max-w-full my-10 bg-white">
-              <div className='p-10'>
+              <div className='md:p-10 p-5'>
                 <div className=' flex items-center justify-center'>
-                  <img src="./icons/ongoing.png" className='h-10 px-10' />
+                  <img src="./icons/ongoing.png" className='h-10 md:px-10 px-5' />
                   <ul className='text-gray-900'>
-                    <li className=' font-semibold text-2xl'>Node Relevance based Graph Neural Network Pruning</li>
+                    <li className=' font-semibold text-lg md:text-2xl'>Node Relevance based Graph Neural Network Pruning</li>
                   </ul>
                 </div>
               </div>
@@ -346,12 +357,12 @@ export default function Research() {
         </div>
       </div>
 
-      <div className='bg-black pt-20 pb-20 founder' id="patents">
+      <div className='bg-black pt-20 pb-20 founder text-justify' id="patents">
         <div className="container mx-auto">
-          <p className="text-3xl md:text-5xl founder text-gradient md:px-20 text-center">Patents</p>
-          <p className="text-2xl md:text-3xl founder text-gray-200 md:px-20 font-semibold">Granted Patents</p>
-          <p className="text-2xl md:text-2xl founder text-gray-200 darkText md:px-20">These patents have been granted to our chief in his past avatars.</p>
-          <div className="md:px-20 py-10">
+          <p className="text-3xl md:text-5xl founder text-gradient md:px-20 px-5 text-center pb-5">Patents</p>
+          <p className="text-2xl md:text-3xl founder text-gray-200 md:px-20 px-5 font-semibold">Granted Patents</p>
+          <p className="text-2xl md:text-2xl founder text-gray-200 darkText md:px-20 px-5">These patents have been granted to our chief in his past avatars.</p>
+          <div className="md:px-20 px-5 py-10">
             <div className="max-w-full p-10 bg-white">
               <ul className='text-gray-900'>
                 <li className="mb-2 text-3xl "><Link className='text-violet-900 underline' href="https://patents.google.com/patent/US8676236B1/en?q=(gautam)&q=(amit)&assignee=amdocs&oq=(inventor):+amit+gautam+amdocs" >US8676236B
@@ -393,12 +404,12 @@ export default function Research() {
               </ul>
             </div>
             <p className="text-2xl md:text-3xl founder text-gray-200 font-semibold pt-5 pb-10">Applied patent</p>
-            <div className="max-w-full bg-white pt-3">
-              <div className='p-10'>
+            <div className="max-w-full bg-white">
+              <div className='md:p-10 p-5'>
                 <div className=' flex items-center justify-center'>
-                  <img src="./icons/ongoing.png" className='h-10 px-10' />
+                  <img src="./icons/ongoing.png" className='h-10 md:px-10 px-5' />
                   <ul className='text-gray-900'>
-                    <li className=' font-semibold text-2xl'>Autonomous Authorization in heterogeneous environment</li>
+                    <li className=' font-semibold md:text-2xl text-lg'>Autonomous Authorization in heterogeneous environment</li>
                   </ul>
                 </div>
               </div>

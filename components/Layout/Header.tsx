@@ -89,14 +89,14 @@ export default function Header() {
                     {/* Left column for text */}
                     <div className="p-8 bg-[#131318]">
                       <div className="text-3xl text-gradient founder">
-                        Ease the data protection challenge. Get the delicate balance between fortifying your data and ensuring seamless access.
+                        Ease the Data Protection Challenge. Get the Delicate Balance Between Fortifying Your Data and Ensuring Seamless Access.
                       </div>
                      
                       <hr className='border-b border-gray-500 my-7' />
                       <div className='grid md:grid-cols-2 gap-10'>
                         <div>
                           <div className='mark'>
-                          <Link href="graphene-platform-overview" className="text-2xl"  onClick={handleProductSubMenuItemClick}>Products</Link>
+                          <p className="text-2xl">Products</p>
                             <Link href="graphene-platform-overview" className="text-lg">Graphene</Link>
                             <ul className='ml-10 submenulist'>
                               <li>
@@ -124,7 +124,7 @@ export default function Header() {
                         </div>
                         <div>
                           <div className='mark'>
-                            <Link href="/incubators" className="text-2xl"  onClick={handleProductSubMenuItemClick}>Incubators</Link>
+                          <p className="text-2xl">Incubators</p>
                             <ul className='submenulist'>
                               <li><Link href="/incubators-intrusion-detection" className="text-lg text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}> Intrusion Detection<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span></Link></li>
                               <li><Link href="/incubators-attack-vector-discovery" className="text-lg text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}> Attack Vector Discovery<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span></Link></li>
@@ -171,7 +171,7 @@ export default function Header() {
                     {/* Left column for text */}
                     <div className="p-8 bg-[#131318]">
                       <div className="text-3xl text-gradient founder">
-                      In the ever-evolving landscape of data threats, our research is the compass guiding us to innovative solutions.
+                      In the Ever-Evolving Landscape of Data Threats, Our Research is the Compass Guiding Us to Innovative Solutions.
                       </div>
                       <hr className='border-b border-gray-500 my-7' />
                       <div className='grid md:grid-cols-2 gap-10'>
@@ -195,7 +195,7 @@ export default function Header() {
                                 </Link>
                               </li>
                               <li>
-                              <Link href="/research#research" className="text-md text-gray-400 hover:text-white" onClick={handleResearchSubMenuItemClick}>
+                              <Link href="/research#research-papers" className="text-md text-gray-400 hover:text-white" onClick={handleResearchSubMenuItemClick}>
                                    Research Papers<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
@@ -243,7 +243,7 @@ export default function Header() {
                     {/* Left column for text */}
                     <div className="p-8 bg-[#131318]">
                       <div className="text-3xl text-gradient founder">
-                      In the vast expanse of digital knowledge, written insights serve as guiding stars, illuminating the path to data security excellence.
+                      In the Vast Expanse of Digital Knowledge, Written Insights Serve as Guiding Stars, Illuminating the Path to Data Security Excellence.
                       </div>
                       <hr className='border-b border-gray-500 my-7' />
                       <div className='grid md:grid-cols-2 gap-10'>
@@ -301,7 +301,7 @@ export default function Header() {
                     {/* Left column for text */}
                     <div className="p-8 bg-[#131318]">
                       <div className="text-3xl text-gradient founder">
-                      In the vast landscape of data, we carve out secure havens, ensuring your information remains untouchable.
+                      In the Vast Landscape of Data, We Carve Out Secure Havens, Ensuring Your Information Remains Untouchable.
                       </div>
                       
                       <hr className='border-b border-gray-500 my-7' />
@@ -361,7 +361,7 @@ export default function Header() {
                 )}
               </li>
               <li>
-                <Link href="/contact" className="btn-sm text-white bg-gray-800 hover:bg-gray-600 ml-3 p-2 rounded-md">
+                <Link href="/contact" className="text-white bg-gray-800 hover:bg-gray-600 ml-3 p-2 rounded-md">
                   Request a Demo
                 </Link>
               </li>
