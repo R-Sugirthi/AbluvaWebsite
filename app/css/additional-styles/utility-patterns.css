@@ -64,11 +64,6 @@
     @apply py-3 px-4;
 }
 
-.form-input,
-.form-textarea {
-    @apply placeholder-gray-900;
-}
-
 .form-select {
     @apply pr-10;
 }
@@ -76,4 +71,13 @@
 .form-checkbox,
 .form-radio {
     @apply text-violet-950;
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-multiselect:focus,
+.form-select:focus,
+.form-checkbox:focus,
+.form-radio:focus {
+    @apply ring-0;
 }

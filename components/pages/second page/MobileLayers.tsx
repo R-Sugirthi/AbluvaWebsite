@@ -82,8 +82,8 @@ const MobileLayers: React.FC = () => {
           <section id="sec1" className="section py-5">
             <div className="py-5">
             <p className='text-2xl font-semibold'>Discover</p>
-              <p className='text-xl text-justify'>Uncover strategic insights and actionable intelligence through thorough data and behaviour discovery.</p>
-              <Link href="/discover" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+              <p className='text-xl'>Uncover strategic insights and actionable intelligence through thorough data and behaviour discovery.</p>
+              <Link href="/discover" className="btn-sm text-lg text-white bg-violet-950 font-bold p-3 rounded-md mark mt-3">
                 Learn more
               </Link>
             </div>
@@ -94,8 +94,8 @@ const MobileLayers: React.FC = () => {
           <section id="sec2" className="section py-5">
           <div className="py-5">
           <p className='text-2xl font-semibold'>Protect</p>
-              <p className='text-xl text-justify'>Secure your data with fine-grain access controls, dynamic masking, and advanced safeguards for unmatched protection with no performance penalty.</p>
-              <Link href="/protect" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+              <p className='text-xl'>Secure your data with fine-grain access controls, dynamic masking, and advanced safeguards for unmatched protection with no performance penalty.</p>
+              <Link href="/protect" className="btn-sm text-lg text-white bg-violet-950 font-bold p-3 rounded-md mark mt-3">
                 Learn more
               </Link>
             </div>
@@ -106,8 +106,8 @@ const MobileLayers: React.FC = () => {
           <section id="sec3" className="section py-5">
           <div className="py-5">
           <p className='text-2xl font-semibold'>Monitor</p>
-              <p className='text-xl text-justify'>Comprehensive oversight, real-time reporting, and intuitive dashboards for regulatory adherence and peace of mind.</p>
-              <Link href="/graphene-compliance-enablement" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+              <p className='text-xl'>Comprehensive oversight, real-time reporting, and intuitive dashboards for regulatory adherence and peace of mind.</p>
+              <Link href="/graphene-compliance-enablement" className="btn-sm text-lg text-white bg-violet-950 font-bold  p-3 rounded-md mark mt-3">
                 Learn more
               </Link>
             </div>
@@ -118,8 +118,8 @@ const MobileLayers: React.FC = () => {
           <section id="sec4" className="section py-5">
           <div className="py-5">
           <p className='text-2xl font-semibold'>Extend</p>
-              <p className='text-xl text-justify'>Uncover new revenue streams, optimize processes, and foster collaboration for unparalleled value extraction from every byte.</p>
-              <Link href="/extend" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+              <p className='text-xl'>Uncover new revenue streams, optimize processes, and foster collaboration for unparalleled value extraction from every byte.</p>
+              <Link href="/extend" className="btn-sm text-lg text-white bg-violet-950 font-bold p-3 rounded-md mark mt-3">
                 Learn more
               </Link>
             </div>

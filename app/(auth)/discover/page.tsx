@@ -23,21 +23,21 @@ export default function Discover() {
             <div className="max-w-xl p-3 flex flex-col text-center">
                 <img src="/icons/interaction.png" className='h-10 mx-auto' />
                 <div className='py-5'>
-              <Link href="user-behaviour-discovery" ><span className='underline text-violet-950'>User Behaviour Discovery</span></Link>
+              <Link href="/user-behaviour-discovery" ><span className='underline text-violet-950'>User Behaviour Discovery</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Uncover patterns, anomalies, and trends that offer invaluable insights into user interactions within your data ecosystem.</p>
             </div>
             <div className="max-w-xl p-3 md:border-l md:border-r border-gray-300 flex flex-col text-center">
                 <img src="/icons/defense.png" className='h-10 mx-auto' />
                 <div className='py-5'>
-              <Link href="incubators-attack-vector-discovery" ><span className='underline text-violet-950'>Attack Vector Discovery</span></Link>
+              <Link href="/incubators-attack-vector-discovery" ><span className='underline text-violet-950'>Attack Vector Discovery</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Comprehend potential entry points and vulnerabilities in your system, enabling proactive defense measures.</p>
             </div>
             <div className="max-w-xl p-3  flex flex-col text-center">
                 <img src="/icons/dynamic.png" className='h-10 mx-auto' />
                 <div className='py-5'>
-              <Link href="sensitive-data-discovery" ><span className='underline text-violet-950'>Sensitive Data Discovery</span></Link>
+              <Link href="/sensitive-data-discovery" ><span className='underline text-violet-950'>Sensitive Data Discovery</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Identify and classify sensitive information across your databases, ensuring compliance with regulatory standards and mitigating the risk of data breaches.</p>
             </div>

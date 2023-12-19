@@ -24,18 +24,18 @@ export default function IncubatorSecureKnowledgeGraph() {
         Graphene's Knowledge Graphs, with the added power of machine learning, help in understanding complicated relationships between different pieces of information. They find new knowledge without needing experts to do a lot of hard work. This means specialists can use this new knowledge without spending too much time on complicated analyses.
         </p>
         
-        <div className='pt-10'>
-        <div className='border border-gray-500 rounded-lg p-10 text-justify'>
-        <h1 className="text-3xl text-gray-900 font-semibold">Graphene's Knowledge Graph Key Features: </h1>
-          <ul className='list-disc md:ml-10'>
-            <li className='py-2'><span className='font-semibold'>Relationship Inference : </span>Graphene's Secure Knowledge Graphs excel in inferring relationships between entities, providing a deeper understanding of interconnected data for enhanced insights.</li>
-            <li className='py-2'><span className='font-semibold'>Schema Flexibility : </span>Enjoy the flexibility of adapting the knowledge graph schema dynamically, accommodating evolving data structures without compromising performance.</li>
-            <li className='py-2'><span className='font-semibold'>Sensitive Data Discovery : </span>Graphene excels in efficient identification and management of sensitive data within the system.</li>
-            <li className='py-2'><span className='font-semibold'>Ontology Support : </span>Leverage Graphene's support for ontologies, enabling the modeling of complex relationships and semantic connections for a more nuanced representation of knowledge.</li>
-            <li className='py-2'><span className='font-semibold'>Contextual Insights : </span>Uncover a full range of data assets, allowing for contextual insights that go beyond surface-level analysis.</li>
-            <li className='py-2'><span className='font-semibold'>Security Issue Identification : </span>Effectively identify and address security issues across diverse cloud and data storage environments, ensuring a proactive security posture.</li>
-            <li className='py-2'><span className='font-semibold'>Real-time Compliance Evidence : </span>Enhance compliance posture with real-time evidence, streamlining regulatory adherence and minimizing risks.</li>
-            <li className='py-2'><span className='font-semibold'>Graph Algorithms Integration : </span>Integrate a variety of graph algorithms within the knowledge graph, enabling advanced analytics and uncovering hidden patterns and trends in your data.</li>
+        <div className='pt-10 text-left'>
+        <div className='border border-gray-500 rounded-lg p-10 text-left'>
+        <h1 className="text-3xl text-gray-900 font-semibold text-left">Graphene's Knowledge Graph Key Features: </h1>
+          <ul className='list-disc md:ml-10 ml-5 text-left'>
+            <li className='py-2 text-left'><span className='font-semibold'>Relationship Inference : </span>Graphene's Secure Knowledge Graphs excel in inferring relationships between entities, providing a deeper understanding of interconnected data for enhanced insights.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Schema Flexibility : </span>Enjoy the flexibility of adapting the knowledge graph schema dynamically, accommodating evolving data structures without compromising performance.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Sensitive Data Discovery : </span>Graphene excels in efficient identification and management of sensitive data within the system.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Ontology Support : </span>Leverage Graphene's support for ontologies, enabling the modeling of complex relationships and semantic connections for a more nuanced representation of knowledge.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Contextual Insights : </span>Uncover a full range of data assets, allowing for contextual insights that go beyond surface-level analysis.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Security Issue Identification : </span>Effectively identify and address security issues across diverse cloud and data storage environments, ensuring a proactive security posture.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Real-time Compliance Evidence : </span>Enhance compliance posture with real-time evidence, streamlining regulatory adherence and minimizing risks.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Graph Algorithms Integration : </span>Integrate a variety of graph algorithms within the knowledge graph, enabling advanced analytics and uncovering hidden patterns and trends in your data.</li>
           </ul>
         </div>
         </div>

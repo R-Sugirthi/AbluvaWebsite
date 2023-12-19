@@ -17,8 +17,8 @@ export default function Careers() {
       <div className="py-28 md:py-28 md:pb-20 md:pl-48 md:pr-12 lg:pr-32 sm:px-10 bg ">
       <div className="container mx-auto px-5 flex flex-col md:flex-row items-center">
           <div className="w-full text-white pt-10 pb-40 w-3/4">
-          <p className="text-5xl font-bold text-gray-100 founder"><span className='text-7xl'>T</span>he Only way to do great work is to<br className='md:block hidden'></br> love what you do - <span className='text-violet-500 font-thin'>Steve Jobs</span></p>
-            <p className="text-3xl founder text-gray-300">"Solve the real world problems with use of <br></br>technology and liberate the data"</p>
+          <p className="text-5xl font-bold text-gray-100 founder"><span className='text-7xl'>T</span>he Only Way to Do Great Work is to<br className='md:block hidden'></br> Love What You Do - <span className='text-violet-500 font-thin'>Steve Jobs</span></p>
+            <p className="text-3xl founder text-gray-300">"Solve the Real World Problems with Use of <br></br>Technology and Liberate the Data"</p>
           </div>
         </div>
       </div>

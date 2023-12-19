@@ -199,7 +199,7 @@ import React, { useEffect, useState } from 'react';
                 Comprehensive oversight, real-time reporting, and intuitive dashboards for regulatory adherence and peace of mind.
                   <br />
                   <div className="py-5">
-                    <Link href="graphene-compliance-enablement" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
+                    <Link href="/graphene-compliance-enablement" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
                       Learn More
                     </Link>
                   </div>

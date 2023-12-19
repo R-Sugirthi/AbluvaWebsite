@@ -29,7 +29,7 @@ export default function About() {
         <div className="container mx-auto px-5 flex flex-col md:flex-row items-center">
           <div className="w-full text-white pt-10 pb-20">
             <p className="text-6xl founder"><span className=' text-gradient'>Our Motive</span></p>
-            <p className="text-3xl founder pt-5 purpose text-gray-300">To empower knowledge users to create a better <br></br>future by Democratizing Data</p>
+            <p className="text-3xl founder pt-5 purpose text-gray-300">To Empower Knowledge Users to Create a Better <br></br>Future by Democratizing Data</p>
           </div>
         </div>
       </div>
@@ -120,19 +120,19 @@ export default function About() {
           
 
           <div className='grid md:grid-cols-3 grid-col-1 justify-center items-center'>
-            <Link href="https://www.iafcertsearch.org/certified-entity/19XQG6a95MPC5oi6yQUW1F5y">
+            <Link href="https://www.iafcertsearch.org/certified-entity/19XQG6a95MPC5oi6yQUW1F5y" rel='noopener noreferrer'>
               <div className='stdImg relative md:m-24  sliding-logo'>
                 <img src="/images/iso.png" className='object-cover h-full w-full hover:scale-110 transition-transform duration-300' alt="iso" />
               </div>
             </Link>
 
-            <Link href="https://owasp.org/www-project-samm/">
+            <Link href="https://owasp.org/www-project-samm/" rel='noopener noreferrer'>
               <div className='stdImg relative md:m-24 my-10 sliding-logo'>
                 <img src="/images/owasp.png" className='object-cover h-full w-full hover:scale-110 transition-transform duration-300' alt="owasp" />
               </div>
             </Link>
 
-            <Link href="https://cloud.google.com/blog/products/application-development/google-introduces-slsa-framework">
+            <Link href="https://cloud.google.com/blog/products/application-development/google-introduces-slsa-framework" rel='noopener noreferrer'>
               <div className='stdImg relative md:m-24 sliding-logo'>
                 <img src="/images/google.png" className='object-cover h-full w-full hover:scale-110 transition-transform duration-300' alt="google" />
               </div>

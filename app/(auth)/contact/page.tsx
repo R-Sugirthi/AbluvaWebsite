@@ -1,12 +1,12 @@
-
 "use client"
-import React, { FC, FormEvent, useState } from 'react';
+import React, { FC, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import Link from 'next/link';
 import emailjs from 'emailjs-com';
-import "./contact.css";
+import { useForm, SubmitHandler } from 'react-hook-form';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import "./contact.css";
 
 const metadata = {
   title: 'Contact'
@@ -37,28 +37,32 @@ const Popup: FC<{ message: string, onClose: () => void }> = ({ message, onClose 
   </div>
 );
 
+type FormValues = {
+  sender_fname: string;
+  sender_lname: string;
+  sender_org: string;
+  sender_email: string;
+  sender_contact: string;
+  sender_message: string;
+  agreeToTerms: boolean;
+};
+
 const Contact: FC = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
   const [popupMessage, setPopupMessage] = useState('');
 
-  const handleFormSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setIsSubmitting(true);
+  const { register, handleSubmit, formState } = useForm<FormValues>();
+  const { isSubmitting } = formState;
+  const { errors } = formState;
 
+  const handleFormSubmit: SubmitHandler<FormValues> = async (data) => {
     const serviceID = 'default_service';
     const templateID = 'template_hk712f9';
 
     try {
-      const form = document.getElementById('contactForm') as HTMLFormElement;
-      if (!form) {
-        throw new Error('Form not found');
-      }
-
-      const response: any = await (emailjs.sendForm as any)(serviceID, templateID, form);
+      const response: any = await emailjs.send(serviceID, templateID, data);
 
       if (response?.status === 200) {
-        form.reset();
         setShowPopup(true);
       } else {
         throw new Error(`EmailJS Error: ${JSON.stringify(response)}`);
@@ -67,17 +71,16 @@ const Contact: FC = () => {
       console.error('Error:', error);
       setPopupMessage(`Error: ${error.message}`);
       setShowPopup(true);
-    } finally {
-      setIsSubmitting(false);
     }
   };
 
   const closePopup = () => {
     setShowPopup(false);
   }
+
   return (
     <>
-    <Helmet>
+      <Helmet>
         <title>{metadata.title}</title>
       </Helmet>
       <div className="py-28 md:py-28 md:pb-20 md:pl-48 md:pr-12 lg:pr-32 sm:px-10 bg">
@@ -95,86 +98,97 @@ const Contact: FC = () => {
               <h1 className="text-3xl md:text-4xl mark text-gradient md:pb-0 pb-10">Share your Details</h1>
             </div>
             <div className="mx-auto">
-              <form id="contactForm" onSubmit={handleFormSubmit}>
-                <div className="flex flex-wrap -mx-3 mb-4">
-                  <div className="w-full px-3">
-                    <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_fname">First Name</label>
-                    <input id="sender_fname" name="sender_fname" type="text" className="form-input w-full text-gray-300" maxLength={50} required />
-                  </div>
-                </div>
-                <div className="flex flex-wrap -mx-3 mb-4">
-                  <div className="w-full px-3">
-                    <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_lname">Last Name</label>
-                    <input id="sender_lname" name="sender_lname" type="text" className="form-input w-full text-gray-300" maxLength={50} required />
-                  </div>
-                </div>
-                <div className="flex flex-wrap -mx-3 mb-4">
-                  <div className="w-full px-3">
-                    <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_org">Organization</label>
-                    <input id="sender_org" name="sender_org" type="text" className="form-input w-full text-gray-300" maxLength={50} required />
-                  </div>
-                </div>
-                <div className="flex flex-wrap -mx-3 mb-4">
-                  <div className="w-full px-3">
-                    <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_email">Business Email</label>
-                    <input
-                      id="sender_email"
-                      name="sender_email"
-                      type="email"
-                      className="form-input w-full text-gray-300"
-                      maxLength={100}
-                      pattern="^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,}$"
-                      title="Please enter a valid email"
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-wrap -mx-3 mb-4">
-                  <div className="w-full px-3">
-                    <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_contact">Contact Number</label>
-                    <input
-                      id="sender_contact"
-                      name="sender_contact"
-                      type="tel"
-                      className="form-input w-full text-gray-300"
-                      maxLength={14}
-                      pattern="^[+]?[0-9]+$"
-                      title="Please enter a valid phone number."
-                      required
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-wrap -mx-3 mb-4">
-                  <div className="w-full px-3">
-                    <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_message">Message</label>
-                    <textarea id="sender_message" name="sender_message" className="form-input w-full text-gray-300" maxLength={300} required></textarea>
-
-                  </div>
-                </div>
-                <div className="w-full py-3 mb-4  flex items-start">
-                  <div>
-                    <input type="checkbox" className="form-checkbox" required />
-                  </div>
-                  <span className="ml-2">
-                    I agree to receive future communications from Abluva, in accordance with the{' '}
-                    <Link href="/privacy-policy">
-                      <span className="text-violet-300 underline">Privacy Policy</span>
-                    </Link>
-                    .
-                  </span>
-                </div>
-                <div className="flex flex-wrap -mx-3 mb-4">
-                  <div className="w-full px-3">
-                    <button
-                      type="submit"
-                      className="text-white px-4 py-2 rounded submitButton"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? 'Sending...' : 'Submit'}
-                    </button>
-                  </div>
-                </div>
-              </form>
+            <form id="contactForm" onSubmit={handleSubmit(handleFormSubmit)} className='mark'>
+        <div className="flex flex-wrap -mx-3 mb-4">
+          <div className="w-full px-3">
+            <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_fname"><span className="text-red-500">*</span>First Name</label>
+            <input id="sender_fname" {...register("sender_fname")} type="text" className="form-input w-full text-gray-300" maxLength={50} required />
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4">
+          <div className="w-full px-3">
+            <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_lname"><span className="text-red-500">*</span>Last Name</label>
+            <input id="sender_lname" {...register("sender_lname")} type="text" className="form-input w-full text-gray-300" maxLength={50} required />
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4">
+          <div className="w-full px-3">
+            <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_org"><span className="text-red-500">*</span>Organization</label>
+            <input id="sender_org" {...register("sender_org")} type="text" className="form-input w-full text-gray-300" maxLength={50} required />
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4">
+          <div className="w-full px-3">
+            <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_email"><span className="text-red-500">*</span>Business Email</label>
+            <input
+                  id="sender_email"
+                  {...register("sender_email", {                  
+                    pattern: {
+                      value: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/,
+                      message: 'Invalid email address',
+                    }
+                  })}
+                  
+                  className={`form-input w-full text-gray-300 ${errors.sender_email ? 'border-red-500' : ''}`}
+                  required
+                />
+                {errors.sender_email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.sender_email.message}</p>
+                )}
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4">
+          <div className="w-full px-3">
+            <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_contact"><span className="text-red-500">*</span>Contact Number</label>
+            <input
+              id="sender_contact"
+              {...register("sender_contact", {
+                maxLength: 14,
+                pattern: {
+                  value: /^[+]?[0-9]+$/,
+                  message: 'Invalid contact number',
+                }
+              })}
+               
+              className={`form-input w-full text-gray-300 ${errors.sender_contact ? 'border-red-500' : ''}`}
+              required
+            />
+            {errors.sender_contact && (
+              <p className="text-red-500 text-sm mt-1">{errors.sender_contact.message}</p>
+            )}
+            
+          </div>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4">
+          <div className="w-full px-3">
+            <label className="block text-gray-300 text-sm font-medium mb-1" htmlFor="sender_message"><span className="text-red-500">*</span>Message</label>
+            <textarea id="sender_message" {...register("sender_message")} className="form-input w-full text-gray-300" maxLength={300} required></textarea>
+          </div>
+        </div>
+        <div className="w-full py-3 mb-4  flex items-start">
+          <div>
+          <input type="checkbox" {...register("agreeToTerms", { required: true })} className="form-checkbox" required/>
+          </div>
+          <span className="ml-2">
+            I agree to receive future communications from Abluva, in accordance with the{' '}
+            <Link href="/privacy-policy">
+              <span className="text-violet-300 underline">Privacy Policy</span>
+            </Link>
+            .
+          </span>
+        </div>
+        <div className="flex flex-wrap -mx-3 mb-4">
+          <div className="w-full px-3">
+            <button
+              type="submit"
+              className="text-white px-4 py-2 rounded submitButton"
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? 'Sending...' : 'Submit'}
+            </button>
+          </div>
+        </div>
+      </form>
             </div>
           </div>
         </div>
@@ -194,5 +208,5 @@ const Contact: FC = () => {
     </>
   );
 }
-export default Contact;
 
+export default Contact;

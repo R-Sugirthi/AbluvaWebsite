@@ -9,7 +9,7 @@ export default function MobileLandingPage() {
         <p className="text-xl text-gray-200 founder">
           "Experience Next-Level Data Security: An AI-Powered, Multi-Layered Fortress for Your Valuables."
         </p>
-        <Link href="/contact" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3">
+        <Link href="/contact" className="btn-sm text-lg text-white bg-violet-950 font-bold p-3 rounded-md mark mt-3">
           Request a Demo
         </Link>
       </div>

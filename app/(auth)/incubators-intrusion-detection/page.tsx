@@ -29,9 +29,6 @@ export default function IncubatorIntrusionDetection() {
             <p className="mb-4 text-2xl text-gray-300 text-justify">
             <span className='font-semibold'>Behavioral Analysis: </span>Our system employs machine learning algorithms to continuously monitor and analyze user behaviors, data access patterns, and resource interactions in real-time. This behavioral analysis ensures a nuanced understanding of normal activities, allowing for the prompt detection of anomalies.
             </p>
-            <p className="mb-4 text-2xl text-gray-300 text-justify">
-            <span className='font-semibold'>Language Pattern Recognition: </span>By scrutinizing data access language patterns, our solution identifies deviations in queries or commands associated with potential security threats. This level of linguistic analysis enhances the precision of our intrusion detection capabilities.
-            </p>
             </div>
             <div className='py-5'>
             <div className='border border-gray-500 rounded-lg p-5'>

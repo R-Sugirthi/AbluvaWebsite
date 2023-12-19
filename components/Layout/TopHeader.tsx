@@ -36,9 +36,9 @@ export default function TopHeader() {
               
               <li>
                 <Link
-                  href="https://abluva.freshdesk.com/support/home"
-                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
-                >
+                  href="https://abluva.freshdesk.com/support/home" rel='noopener noreferrer'
+                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white">
+                
                   Support
                 </Link>
               </li>

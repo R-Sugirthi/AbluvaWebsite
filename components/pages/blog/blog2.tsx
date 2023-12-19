@@ -51,7 +51,7 @@ export default function Blog2() {
             </ul>
           </p><br /><br />
 
-          <p className='mainText'>Benefits of using data protection technologiesChallenges of implementing data protection technologies</p><br/>
+          <p className='mainText'>Challenges of implementing data protection technologies</p><br/>
         <p className='subText'>
         There are a number of challenges that organizations face when implementing data protection technologies. These challenges include:
         </p><br/>

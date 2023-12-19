@@ -37,7 +37,7 @@ export default function News() {
                 </Link>
               </div>
             </div>
-            <p className='text-2xl sm:text-4xl founder gradient-text'><Link href="abluva-initiates-aws-security-ug-apac">Abluva Initiates ‘AWS Security UG-APAC’</Link></p>
+            <p className='text-2xl sm:text-4xl founder gradient-text'><Link href="/abluva-initiates-aws-security-ug-apac">Abluva Initiates ‘AWS Security UG-APAC’</Link></p>
             <p className='mt-2 sm:mt-12 text-base sm:text-sm text-gray-500'>Abluva . 04 Dec 2023</p>
           </div>
         </div>

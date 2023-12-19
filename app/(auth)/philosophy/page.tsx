@@ -65,7 +65,7 @@ export default function Philosophy() {
               Highlights of Our SSDLC
             </p>
             <p className="text-2xl md:text-2xl text-gray-900 text-justify founder">
-              <ul className='list-disc md:ml-10'>
+              <ul className='list-disc md:ml-10 ml-5'>
                 <li><span className='font-semibold'>Threat Modeling :  </span>We conduct threat modeling to identify and assess potential threats to our products. This helps us to prioritize security risks and develop appropriate mitigation strategies.</li>
                 <li className='py-3'><span className='font-semibold'>Risk Assessment : </span>We perform risk assessments to quantify the potential impact of security vulnerabilities. This helps us to make informed decisions about how to allocate resources to security mitigation activities.</li>
                 <li className='py-3'><span className='font-semibold'>Secure Coding Practices : </span>We implement secure coding practices to prevent common programming errors that can lead to vulnerabilities. This includes using strong encryption, input validation, and error handling.</li>

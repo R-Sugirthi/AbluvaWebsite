@@ -19,7 +19,7 @@ export default function Incubators() {
           <div className="container mx-auto px-5 flex flex-col md:flex-row items-center">
             <div className="w-full text-white pt-20 pb-40 w-3/4">
               <p className="text-5xl font-bold text-gray-100 founder"><span className='text-7xl'>P</span>roduct - Incubators</p>
-              <p className="text-3xl founder text-gray-300">We're not only building products, <br></br>we're shaping the future of data security.</p>
+              <p className="text-3xl founder text-gray-300">We're Not Only Building Products, <br></br>we're Shaping the Future of Data Security.</p>
             </div>
           </div>
         </div>
@@ -38,9 +38,6 @@ export default function Incubators() {
             <h1 className="text-3xl  text-gray-300 font-semibold py-5">Contextual AI</h1>
             <p className="mb-4 text-2xl text-gray-300 text-justify">
             <span className='font-semibold'>Behavioral Analysis: </span>Our system employs machine learning algorithms to continuously monitor and analyze user behaviors, data access patterns, and resource interactions in real-time. This behavioral analysis ensures a nuanced understanding of normal activities, allowing for the prompt detection of anomalies.
-            </p>
-            <p className="mb-4 text-2xl text-gray-300 text-justify">
-            <span className='font-semibold'>Language Pattern Recognition: </span>By scrutinizing data access language patterns, our solution identifies deviations in queries or commands associated with potential security threats. This level of linguistic analysis enhances the precision of our intrusion detection capabilities.
             </p>
             </div>
             <div className='py-5'>
@@ -191,16 +188,16 @@ export default function Incubators() {
         Graphene redefines Data Governance with a comprehensive suite of capabilities. With a keen focus on metadata, retention policies, and audit trails, Graphene ensures a secure, compliant, and optimized data landscape. Experience the power of streamlined governance, where every byte is a strategic asset.  
         </p>
         
-        <div className='pt-10'>
-        <div className='border border-gray-500 rounded-lg p-10 text-justify'>
-        <h1 className="md:text-3xl text:2xl text-gray-300 font-semibold ">Graphene’s Data Governance Key Features: </h1>
+        <div className='pt-10 text-left'>
+        <div className='border border-gray-500 rounded-lg p-10 text-left'>
+        <h1 className="md:text-3xl text:2xl text-gray-300 font-semibold text-left">Graphene’s Data Governance Key Features: </h1>
 
-          <ul className='list-disc md:ml-10'>
-            <li className='py-2'><span className='font-semibold'>Sensitive Data Discovery : </span>Graphene excels in efficient identification and management of sensitive data within the system.</li>
-            <li className='py-2'><span className='font-semibold'>Data Classification : </span>Graphene provides robust capabilities for categorizing and organizing data, enhancing overall information management.</li>
-            <li className='py-2'><span className='font-semibold'>Data Catalog : </span>With Graphene's data catalog, users gain a comprehensive overview and easy access to the organization's data assets.</li>
-            <li className='py-2'><span className='font-semibold'>Data Access Control : </span>Graphene ensures precise control over data access, allowing organizations to manage and restrict information based on defined parameters. <br></br><span><Link href="GrapheneAccessControl" className='underline text-violet-300'>Read more about Grahphene’s data access control</Link></span></li>
-            <li className='py-2'><span className='font-semibold'>Data Privacy and Compliance : </span>Graphene prioritizes data privacy and compliance, aligning seamlessly with regulatory requirements for enhanced security measures.<br></br><span><Link href="ComplianceEnablement" className='underline text-violet-300'>Read more about Graphene’s data privacy and Compliance capabilities</Link></span></li>
+          <ul className='list-disc md:ml-10 ml-5 text-left'>
+            <li className='py-2 text-left'><span className='font-semibold'>Sensitive Data Discovery : </span>Graphene excels in efficient identification and management of sensitive data within the system.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Data Classification : </span>Graphene provides robust capabilities for categorizing and organizing data, enhancing overall information management.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Data Catalog : </span>With Graphene's data catalog, users gain a comprehensive overview and easy access to the organization's data assets.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Data Access Control : </span>Graphene ensures precise control over data access, allowing organizations to manage and restrict information based on defined parameters. <br></br><span><Link href="/graphene-data-access-control" className='underline text-violet-300'>Read more about Grahphene’s data access control</Link></span></li>
+            <li className='py-2 text-left'><span className='font-semibold'>Data Privacy and Compliance : </span>Graphene prioritizes data privacy and compliance, aligning seamlessly with regulatory requirements for enhanced security measures.<br></br><span><Link href="/graphene-compliance-enablement" className='underline text-violet-300'>Read more about Graphene’s data privacy and Compliance capabilities</Link></span></li>
           </ul>
         </div>
         </div>
@@ -222,17 +219,17 @@ export default function Incubators() {
         </p>
         
         <div className='pt-10'>
-        <div className='border border-gray-500 rounded-lg p-10 text-justify'>
-        <h1 className="text-3xl text-gray-900 font-semibold">Graphene's Knowledge Graph Key Features: </h1>
-          <ul className='list-disc md:ml-10'>
-            <li className='py-2'><span className='font-semibold'>Relationship Inference : </span>Graphene's Secure Knowledge Graphs excel in inferring relationships between entities, providing a deeper understanding of interconnected data for enhanced insights.</li>
-            <li className='py-2'><span className='font-semibold'>Schema Flexibility : </span>Enjoy the flexibility of adapting the knowledge graph schema dynamically, accommodating evolving data structures without compromising performance.</li>
-            <li className='py-2'><span className='font-semibold'>Sensitive Data Discovery : </span>Graphene excels in efficient identification and management of sensitive data within the system.</li>
-            <li className='py-2'><span className='font-semibold'>Ontology Support : </span>Leverage Graphene's support for ontologies, enabling the modeling of complex relationships and semantic connections for a more nuanced representation of knowledge.</li>
-            <li className='py-2'><span className='font-semibold'>Contextual Insights : </span>Uncover a full range of data assets, allowing for contextual insights that go beyond surface-level analysis.</li>
-            <li className='py-2'><span className='font-semibold'>Security Issue Identification : </span>Effectively identify and address security issues across diverse cloud and data storage environments, ensuring a proactive security posture.</li>
-            <li className='py-2'><span className='font-semibold'>Real-time Compliance Evidence : </span>Enhance compliance posture with real-time evidence, streamlining regulatory adherence and minimizing risks.</li>
-            <li className='py-2'><span className='font-semibold'>Graph Algorithms Integration : </span>Integrate a variety of graph algorithms within the knowledge graph, enabling advanced analytics and uncovering hidden patterns and trends in your data.</li>
+        <div className='border border-gray-500 rounded-lg p-10 text-left'>
+        <h1 className="text-3xl text-gray-900 font-semibold text-left">Graphene's Knowledge Graph Key Features: </h1>
+          <ul className='list-disc md:ml-10 ml-5 text-left'>
+            <li className='py-2 text-left'><span className='font-semibold'>Relationship Inference : </span>Graphene's Secure Knowledge Graphs excel in inferring relationships between entities, providing a deeper understanding of interconnected data for enhanced insights.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Schema Flexibility : </span>Enjoy the flexibility of adapting the knowledge graph schema dynamically, accommodating evolving data structures without compromising performance.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Sensitive Data Discovery : </span>Graphene excels in efficient identification and management of sensitive data within the system.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Ontology Support : </span>Leverage Graphene's support for ontologies, enabling the modeling of complex relationships and semantic connections for a more nuanced representation of knowledge.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Contextual Insights : </span>Uncover a full range of data assets, allowing for contextual insights that go beyond surface-level analysis.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Security Issue Identification : </span>Effectively identify and address security issues across diverse cloud and data storage environments, ensuring a proactive security posture.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Real-time Compliance Evidence : </span>Enhance compliance posture with real-time evidence, streamlining regulatory adherence and minimizing risks.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Graph Algorithms Integration : </span>Integrate a variety of graph algorithms within the knowledge graph, enabling advanced analytics and uncovering hidden patterns and trends in your data.</li>
           </ul>
         </div>
         </div>

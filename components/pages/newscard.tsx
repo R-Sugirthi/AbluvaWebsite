@@ -50,7 +50,7 @@ export default function NewsPage() {
             section="News"
             description="Abluva Initiates ‘AWS Security UG-APAC’"
             date="04 Dec 2023"
-            link="abluva-initiates-aws-security-ug-apac"
+            link="/abluva-initiates-aws-security-ug-apac"
           /> 
            <News
             imageSrc="https://img.freepik.com/premium-photo/hand-using-electronic-signature-document-virtual-screen-document-online-approve-paperless-quality-assurance-erp-management-concept_50039-3900.jpg?w=740"
@@ -60,7 +60,7 @@ export default function NewsPage() {
             section="News"
             description="Abluva Attains ISO 27001 Certification"
             date="15 Oct 2023"
-            link="abluva-attains-iso-27001-certification"
+            link="/abluva-attains-iso-27001-certification"
           /> 
         </div>
       </div>

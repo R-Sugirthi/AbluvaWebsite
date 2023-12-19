@@ -64,7 +64,7 @@ export default function Header() {
             <Link href="/" aria-label="Cruip">
               <div className="flex">
                 <div>
-                  <Image src="/images/Logo.png" alt="Logo" width={60} height={50} priority />
+                  <Image src="/images/logo.png" alt="Logo" width={60} height={50} priority />
                 </div>
                 <div>
                   <Image src="/images/abluva_logo.png" className="pt-2 pl-1" alt="Logo" width={85} height={50} priority />
@@ -97,25 +97,25 @@ export default function Header() {
                         <div>
                           <div className='mark'>
                           <p className="text-2xl">Products</p>
-                            <Link href="graphene-platform-overview" className="text-lg">Graphene</Link>
+                            <Link href="/graphene-platform-overview" className="text-lg">Graphene</Link>
                             <ul className='ml-10 submenulist'>
                               <li>
-                                <Link href="graphene-platform-overview" className="text-md text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}>
+                                <Link href="/graphene-platform-overview" className="text-md text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}>
                                   Platform Overview  <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="graphene-data-access-control" className="text-md text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}>
+                                <Link href="/graphene-data-access-control" className="text-md text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}>
                                   Data Access Control<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="graphene-depersonalization" className="text-md text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}>
+                                <Link href="/graphene-depersonalization" className="text-md text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}>
                                   Data Depersonalization<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="graphene-compliance-enablement" className="text-md text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}>
+                                <Link href="/graphene-compliance-enablement" className="text-md text-gray-400 hover:text-white"  onClick={handleProductSubMenuItemClick}>
                                   Compliance Enablement <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
@@ -144,7 +144,7 @@ export default function Header() {
                       </div>
                       <div>
                       <p className='text-2xl pt-5'>Data Protection</p>
-                      <Link href="changing-paradigms-data-security" className='py-2 text-lg text-gray-400 hover:text-white' onClick={handleProductSubMenuItemClick}>The changing paradigms in changing times <span className='text-sm' > <FontAwesomeIcon icon={faAngleRight} /> </span></Link>
+                      <Link href="/changing-paradigms-data-security" className='py-2 text-lg text-gray-400 hover:text-white' onClick={handleProductSubMenuItemClick}>The changing paradigms in changing times <span className='text-sm' > <FontAwesomeIcon icon={faAngleRight} /> </span></Link>
                       </div>
                     </div>
                     <button
@@ -217,7 +217,7 @@ export default function Header() {
                       </div>
                       <div>
                       <p className='text-2xl pt-5'>Data Protection Technologies</p>
-                      <Link href="selecting-right-data-protection-technologies" className='py-2 text-lg text-gray-400 hover:text-white' onClick={handleResearchSubMenuItemClick} >Selecting Right Data Protection Technologies<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span></Link>
+                      <Link href="/selecting-right-data-protection-technologies" className='py-2 text-lg text-gray-400 hover:text-white' onClick={handleResearchSubMenuItemClick} >Selecting Right Data Protection Technologies<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span></Link>
                       </div>
                     </div>
                     <button
@@ -252,12 +252,12 @@ export default function Header() {
 
                             <ul className='submenulist'>
                               <li>
-                                <Link href="blogs" className="text-md text-gray-400 hover:text-white" onClick={handleResourcesSubMenuItemClick}>
+                                <Link href="/blogs" className="text-md text-gray-400 hover:text-white" onClick={handleResourcesSubMenuItemClick}>
                                   Blogs  <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="ebook-evolving-landscape-data-privacy-regulations" className="text-md text-gray-400 hover:text-white"  onClick={handleResourcesSubMenuItemClick}>
+                                <Link href="/ebook-evolving-landscape-data-privacy-regulations" className="text-md text-gray-400 hover:text-white"  onClick={handleResourcesSubMenuItemClick}>
                                   eBook<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
@@ -275,7 +275,7 @@ export default function Header() {
                       </div>
                       <div>
                       <p className='text-2xl pt-5'>Cloud Security</p>
-                      <Link href="comprehensive-guide-cloud-security" className='py-2 text-lg text-gray-400 hover:text-white' onClick={handleResourcesSubMenuItemClick}>A Comprehensive Guide to Cloud Security<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight}  /> </span></Link>
+                      <Link href="/comprehensive-guide-cloud-security" className='py-2 text-lg text-gray-400 hover:text-white' onClick={handleResourcesSubMenuItemClick}>A Comprehensive Guide to Cloud Security<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight}  /> </span></Link>
                       </div>
                     </div>
                     <button
@@ -311,27 +311,27 @@ export default function Header() {
 
                             <ul className='submenulist'>
                               <li>
-                                <Link href="about" className="text-md text-gray-400 hover:text-white"  onClick={handleCompanySubMenuItemClick}>
+                                <Link href="/about" className="text-md text-gray-400 hover:text-white"  onClick={handleCompanySubMenuItemClick}>
                                   About  <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="philosophy" className="text-md text-gray-400 hover:text-white" onClick={handleCompanySubMenuItemClick}>
+                                <Link href="/philosophy" className="text-md text-gray-400 hover:text-white" onClick={handleCompanySubMenuItemClick}>
                                   Philosophy <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="news" className="text-md text-gray-400 hover:text-white" onClick={handleCompanySubMenuItemClick}>
+                                <Link href="/news" className="text-md text-gray-400 hover:text-white" onClick={handleCompanySubMenuItemClick}>
                                   News & Events <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="careers" className="text-md text-gray-400 hover:text-white" onClick={handleCompanySubMenuItemClick}>
+                                <Link href="/careers" className="text-md text-gray-400 hover:text-white" onClick={handleCompanySubMenuItemClick}>
                                   Careers<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
                               <li>
-                                <Link href="contact" className="text-md text-gray-400 hover:text-white" onClick={handleCompanySubMenuItemClick}>
+                                <Link href="/contact" className="text-md text-gray-400 hover:text-white" onClick={handleCompanySubMenuItemClick}>
                                   Contact<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                                 </Link>
                               </li>
@@ -348,7 +348,7 @@ export default function Header() {
                       </div>
                       <div>
                       <p className='text-2xl pt-5'> Cybersecurity Defences</p>
-                      <Link href="understanding-security-posture" className='py-2 text-lg text-gray-400 hover:text-white' onClick={handleCompanySubMenuItemClick}>Understanding Security Posture: Strengthening Your Cybersecurity Defences<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span></Link>
+                      <Link href="/understanding-security-posture" className='py-2 text-lg text-gray-400 hover:text-white' onClick={handleCompanySubMenuItemClick}>Understanding Security Posture: Strengthening Your Cybersecurity Defences<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span></Link>
                       </div>
                     </div>
                     <button
@@ -361,7 +361,7 @@ export default function Header() {
                 )}
               </li>
               <li>
-                <Link href="/contact" className="text-white bg-gray-800 hover:bg-gray-600 ml-3 p-2 rounded-md">
+                <Link href="/contact" className="text-white bg-gray-800 hover:bg-gray-600 ml-3 p-3 rounded-md">
                   Request a Demo
                 </Link>
               </li>

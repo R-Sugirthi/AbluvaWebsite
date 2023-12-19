@@ -64,7 +64,7 @@ export default function BlogPage() {
             section="Blog"
             description="Changing Paradigms in Data Security"
             date="14 Dec 2023"
-            link="changing-paradigms-data-security"
+            link="/changing-paradigms-data-security"
           />
           <Blogs
             imageSrc="https://img.freepik.com/free-photo/group-people-with-laptops_23-2147993343.jpg?w=740&t=st=1701942478~exp=1701943078~hmac=be64ef6d595dc662a8486c06cdea82c3fb4e24dbc7d8cd71017eb3a87b14eb63"
@@ -74,7 +74,7 @@ export default function BlogPage() {
             section="Blog"
             description="Selecting Right Data Protection Technologies"
             date="10 Dec 2023"
-            link="selecting-right-data-protection-technologies"
+            link="/selecting-right-data-protection-technologies"
           />
            <Blogs
             imageSrc="https://img.freepik.com/premium-photo/young-business-people-group-have-meeting-working-modern-bright-office-indoor_530697-11140.jpg?w=740"
@@ -83,7 +83,7 @@ export default function BlogPage() {
             section="Blog"
             description="A Comprehensive Guide to Cloud Security"
             date="03 Dec 2023"
-            link="comprehensive-guide-cloud-security"
+            link="/comprehensive-guide-cloud-security"
           />
            <Blogs
             imageSrc="https://img.freepik.com/free-photo/young-thief-working-hack-computer-system-multi-monitors-using-server-malware-plant-virus-dangerous-hacker-doing-phishing-committing-cyberterrorism-stealing-passwords_482257-68986.jpg?w=740&t=st=1702110940~exp=1702111540~hmac=b964641f359815c2294a698008b60bda7f6df19dadd524aa30ad5ab6cdbc622a"
@@ -93,7 +93,7 @@ export default function BlogPage() {
             section="Blog"
             description="Understanding Security Posture: Strengthening Your Cybersecurity Defences"
             date="28 Nov 2023"
-            link="understanding-security-posture"
+            link="/understanding-security-posture"
           />
         </div>
       </div>

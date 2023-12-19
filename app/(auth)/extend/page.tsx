@@ -25,21 +25,21 @@ export default function Extend() {
             <div className="max-w-xl p-3 flex flex-col text-center">
                 <img src="/icons/power.png" className='h-10 mx-auto' />
                 <div className='py-5'>
-              <Link href="bi-integration"><span className='underline text-violet-950'>BI Integration</span></Link>
+              <Link href="/bi-integration"><span className='underline text-violet-950'>BI Integration</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Integrates your BI tools and unleash the power of insights even with NoSQL databases.</p>
             </div>
             <div className="max-w-xl p-3 md:border-l md:border-r border-gray-300 flex flex-col text-center">
                 <img src="/icons/costoptimization.png" className='h-10 mx-auto' />
                 <div className='py-5'>
-              <Link href="cost-optimization" ><span className='underline text-violet-950'>Cost Optimization</span></Link>
+              <Link href="/cost-optimization" ><span className='underline text-violet-950'>Cost Optimization</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Boost performance but strategically minimizes costs. Experience efficiency that directly impacts your bottom line.</p>
             </div>
             <div className="max-w-xl p-3  flex flex-col text-center">
                 <img src="/icons/graph.png" className='h-10 mx-auto' />
                 <div className='py-5'>
-              <Link href="incubators-secure-knowledge-graph" ><span className='underline text-violet-950'>Knowledge Graphs</span></Link>
+              <Link href="/incubators-secure-knowledge-graph" ><span className='underline text-violet-950'>Knowledge Graphs</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Uncover the layers of intelligence within your data, fostering a deeper understanding and utilization of knowledge graphs.</p>
             </div> 

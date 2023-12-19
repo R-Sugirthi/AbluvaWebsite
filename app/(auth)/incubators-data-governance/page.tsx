@@ -22,16 +22,16 @@ export default function IncubatorDataGovernance() {
         Graphene redefines Data Governance with a comprehensive suite of capabilities. With a keen focus on metadata, retention policies, and audit trails, Graphene ensures a secure, compliant, and optimized data landscape. Experience the power of streamlined governance, where every byte is a strategic asset.  
         </p>
         
-        <div className='pt-10'>
-        <div className='border border-gray-500 rounded-lg p-10 text-justify'>
-        <h1 className="md:text-3xl text:2xl text-gray-300 font-semibold ">Graphene’s Data Governance Key Features: </h1>
+        <div className='pt-10 text-left'>
+        <div className='border border-gray-500 rounded-lg p-10 text-left'>
+        <h1 className="md:text-3xl text:2xl text-gray-300 font-semibold text-left">Graphene’s Data Governance Key Features: </h1>
 
-          <ul className='list-disc md:ml-10'>
-            <li className='py-2'><span className='font-semibold'>Sensitive Data Discovery : </span>Graphene excels in efficient identification and management of sensitive data within the system.</li>
-            <li className='py-2'><span className='font-semibold'>Data Classification : </span>Graphene provides robust capabilities for categorizing and organizing data, enhancing overall information management.</li>
-            <li className='py-2'><span className='font-semibold'>Data Catalog : </span>With Graphene's data catalog, users gain a comprehensive overview and easy access to the organization's data assets.</li>
-            <li className='py-2'><span className='font-semibold'>Data Access Control : </span>Graphene ensures precise control over data access, allowing organizations to manage and restrict information based on defined parameters. <br></br><span><Link href="GrapheneAccessControl" className='underline text-violet-300'>Read more about Grahphene’s data access control</Link></span></li>
-            <li className='py-2'><span className='font-semibold'>Data Privacy and Compliance : </span>Graphene prioritizes data privacy and compliance, aligning seamlessly with regulatory requirements for enhanced security measures.<br></br><span><Link href="ComplianceEnablement" className='underline text-violet-300'>Read more about Graphene’s data privacy and Compliance capabilities</Link></span></li>
+          <ul className='list-disc md:ml-10 ml-5 text-left'>
+            <li className='py-2 text-left'><span className='font-semibold'>Sensitive Data Discovery : </span>Graphene excels in efficient identification and management of sensitive data within the system.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Data Classification : </span>Graphene provides robust capabilities for categorizing and organizing data, enhancing overall information management.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Data Catalog : </span>With Graphene's data catalog, users gain a comprehensive overview and easy access to the organization's data assets.</li>
+            <li className='py-2 text-left'><span className='font-semibold'>Data Access Control : </span>Graphene ensures precise control over data access, allowing organizations to manage and restrict information based on defined parameters. <br></br><span><Link href="/graphene-data-access-control" className='underline text-violet-300'>Read more about Grahphene’s data access control</Link></span></li>
+            <li className='py-2 text-left'><span className='font-semibold'>Data Privacy and Compliance : </span>Graphene prioritizes data privacy and compliance, aligning seamlessly with regulatory requirements for enhanced security measures.<br></br><span><Link href="/graphene-compliance-enablement text-left" className='underline text-violet-300'>Read more about Graphene’s data privacy and Compliance capabilities</Link></span></li>
           </ul>
         </div>
         </div>

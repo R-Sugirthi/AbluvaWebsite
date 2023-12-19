@@ -68,22 +68,22 @@ export default function MobileMenu() {
             <li>
               <p className="pb-2">Graphene</p>
               <li>
-                <Link href="graphene-platform-overview" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/graphene-platform-overview" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Platform Overview <span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
               <li>
-                <Link href="graphene-data-access-control" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/graphene-data-access-control" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Data Access Control<span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
               <li>
-                <Link href="graphene-depersonalization" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/graphene-depersonalization" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Data Depersonalization<span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
               <li>
-                <Link href="graphene-compliance-enablement" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/graphene-compliance-enablement" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Compliance Enablement<span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
@@ -91,27 +91,27 @@ export default function MobileMenu() {
             <li>
               <p className="py-2">Incubators</p>
               <li>
-                <Link href="incubators-intrusion-detection" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/incubators-intrusion-detection" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Intrusion Detection<span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
               <li>
-                <Link href="incubators-attack-vector-discovery" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/incubators-attack-vector-discovery" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Attack Vector Discovery<span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
               <li>
-                <Link href="incubators-data-governance" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/incubators-data-governance" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Data Governance<span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
               <li>
-                <Link href="incubators-secure-knowledge-graph" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/incubators-secure-knowledge-graph" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Secure Knowledge Graph<span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
               <li>
-                <Link href="incubators-breathing-security" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                <Link href="/incubators-breathing-security" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                   Breathing Security<span className="text-sm"> <FontAwesomeIcon icon={faAngleRight} /> </span>
                 </Link>
               </li>
@@ -127,22 +127,22 @@ export default function MobileMenu() {
             {mobileNavOpen && activeMenu === 'research' && (
               <ul className="submenu text-sm ml-5">
   <li>
-    <Link href="research#leaderboards" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/research#leaderboards" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Leaderboards <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="research#datasets" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/research#datasets" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Synthetic Datasets<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="research#research-papers" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/research#research-papers" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Research Papers<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="research#patents" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/research#patents" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Patents<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
@@ -159,12 +159,12 @@ export default function MobileMenu() {
             {mobileNavOpen && activeMenu === 'resources' && (
               <ul className="submenu text-sm ml-5">
                 <li>
-                  <Link href="blogs" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                  <Link href="/blogs" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                     Blogs <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                   </Link>
                   </li>
                   <li>
-                  <Link href="ebook-evolving-landscape-data-privacy-regulations" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+                  <Link href="/ebook-evolving-landscape-data-privacy-regulations" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
                     eBook<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
                   </Link>
                   
@@ -181,27 +181,27 @@ export default function MobileMenu() {
               
               <ul className="submenu text-sm ml-5">
   <li>
-    <Link href="about" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/about" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       About <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="philosophy" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/philosophy" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Philosophy<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="news" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/news" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       News & Events<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="careers" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/careers" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Careers<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="contact" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/contact" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Contact<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
