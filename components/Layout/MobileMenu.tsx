@@ -127,22 +127,22 @@ export default function MobileMenu() {
             {mobileNavOpen && activeMenu === 'research' && (
               <ul className="submenu text-sm ml-5">
   <li>
-    <Link href="/research#leaderboards" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/research/leaderboards" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Leaderboards <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="/research#datasets" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/research/datasets" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Synthetic Datasets<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="/research#research-papers" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/research/research-papers" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Research Papers<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="/research#patents" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/research/patents" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Patents<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
@@ -181,27 +181,27 @@ export default function MobileMenu() {
               
               <ul className="submenu text-sm ml-5">
   <li>
-    <Link href="/about" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/company/about" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       About <span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="/philosophy" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/company/philosophy" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Philosophy<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="/news" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/company/news" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       News & Events<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="/careers" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/company/careers" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Careers<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
   <li>
-    <Link href="/contact" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
+    <Link href="/company/contact" className="text-gray-400 hover:text-white" onClick={() => setMobileNavOpen(false)}>
       Contact<span className='text-sm'> <FontAwesomeIcon icon={faAngleRight} /> </span>
     </Link>
   </li>
@@ -209,7 +209,7 @@ export default function MobileMenu() {
             )}
           </li>
           <li className='pb-5'>
-          <Link href="/contact" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3" onClick={() => setMobileNavOpen(false)}>
+          <Link href="/company/contact" className="btn-sm text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark mt-3" onClick={() => setMobileNavOpen(false)}>
           Request a Demo
         </Link>
           </li>         

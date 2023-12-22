@@ -23,7 +23,7 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
           {customSubText || defaultSubText}
           </p>
           <Link
-            href="/contact"
+            href="/company/contact"
             className="btn-md md:text-xl text-lg text-white bg-violet-950 font-bold font-bold py-4 p-3 rounded-md mark"
           >
             Contact Us
@@ -36,7 +36,7 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
             <div className="text-md md:col-span-2">
               <div className="mb-2">
                 <Link href="/" className="inline-block">
-                  <img src="/images/logo.png" className='h-8 w-12' />
+                  <img src="/images/logo.png" className='h-8 w-12' alt="logo"/>
                 </Link>
               </div>
               <div className="text-gray-300 text-md text-sm">Unlocking Confidence in Every Byte,<br></br>Connect with us for a fortress of data security.</div>
@@ -46,7 +46,7 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
               <p className="text-gray-200 font-semibold md:text-lg text-md mb-3">Products</p>
               <ul>
               <li className="mb-1">
-                  <Link href="/graphene-platform-overview" className="text-gray-300 hover:text-gray-100">Graphene</Link>
+                  <Link href="/graphene/platform-overview" className="text-gray-300 hover:text-gray-100">Graphene</Link>
                 </li> 
                 <li className="mb-1">
                   <Link href="/incubators" className="text-gray-300 hover:text-gray-100">Incubators</Link>
@@ -59,10 +59,10 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
               <ul>
                 
                 <li className="mb-1">
-                  <Link href="/blogs" className="text-gray-300 hover:text-gray-100">Blogs</Link>
+                  <Link href="/insights/blogs" className="text-gray-300 hover:text-gray-100">Blogs</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/ebook-evolving-landscape-data-privacy-regulations" className="text-gray-300 hover:text-gray-100 ">eBook</Link>
+                  <Link href="/insights/ebook-evolving-landscape-data-privacy-regulations" className="text-gray-300 hover:text-gray-100 ">eBook</Link>
                 </li>
               </ul>
             </div>
@@ -71,16 +71,16 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
               <p className="text-gray-200 font-semibold md:text-lg text-md mb-3">Research</p>
               <ul>
                 <li className="mb-1">
-                  <Link href="/research#leaderboards" className="text-gray-300 hover:text-gray-100 ">Leaderboards</Link>
+                  <Link href="/research/leaderboards" className="text-gray-300 hover:text-gray-100 ">Leaderboards</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/research#datasets" className="text-gray-300 hover:text-gray-100 ">Synthetic Datasets</Link>
+                  <Link href="/research/datasets" className="text-gray-300 hover:text-gray-100 ">Synthetic Datasets</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/research#research-papers" className="text-gray-300 hover:text-gray-100 ">Research Papers</Link>
+                  <Link href="/research/research-papers" className="text-gray-300 hover:text-gray-100 ">Research Papers</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/research#patents" className="text-gray-300 hover:text-gray-100 ">Patents</Link>
+                  <Link href="/research/patents" className="text-gray-300 hover:text-gray-100 ">Patents</Link>
                 </li>
               </ul>
             </div>
@@ -89,19 +89,19 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
               <p className="text-gray-200 font-semibold md:text-lg text-md mb-1">Company</p>
               <ul>
                 <li className="mb-1">
-                  <Link href="/about" className="text-gray-300 hover:text-gray-100 ">About</Link>
+                  <Link href="/company/about" className="text-gray-300 hover:text-gray-100 ">About</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/news" className="text-gray-300 hover:text-gray-100 ">News & Events</Link>
+                  <Link href="/company/news" className="text-gray-300 hover:text-gray-100 ">News & Events</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/philosophy" className="text-gray-300 hover:text-gray-100 ">Philosophy</Link>
+                  <Link href="/company/philosophy" className="text-gray-300 hover:text-gray-100 ">Philosophy</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/careers" className="text-gray-300 hover:text-gray-100 ">Careers</Link>
+                  <Link href="/company/careers" className="text-gray-300 hover:text-gray-100 ">Careers</Link>
                 </li>
                 <li className="mb-1">
-                  <Link href="/contact" className="text-gray-300 hover:text-gray-100 ">Contact</Link>
+                  <Link href="/company/contact" className="text-gray-300 hover:text-gray-100 ">Contact</Link>
                 </li>
               </ul>
             </div>
@@ -146,19 +146,19 @@ const Footer: React.FC<FooterProps> = ({ customMainText, customSubText }) => {
             <div className="text-gray-300 text-sm md:text-md mr-4 mt-5 mark">&copy; {currentYear} Abluva. All rights reserved.</div>
             {/* support */}
             <div className="text-gray-300 text-sm md:text-md mr-4 mt-5 mark">
-              <Link href="/legal" className="text-gray-300 hover:text-gray-100 ">
+              <Link href="/support/legal" className="text-gray-300 hover:text-gray-100 ">
                 Legal
               </Link>
               <span className="mx-2">|</span>
-              <Link href="/privacy-policy" className="text-gray-300 hover:text-gray-100 ">
+              <Link href="/support/privacy-policy" className="text-gray-300 hover:text-gray-100 ">
                 Privacy Policy
               </Link>
               <span className="mx-2">|</span>
-              <Link href="/terms" className="text-gray-300 hover:text-gray-100 ">
+              <Link href="/support/terms" className="text-gray-300 hover:text-gray-100 ">
                 Terms of Service
               </Link>
               <span className="mx-2">|</span>
-              <Link href="/cookie-policy" className="text-gray-300 hover:text-gray-100 ">
+              <Link href="/support/cookie-policy" className="text-gray-300 hover:text-gray-100 ">
                 Cookie Policy
               </Link>
             </div>

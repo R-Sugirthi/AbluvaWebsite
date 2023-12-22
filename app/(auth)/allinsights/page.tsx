@@ -9,7 +9,7 @@ import DropdownWithCheckbox1 from '@/components/pages/dropdownTopic';
 import DropdownWithCheckbox2 from '@/components/pages/dropdownTags';
 
 const options = ['Blog', 'eBook', 'Clear'];
-// const options1 = ['Option1', 'Option2', 'Option3'];
+const options1 = ['Option1', 'Option2', 'Option3'];
 const options2 = ['Security', 'Compliance', 'Privacy', 'Governance', 'Access'];
 
 
@@ -70,18 +70,18 @@ export default function Allsights() {
         </div>
       </div>
       <div className='relative'>
-        {/* <div className='bg-gray-200 h-20 flex'>
-        <div>
-          <p className='text-black pt-5  sm:pl-52 pr-20 text-2xl '>All Insights</p>
+        <div className='sticky top-0 z-50 bg-gray-200 h-20 flex'>
+          <div>
+            <p className='text-black pt-5 sm:pl-52 pr-20 text-2xl'>All Insights</p>
+          </div>
+          <div>
+            <p>
+              <DropdownWithCheckbox options={options} onChange={handleOptionChange} />
+              {/* <DropdownWithCheckbox1 options={options1} onChange={handleOptionChange} /> */}
+              <DropdownWithCheckbox2 options={options2} onChange={handleOptionChange} />
+            </p>
+          </div>
         </div>
-        <div>
-          <p>
-            <DropdownWithCheckbox options={options} onChange={handleOptionChange}/>
-            <DropdownWithCheckbox1 options={options1} onChange={handleOptionChange} />
-            <DropdownWithCheckbox2 options={options2} onChange={handleOptionChange} />
-          </p>
-        </div>
-      </div> */}
       </div>
       {renderProductCards()}
 

@@ -11,7 +11,7 @@ export default function TopHeader() {
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/about"
+                  href="/company/about"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
                   About
@@ -19,7 +19,7 @@ export default function TopHeader() {
               </li>
               <li>
                 <Link
-                  href="/news"
+                  href="/company/news"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
                   News & Events
@@ -27,7 +27,7 @@ export default function TopHeader() {
               </li>
               <li>
                 <Link
-                  href="/careers"
+                  href="/company/careers"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
                   Careers
@@ -44,7 +44,7 @@ export default function TopHeader() {
               </li>
               <li>
                 <Link
-                  href="/contact"
+                  href="/company/contact"
                   className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
                 >
                   Contact

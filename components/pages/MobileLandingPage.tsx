@@ -9,11 +9,13 @@ export default function MobileLandingPage() {
         <p className="text-xl text-gray-200 founder">
           "Experience Next-Level Data Security: An AI-Powered, Multi-Layered Fortress for Your Valuables."
         </p>
-        <Link href="/contact" className="btn-sm text-lg text-white bg-violet-950 font-bold p-3 rounded-md mark mt-3">
+        <div className='mt-10'>
+        <Link href="/company/contact" className="text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
           Request a Demo
         </Link>
+        </div>
       </div>
-      <div className="img-container bg">
+      <div className="img-container bg mt-5">
         <img src="https://img.freepik.com/premium-photo/abstract-wave-with-blue-light-black-background-science-background-with-moving-dots-network-connection-technology-digital-structure-with-particles-3d-rendering_1005891-52.jpg?w=900" />
       </div>
     </section>

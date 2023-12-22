@@ -59,7 +59,7 @@ export default function BlogPage() {
       <div>
         <div className='flex flex-col md:flex-row justify-between md:items-center py-5'>
           <div className='text-3xl mark'>Latest</div>
-          <div><Link href="/insights" className='text-md all-insights mark'>All insights<span className='text-sm text-white'> <FontAwesomeIcon icon={faAngleRight}/> </span></Link></div>
+          <div><Link href="/allinsights" className='text-md all-insights mark'>All insights<span className='text-sm text-white'> <FontAwesomeIcon icon={faAngleRight}/> </span></Link></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center">
           <Card
@@ -69,7 +69,7 @@ export default function BlogPage() {
            section="Blog"
            description="Changing Paradigms in Data Security"
            date="14 Dec 2023"
-           link="/changing-paradigms-data-security"
+           link="/insights/blogs/changing-paradigms-data-security"
           />
           <Card
             imageSrc="https://img.freepik.com/free-photo/group-people-with-laptops_23-2147993343.jpg?w=740&t=st=1701942478~exp=1701943078~hmac=be64ef6d595dc662a8486c06cdea82c3fb4e24dbc7d8cd71017eb3a87b14eb63"
@@ -79,7 +79,7 @@ export default function BlogPage() {
             section="Blog"
             description="Selecting Right Data Protection Technologies"
             date="10 Dec 2023"
-            link="/selecting-right-data-protection-technologies"
+            link="/insights/blogs/selecting-right-data-protection-technologies"
           />
         </div>
       </div>

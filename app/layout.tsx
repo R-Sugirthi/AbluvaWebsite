@@ -10,9 +10,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`bg-[#131318] text-white`}>
         <div className="flex flex-col min-h-screen">
-
           {children}
-         
         </div>
       </body>
     </html>

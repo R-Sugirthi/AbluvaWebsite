@@ -46,7 +46,7 @@ export default function EbookPage() {
             section="eBook"
             description="The Evolving Landscape of Data Privacy Regulations"
             date="03 Nov 2023"
-            link="/evolving-landscape-data-privacy-regulations"
+            link="/insights/evolving-landscape-data-privacy-regulations"
           />
         </div>
       </div>

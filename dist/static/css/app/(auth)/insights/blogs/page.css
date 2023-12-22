@@ -1,0 +1,56 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./components/style.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************/
+
+
+.allsightlink {
+  background-color: rgb(144, 96, 188, 0.3);
+  color: rgb(48, 11, 85);
+  padding: 8px;
+  border-radius: 3px;
+}
+
+.allsightlink:hover {
+  background: linear-gradient(to right, rgb(43, 18, 74), rgb(115, 57, 186));
+  color: white;
+  box-shadow: 0 0 20px rgba(58, 16, 110, 0.3);
+}
+
+.hidden-mobile {
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .hidden-mobile {
+    display: none;
+  }
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to bottom, rgba(19, 19, 24, 1) 0%, rgba(19, 19, 24, 0) 100%);
+}
+
+@media (max-width: 640px) {
+  .mq {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.optionDiv{
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px); /* Adjust the blur value based on your preference */
+  background-color: rgba(255, 255, 255, 0.6); /* Adjust the opacity value based on your preference */
+}
+

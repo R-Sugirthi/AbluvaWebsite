@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Blogs from '@/components/pages/blogs';
@@ -8,7 +7,7 @@ import Allinsights from '@/components/pages/resourcesCard';
 
 export const metadata = {
   title: 'Insights | ABLUVA',
-  // description: 'Page description',
+  description: 'Explore the latest insights on data security and compliance at ABLUVA.',
 };
 
 export default function Insights() {
@@ -47,7 +46,7 @@ export default function Insights() {
                 </Link>
               </div>
             </div>
-            <p className='text-2xl sm:text-4xl founder gradient-text'><Link href="/changing-paradigms-data-security">Changing Paradigms in Data Security</Link></p>
+            <p className='text-2xl sm:text-4xl founder gradient-text'><Link href="/insights/blogs/changing-paradigms-data-security">Changing Paradigms in Data Security</Link></p>
             <p className='mt-2 sm:mt-12 text-base sm:text-sm text-gray-500'>Abluva . 14 Dec 2023</p>
           </div>
         </div>

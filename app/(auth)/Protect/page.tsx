@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Protect | ABLUVA',
-  // description: 'Page description',
+  description: 'ABLUVA\'s Data Security Essentials: Shield, Conceal, Alert. Silent yet steadfast security. Simple controls, powerful protection.',
 };
 
 export default function Protect() {
@@ -23,23 +23,23 @@ export default function Protect() {
         
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 py-20">
             <div className="max-w-xl p-3 flex flex-col text-center">
-                <img src="/icons/dataAccess.png" className='h-10 mx-auto' />
+                <img src="/icons/dataAccess.png" className='h-10 mx-auto' alt="icon"/>
                 <div className='py-5'>
-              <Link href="/graphene-data-access-control" ><span className='underline text-violet-950'>Data Access Controls</span></Link>
+              <Link href="/graphene/data-access-control" ><span className='underline text-violet-950'>Data Access Controls</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Define and enforce access policies, ensuring that only authorized individuals can interact with sensitive information.</p>
             </div>
             <div className="max-w-xl p-3 md:border-l md:border-r border-gray-300 flex flex-col text-center">
-                <img src="/icons/depersonalization.png" className='h-10 mx-auto' />
+                <img src="/icons/depersonalization.png" className='h-10 mx-auto' alt="icon"/>
                 <div className='py-5'>
-              <Link href="/graphene-depersonalization" ><span className='underline text-violet-950'>Data Depersonalization</span></Link>
+              <Link href="/graphene/depersonalization" ><span className='underline text-violet-950'>Data Depersonalization</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Strike the delicate balance between data utility and protection, securing your information while respecting privacy principles.</p>
             </div>
             <div className="max-w-xl p-3  flex flex-col text-center">
-                <img src="/icons/intrusionDetection.png" className='h-10 mx-auto' />
+                <img src="/icons/intrusionDetection.png" className='h-10 mx-auto' alt="icon"/>
                 <div className='py-5'>
-              <Link href="/incubators-intrusion-detection" ><span className='underline text-violet-950'>Intrusion Detection</span></Link>
+              <Link href="/incubators/intrusion-detection" ><span className='underline text-violet-950'>Intrusion Detection</span></Link>
                 </div>
                 <p className="mb-2 text-2xl text-gray-900 text-center">Enhance your security posture by swiftly detecting and mitigating potential intrusions before they escalate.</p>
             </div>

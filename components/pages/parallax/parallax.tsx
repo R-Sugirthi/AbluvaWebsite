@@ -15,7 +15,7 @@ const Parallax = () => {
                 <p className="md:text-2xl mb-14 con">
                 Every organization is Unique and faces unique challenges. Customize your data protection with Graphene. Connect with us to know more.
                 </p>
-                <Link href="/contact" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
+                <Link href="/company/contact" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
                   Contact Us
                 </Link>
               </div>
@@ -35,7 +35,7 @@ const Parallax = () => {
                 <p className="md:text-2xl mb-14 con">
                 Identify and Fix Data Control Gaps with Graphene's Efficient Data Access and Depersonalization Solutions.
                 </p>
-                <Link href="/contact" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
+                <Link href="/company/contact" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
                   Contact Us
                 </Link>
               </div>

@@ -1,11 +1,5 @@
 {
   "pages": {
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
     "/(default)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -18,17 +12,47 @@
       "static/css/app/(default)/layout.css",
       "static/chunks/app/(default)/layout.js"
     ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
     "/(auth)/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/(auth)/layout.css",
       "static/chunks/app/(auth)/layout.js"
     ],
-    "/(auth)/contact/page": [
+    "/(auth)/research/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(auth)/contact/page.css",
-      "static/chunks/app/(auth)/contact/page.js"
+      "static/css/app/(auth)/research/page.css",
+      "static/chunks/app/(auth)/research/page.js"
+    ],
+    "/(auth)/research/leaderboards/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(auth)/research/leaderboards/page.css",
+      "static/chunks/app/(auth)/research/leaderboards/page.js"
+    ],
+    "/(auth)/research/patents/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(auth)/research/patents/page.css",
+      "static/chunks/app/(auth)/research/patents/page.js"
+    ],
+    "/(auth)/insights/blogs/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(auth)/insights/blogs/page.css",
+      "static/chunks/app/(auth)/insights/blogs/page.js"
+    ],
+    "/(auth)/allinsights/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/(auth)/allinsights/page.css",
+      "static/chunks/app/(auth)/allinsights/page.js"
     ]
   }
 }
