@@ -1,73 +1,130 @@
+"use client"
 import Link from 'next/link';
-import '../style.css';
+import { useEffect, useState } from 'react';
 
 interface CardProps {
-  imageSrc: string;
-  tag1?: string; 
+  tag1?: string;
   tag2?: string;
   tag3?: string;
+  tag4?: string;
   description: string;
   section: string;
   date: string;
   link: string;
 }
 
-function ResourcesCard({ imageSrc, tag1,tag2,tag3, section, date, link, description }: CardProps) {
- 
+function shuffleArray(array: string[]) {
+  const shuffledArray = array.slice();
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
+
+function ResourcesCard({ tag1, tag2, tag3, tag4, section, date, link, description }: CardProps) {
+  const patterns = shuffleArray([
+    'pattern-1',
+    'pattern-2',
+    'pattern-3',
+    'pattern-4',
+    'pattern-5',
+    'pattern-6',
+    'pattern-7',
+    'pattern-8',
+    'pattern-9',
+  ]);
+
+  const [patternIndex, setPatternIndex] = useState(0);
+
+  useEffect(() => {
+    setPatternIndex((prevIndex) => (prevIndex + 1) % patterns.length);
+  }, []);
+
+  const pattern = patterns[patternIndex];
+
   return (
-    <div className='bg-[#f2f3f5] py-5'>
-      
-      <div className='image-container'>
-        <img
-          className="rounded-md w-full"
-          src={imageSrc}
-        />
-        <div className='image-overlay rounded-md'></div>
+    <div className='py-5'>
+      <div
+        className={`image-container rounded-lg ${pattern}`}
+        style={{
+          background: pattern,
+          height:"200px",
+          width:"100%",
+        }}
+      >
+        <div className='image-overlay rounded-lg'></div>
       </div>
       <div className="py-4">
-      <div className='flex'>
-          <div className="text-gray-600 font-bold">{section} . </div>
-          {tag3 ? (
-            <div className='ml-2'>
-              <span className='link1'>{tag1}</span>
-              {tag2 && <span className='mx-2 link1'>{tag2}</span>}
-              {tag3 && <span className='link1'>{tag3}</span>}
-            </div>
-          ) : (
-            <div className='ml-2'>
-              {tag1 && <span className='link1'>{tag1}</span>}
-              {tag2 && <span className='mx-2 link1'>{tag2}</span>}
-            </div>
-          )}
+        <div className='flex text-xs font-semibold'>
+          <div className="text-gray-400">{section}<span className='ml-2 text-gray-500 square'>&#9642;</span> </div>
+          <div className='ml-2'>
+            {tag1 && <span className='tag'>{tag1}</span>}
+            {tag2 && <span className=' mx-2 tag'>{tag2}</span>}
+            {tag3 && <span className=' tag'>{tag3}</span>}
+            {tag4 && <span className='mx-2 tag'>{tag4}</span>}
+          </div>
         </div>
-        <p className="text-2xl text-gray-900 py-2 gradient-text-light">
-          <Link href={link}>{description}</Link>
-        </p>
       </div>
-      <div className="" >
-        <span className="inline-block rounded-full text-sm text-gray-700">{date}</span>
+      <p className="text-xl fonttext-white gradient-text py-5">
+        <Link href={link}>{description}</Link>
+      </p>
+      <div>
+        <span className="inline-block rounded-full text-xs text-gray-400">{date}</span>
       </div>
     </div>
   );
 }
-
 export default function Resources() {
   return (
-    <section className='mt-30 px-4 md:px-52 pt-10 pb-20 bg-[#f2f3f5]'>
+    <section className='mt-30 px-4 md:px-52 py-20'>
       <div>
-      <div><p className='text-gray-600 text-xl font-semibold pb-10'>eBook and Blogs</p></div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 justify-center">
         <ResourcesCard
-            imageSrc="https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595835.jpg?w=740&t=st=1700441701~exp=1700442301~hmac=3858b5506ca28bf0e0a8abb93226b033e92658b7ff66df7e38e911d0b13e067d"
-            tag1="Privacy"
-            tag2="Compliance"          
+            tag1="Cybersecurity"       
+            tag2="Best practices"          
             section="eBook"
-            description="The Evolving Landscape of Data Privacy Regulations"
+            description="A Common Sense & Collaborative Approach to Information and Cyber Security"
+            date="18 mar 2024"
+            link="/insights/ebooks/ebook-common-sense-collaborative-approach-to-information-and-cyber-security"
+          />
+        <ResourcesCard
+            tag1="Access"
+            tag2="Security"          
+            section="eBook"
+            description="Implementing Principles of Least Privilege in Cybersecurity"
+            date="12 Jan 2024"
+            link="/insights/ebooks/ebook-implementing-principles-least-privilege-cybersecurity"
+          />
+        <ResourcesCard
+            tag1="Access"
+            tag2="Security"          
+            section="eBook"
+            description="How to Make a Data Security Policy"
             date="14 Dec 2023"
-            link="/insights/ebook-evolving-landscape-data-privacy-regulations"
+            link="/insights/ebooks/ebook-how-to-make-data-security-policy"
+          />
+           <ResourcesCard
+            tag1="AI"
+            tag2="ML"
+            tag3="IDS"
+            tag4="Datasets"
+            section="Blog"
+            description="Key Datasets for Anomalous 
+            Intrusion Detection Systems in 2024"
+            date="16 Feb 2024"
+            link="/insights/blogs/key-datasets-anomalous-intrusion-detection-systems-2024"
+          />      
+          <ResourcesCard
+            tag1="Intrusion Detection"
+            tag2="AI"
+            tag3="Security"
+            section="Blog"
+            description="Synthetic Datasets in ML-Based Intrusion Detection"
+            date="12 Jan 2024"
+            link="/insights/blogs/synthetic-datasets-ml-based-intrusion-detection"
           />
           <ResourcesCard
-            imageSrc="https://img.freepik.com/premium-photo/medium-shot-people-debating-ideas-office_23-2149345255.jpg?w=740"
             tag1="Security"
             tag2="Compliance"
             section="Blog"
@@ -76,7 +133,6 @@ export default function Resources() {
             link="/insights/blogs/changing-paradigms-data-security"
           />
           <ResourcesCard
-            imageSrc="https://img.freepik.com/free-photo/group-people-with-laptops_23-2147993343.jpg?w=740&t=st=1701942478~exp=1701943078~hmac=be64ef6d595dc662a8486c06cdea82c3fb4e24dbc7d8cd71017eb3a87b14eb63"
             tag1="Access"
             tag2="Privacy"
             tag3="Governance"
@@ -86,7 +142,6 @@ export default function Resources() {
             link="/insights/blogs/selecting-right-data-protection-technologies"
           />
            <ResourcesCard
-            imageSrc="https://img.freepik.com/premium-photo/young-business-people-group-have-meeting-working-modern-bright-office-indoor_530697-11140.jpg?w=740"
             tag1="Security"
             tag2="Access"
             section="Blog"
@@ -95,7 +150,6 @@ export default function Resources() {
             link="/insights/blogs/comprehensive-guide-cloud-security"
           />
            <ResourcesCard
-            imageSrc="https://img.freepik.com/free-photo/young-thief-working-hack-computer-system-multi-monitors-using-server-malware-plant-virus-dangerous-hacker-doing-phishing-committing-cyberterrorism-stealing-passwords_482257-68986.jpg?w=740&t=st=1702110940~exp=1702111540~hmac=b964641f359815c2294a698008b60bda7f6df19dadd524aa30ad5ab6cdbc622a"
             tag1="Access"
             tag2="Privacy"
             tag3="Governance"
@@ -107,7 +161,6 @@ export default function Resources() {
         </div>
       </div>
     </section>
+    
   );
 }
-
-

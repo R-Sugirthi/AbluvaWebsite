@@ -1,7 +1,0 @@
-{
-  "/(auth)/research/page": "app/(auth)/research/page.js",
-  "/(auth)/allinsights/page": "app/(auth)/allinsights/page.js",
-  "/(auth)/research/leaderboards/page": "app/(auth)/research/leaderboards/page.js",
-  "/(auth)/research/patents/page": "app/(auth)/research/patents/page.js",
-  "/(auth)/insights/blogs/page": "app/(auth)/insights/blogs/page.js"
-}

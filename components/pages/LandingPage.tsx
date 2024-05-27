@@ -1,9 +1,8 @@
-"use client"
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import MobileLandingPage from './MobileLandingPage';
-import "../style.css";
+import Blob from '../blob/blob';
 
 export default function LandingPage() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -20,11 +19,32 @@ export default function LandingPage() {
     };
   }, []);
 
+  useEffect(() => {
+    let cursor = document.getElementById('cursor');
+  
+    const handleMouseMove = (e: MouseEvent) => {
+      if (cursor) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        cursor.style.display = 'block'; 
+      }
+    };
+  
+    window.addEventListener('mousemove', handleMouseMove);
+  
+    return () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+  
+
   const isMobileScreen = typeof window !== 'undefined' && window.innerWidth <= 768;
+
 
 
   return (
     <>
+    
       {isMobileScreen ? (
         <MobileLandingPage />
       ) : (
@@ -41,28 +61,28 @@ export default function LandingPage() {
             opacity: 1,
           }}
           animate={{
-            opacity: 1 - scrollPosition / 100,
-            zIndex: 1 - (1 - (1 - scrollPosition / 100))
+            opacity: scrollPosition > 0 ? 0 : 1,
+            zIndex: scrollPosition > 0 ? -1 : 1,
           }}
         >
           <div className='landing'>
-          <div className="max-w-3xl ml-32 py-20 sm:px-6">
-            <div className="pt-32 pb-10 md:pt-40 md:pb-16">
-              <div className="max-w-3xl mx-auto text-left pb-12 md:pb-16">
-                <h1 className="text-3xl text-white font-bold relative">
-                  ALL YOUR DATA BELONGS TO YOU
-                  <span className='font-thin text-xl align-top absolute top-0.5 founder'><sup>TM</sup></span>
-                </h1>
-
-                <p className="md:text-2xl mb-14 text-gray-200 founder">
+            <div className="hex-container land">
+              <Blob/>
+            </div>
+            <div className="" id="cursor"></div>
+          </div>
+          <div className="text-container">
+            <div className="text-left">
+              <h1 className="landingText anime">all your <span className='italictext'>data</span> <br></br>belongs to you<sup><span className='tm'>TM</span></sup></h1>
+              <p className="md:text-lg text-gray-300 font mt-2 anime1">
                 Experience Next-Level Data Security : An AI-Powered,<br></br> Multi-Layered Fortress for Your Valuables.
-                </p>
-                <Link href="/contact" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
+              </p>
+              <div className='mt-14'>
+                <Link href="/company/contact" className="btnland">
                   Request a Demo
                 </Link>
               </div>
             </div>
-          </div>
           </div>
         </motion.section>
       )}

@@ -12,14 +12,14 @@ export default function TermsOfService() {
     <>
 
 
-      <section className=' p-5 md:px-72 md:pb-10 bg-[#f2f3f5] text-justify'>
+      <section className=' p-5 md:px-72 md:pb-10 '>
         <div>
-          <p className='text-gray-700 py-5 border-b border-gray-500 mark text-3xl'>Terms of Service</p>
+          <p className='text-gray-100 py-5 primary-color  text-5xl'>Terms of Service</p>
         </div>
         <div>
           <p className='mainText pt-5'>Terms
           </p><br />
-          <p className='subText'>By accessing the website at <Link href='https://www.Abluva.com' target='_blank' rel='noopener noreferrer' className='text-violet-800 underline'>Abluva.com</Link>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p><br /><br />
+          <p className='subText'>By accessing the website at <Link href='https://www.Abluva.com' target='_blank' rel='noopener noreferrer' className='primary-color underline'>Abluva.com</Link>, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and tradefont  law.</p><br /><br />
 
           <p className='mainText'>Use License
           </p><br />

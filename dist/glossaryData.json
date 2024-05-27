@@ -1,0 +1,21 @@
+{
+    "title": "Access Control | Abluva Glossary",
+    "description": "Expand your Knowledge with our Glossary",
+    "terms": [
+      {
+        "title": "Access Control",
+        "description": "Access control implements a security framework that restricts access to resources (systems, files, networks) based on predefined permissions and user identities. This safeguards sensitive information while ensuring authorized users have the necessary access to efficiently perform their tasks.",
+        "relatedTerms": [
+          {
+            "title": "Active Data Collection",
+            "description": "Active data collection involves the transparent and informed acquisition of user data through explicit actions like form submissions, surveys, or checkbox selections. This data is used to personalize user experiences, improve services, and gain valuable insights with the user's consent, fostering trust and transparency."
+          },
+          {
+            "title": "Anonymization",
+            "description": "Data anonymization transforms personally identifiable information (PII) into a state where it no longer pinpoints specific individuals. This often involves removing direct identifiers like names and addresses, or substituting them with generalized values. The goal is to enable data analysis and utilization while safeguarding individual privacy and adhering to data protection regulations."
+          }
+        ]
+      }
+    ]
+  }
+  

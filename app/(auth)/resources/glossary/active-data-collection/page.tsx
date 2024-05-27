@@ -1,0 +1,95 @@
+"use client"
+
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
+import '../glossary.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUpRightFromSquare, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+
+const GlossaryPage: React.FC = () => {
+  const [isCopied, setIsCopied] = useState<boolean>(false);
+  const handleCopyText = () => {
+    const textToCopy = mainTerm.description;
+    if (textToCopy) {
+      navigator.clipboard.writeText(textToCopy);
+      setIsCopied(true);
+      setTimeout(() => {
+        setIsCopied(false);
+      }, 1000);
+    }
+  };
+
+  const glossaryMeta = {
+    "title": "Active Data Collection | Abluva Glossary",
+    "description": "Expand your Knowledge with our Glossary"
+  };
+  
+  const mainTerm = {
+    "title": "Active Data Collection",
+    "description": "Active data collection involves the transparent and informed acquisition of user data through explicit actions like form submissions, surveys, or checkbox selections. This data is used to personalize user experiences, improve services, and gain valuable insights with the user's consent, fostering trust and transparency."
+  };
+  
+  const relatedTerms = [
+    {
+      "title": "Access Control",
+      "description": "Access control implements a security framework that restricts access to resources (systems, files, networks) based on predefined permissions and user identities. This safeguards sensitive information while ensuring authorized users have the necessary access to efficiently perform their tasks."
+    },
+    {
+      "title": "Anonymization",
+      "description": "Data anonymization transforms personally identifiable information (PII) into a state where it no longer pinpoints specific individuals. This often involves removing direct identifiers like names and addresses, or substituting them with generalized values. The goal is to enable data analysis and utilization while safeguarding individual privacy and adhering to data protection regulations."
+    }
+  ];
+
+  
+
+  const mainRelatedTerms = relatedTerms.filter(term => term.title !== mainTerm.title);
+
+  return (
+    <>
+      <Helmet>
+        <title>{glossaryMeta.title}</title>
+        <meta name="description" content={glossaryMeta.description} />
+      </Helmet>
+      <div className='glossary__page'>
+        <div className='navToGlossary'>
+          <a href="/resources/glossary" className='glossary__backLink'>Glossary</a>
+          <p><FontAwesomeIcon icon={faAngleRight} className="right__angle" /></p>
+          <p className='title__backLink'>{mainTerm.title}</p>
+        </div>
+        <div className='grid md:grid-cols-4 grid-cols-1 '>
+          <div className="md:col-span-3 main__term">
+            <div>
+              <h1 className='glossary__title'><img src="/icons/words.png" className='glossary__img' /><span className='glossary__word'>{mainTerm.title}</span></h1>
+              <p className='glossary__description'>{mainTerm.description}</p>
+              <div>
+                <button onClick={handleCopyText} className='glossary__copyButton'>
+                  {isCopied ? 'Copied' : 'Copy text'}
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className='py-5 glossary__relatedTerms'>
+              <p>Related Terms</p>
+            </div>
+            {mainRelatedTerms.map((term, index) => {
+              const href = `/resources/glossary/${term.title.replace(/\s+/g, '-').toLowerCase()}`;
+              return (
+                <div key={index} className='pt-12'>
+                  <h1 className='relatedTerm__title'>{term.title}</h1>
+                  <p className='relatedTerm__description'>{term.description.substring(0, 100)}...</p>
+                                    <a href={href}>
+                    <img src="/icons/link3.png" className="h-5 learnMoreLink" alt="link"/>
+                  </a>
+                </div>
+              );
+            })}
+
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default GlossaryPage;

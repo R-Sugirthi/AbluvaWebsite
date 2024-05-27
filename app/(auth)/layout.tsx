@@ -1,7 +1,8 @@
-import Head from 'next/head';
+
 import Header from "@/components/Layout/Header";
 import "../(default)/globals.css";
 import Footer from "@/components/Layout/Footer";
+import HexagonContainer from "@/components/Layout/hexagon";
 export default function AuthLayout({
   children,
 }: {
@@ -9,13 +10,10 @@ export default function AuthLayout({
 }) {  
   return (
     <>
-    <Head>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </Head>
     <main className="grow">
       <Header/>
       {children}
+      <HexagonContainer/>
       <Footer/>
     </main>
     </>

@@ -1,0 +1,748 @@
+/* 
+.bg-glossary {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1)10%, rgba(0, 0, 0, 0)),linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url("https://img.freepik.com/free-vector/dark-background-with-dynamic-shapes_23-2148865191.jpg?w=740&t=st=1708002452~exp=1708003052~hmac=79b4db9d50d2780d9b3ae5b5a30db2a9d5529930882f6ba97c847ca1bba2dde3");
+  background-size: 100% 100%;
+  height:90vh;
+}
+
+.py-4 {
+padding-top: 4rem;
+padding-bottom: 4rem;
+}
+
+.mb-6 {
+margin-bottom: 6rem;
+}
+
+
+.form-control {
+box-shadow: none;
+padding: 13px 50px 13px 50px;
+height: 40px;
+background:transparent;
+color: #ffffff;
+border-radius: 50px;
+border-color: #A855F7;
+}
+
+.form-control:focus, .form-control.input-focus {
+box-shadow: none !important;
+border-color: #A855F7;
+}
+
+.card {
+box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+border-radius: 5px;
+overflow: hidden;
+
+}
+
+.card__content {
+padding: 30px;
+font-size: 14px;
+line-height: 22px;
+margin-bottom: 20px;
+}
+.card__content:hover{
+outline:1px solid #A855F7;
+
+}
+.card__content p:last-child {
+margin-bottom: 0;
+}
+.card__title {
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+ color: #ececec;
+}
+.glossary__container{
+  position: sticky;
+  top:30px;
+  z-index: 999;
+}
+
+.card__title a:hover, .card__title a:focus {
+color: #A855F7;
+text-decoration: none;
+}
+
+.glossary__nav__item.active a {
+color: #FFF;
+background-color: #A855F7;
+}
+.glossary__nav__item a {
+width: 30px;
+height: 30px; 
+font-size: 16px;
+color: #ffffff;
+text-decoration: none;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #2b2b2b;
+}
+
+.glossary__nav__item a:hover, .glossary__nav__item a:focus {
+color: #FFF;
+background-color: #A855F7;
+}
+.glossary__nav__item a.card__content {
+padding: 13px 10px;
+margin-bottom: 5px;
+border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+  
+
+  .list-inline {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card__content {
+    padding: 20px; 
+  }
+
+  .glossary__nav__item a {
+    width: 30px;
+    height: 30px; 
+    font-size: 16px; 
+    margin: 5px; 
+  }
+}
+
+.glossary__results__row {
+overflow: hidden;
+margin-bottom: 40px;
+transition: all 0.4s ease-in-out;
+}
+.glossary__results__row:last-child {
+margin-bottom: 0;
+}
+.glossary__results__row.inactive {
+opacity: 0;
+height: 0;
+margin: 0;
+width: 100%;
+}
+.glossary__results__term {
+color: #A855F7;
+margin-bottom: 35px;
+font-size: 20px;
+}
+.glossary__results__item {
+margin-bottom: 20px;
+}
+.glossary__results__item a {
+display: block;
+text-decoration: none;
+color: #fefeff;
+}
+.glossary__results__item a.card {
+border: 1px solid transparent;
+}
+.glossary__results__item a:hover {
+border-color: #A855F7;
+}
+.glossary__results__item a:hover .card__title {
+color: #A855F7;
+}
+
+.title-style--three {
+position: relative;
+padding-top: 20px;
+padding-bottom: 10px;
+}
+.title-style--three:after {
+content: "";
+background: #A855F7;
+width: 60px;
+height: 3px;
+position: absolute;
+left: 0;
+bottom: 0;
+border-radius: 30px;
+}
+.list-inline {
+display: flex;
+justify-content: space-between;
+}
+.search-icon {
+position: absolute;
+left: 10px;
+padding-right: 10px;
+top: 50%;
+transform: translateY(-50%);
+pointer-events: none;
+}
+.input-container{
+position: relative;
+}
+
+
+.glossaryLetter{
+color:#A855F7;
+}
+
+.glossary__results__item {
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+grid-gap: 50px; 
+}
+
+@media (max-width: 767px) {
+  .glossary__results__item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    grid-gap: 20px; 
+    }
+}
+
+
+
+.glossary__results__term {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.up-arrow-icon {
+  color: #a855f7;
+  margin-right:2px;
+}
+
+.glossary__link{
+font-size: 17px;
+font-display: swap;
+}
+
+.glossary__page {
+  background-color: black;
+  padding: 5% 10%;
+  overflow: auto;
+}
+
+.main__term{
+  padding-right:10%;
+  padding-top: 10%;
+}
+.glossary__title{
+      font-family: "Sofia Pro Light";
+      font-size: 50px;
+      color:  #EDF2F7;
+      font-weight: 500;
+      line-height: 60px;
+      border-bottom-width: 1px;
+      border-bottom-color: #272727;
+      padding-bottom: 1.5rem;
+      display: flex;
+      
+}
+@media (max-width: 767px) {
+  .glossary__title {
+    font-size: 35px; 
+    line-height: 40px; 
+  }
+}
+@media (max-width: 767px) {
+  .glossary__page {
+    padding: 20% 5%;
+  }
+}
+@media (max-width: 767px) {
+  .main__term{
+    padding-right:0%;
+    padding-top: 30%;
+  }
+}
+
+.glossary__description {
+  font-family: "Sofia Pro Light";
+  font-size: 20px;
+  color:  #CBD5E0;
+  line-height: 29px;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  padding-top: 45px;
+  font-weight: lighter;
+}
+.glossary__img{
+  margin-right:12px;
+  height: 60px;
+}
+@media (max-width: 767px) {
+  .glossary__img{
+    margin-right:12px;
+    height: 40px;
+  }
+  .glossary__relatedTerms{
+   margin-top: 80px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.glossaryWord{
+  color:#A855F7;
+
+}
+.glossary__copyButton{
+  color: #979797;
+  margin-top: 80px;
+  padding: 5px 20px;
+  border: 1px solid #5b21b6;
+  border-radius: 9999px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.glossary__copyButton:hover {
+  color: #cbd5e0;
+  border-color: #805ad5;
+}
+.glossary__relatedTerms{
+  color: #d1d0d0;
+  font-size: 1.5rem; 
+  border-bottom: 1px solid #272727;
+}
+.relatedTerm__title{
+  font-size: 1.25rem; 
+  color: #d1d0d0;
+  padding-bottom: 0.75rem; 
+}
+.relatedTerm__description{
+  color: #919191; 
+  margin-bottom: 0.75rem;
+}
+.learnMoreLink {
+  color: #a855f7; 
+  margin-top: 10px;
+}
+.learnMoreLink {
+  color: #a855f7;
+  margin-top: 10px;
+  transition: transform 0.2s;
+}
+
+.learnMoreLink:hover {
+  transform: scale(1.1);
+}
+
+.navToGlossary {
+  display: flex;
+  font-size: 14px;
+}
+.right__angle{
+  margin: 0px 12px;
+  color: #A855F7;
+}
+.glossary__backLink{
+  color:  #CBD5E0;
+}
+.glossary__backLink:hover{
+  color:  #e2e6eb;
+}
+.title__backLink{
+color: #979797;
+}
+ */
+
+ :root {
+  --primary-color-glossary: #351c75;
+  --secondary-color: #CBD5E0;
+  --background-color: #ffffff;
+  --text-color: #ffffff;
+  --border-color: #83838333;
+}
+
+.bg-glossary {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0)80%, #030011),linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000), url("https://img.freepik.com/free-vector/dark-background-with-dynamic-shapes_23-2148865191.jpg?w=740&t=st=1708002452~exp=1708003052~hmac=79b4db9d50d2780d9b3ae5b5a30db2a9d5529930882f6ba97c847ca1bba2dde3");
+  background-size: 100% 100%;
+  height:90vh;
+}
+
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.form-control {
+  box-shadow: none;
+  padding: 13px 50px 13px 50px;
+  height: 40px;
+  background:transparent;
+  color: var(--text-color);
+  border-radius: 50px;
+  border-color: var(--primary-color-glossary);
+}
+
+.form-control:focus, .form-control.input-focus {
+  box-shadow: none !important;
+  border-color: var(--primary-color-glossary);
+}
+
+.card {
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card__content {
+  padding: 30px;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.card__content:hover {
+  outline: 1px solid var(--primary-color-glossary);
+}
+
+.card__content p:last-child {
+  margin-bottom: 0;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-color);
+}
+
+.glossary__container {
+  position: sticky;
+  top: 30px;
+  z-index: 999;
+}
+
+.card__title a:hover, .card__title a:focus {
+  color: var(--primary-color-glossary);
+  text-decoration: none;
+}
+
+.glossary__nav__item.active a {
+  color: var(--text-color);
+  background-color: var(--primary-color-glossary);
+}
+
+.glossary__nav__item a {
+  width: 30px;
+  height: 30px; 
+  font-size: 16px;
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--primary-color-glossary); */
+  border:1px solid var(--primary-color-glossary)
+}
+
+.glossary__nav__item a:hover, .glossary__nav__item a:focus {
+  color: var(--background-color);
+  background-color: var(--primary-color-glossary);
+  font-weight: 600;
+}
+
+.glossary__nav__item a.card__content {
+  padding: 13px 10px;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+  .list-inline {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card__content {
+    padding: 20px;
+  }
+
+  .glossary__nav__item a {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    margin: 5px;
+  }
+}
+
+.glossary__results__row {
+  overflow: hidden;
+  margin-bottom: 40px;
+  transition: all 0.4s ease-in-out;
+}
+
+.glossary__results__row:last-child {
+  margin-bottom: 0;
+}
+
+.glossary__results__row.inactive {
+  opacity: 0;
+  height: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.glossary__results__term {
+  color: var(--secondary-color);
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+.glossary__results__item {
+  margin-bottom: 20px;
+}
+
+.glossary__results__item a {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.glossary__results__item a.card {
+  border: 1px solid transparent;
+}
+
+.glossary__results__item a:hover {
+  border-color: var(--primary-color-glossary);
+}
+
+.glossary__results__item a:hover .card__title {
+  color: var(--primary-color-glossary);
+}
+
+.title-style--three {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.title-style--three:after {
+  content: "";
+  background: var(--primary-color-glossary);
+  width: 60px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 30px;
+}
+
+.list-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  padding-right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.input-container {
+  position: relative;
+}
+
+.glossaryLetter {
+  color: var(--primary-color-glossary);
+}
+
+.glossary__results__item {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+@media (max-width: 767px) {
+  .glossary__results__item {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+.glossary__results__term {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.up-arrow-icon {
+  color: var(--primary-color-glossary);
+  margin-right: 2px;
+}
+
+.glossary__link {
+  font-size: 17px;
+  font-display: swap;
+}
+
+.glossary__page {
+  background-color: var(--default-color);
+  padding: 5% 10%;
+  overflow: auto;
+}
+
+.main__term {
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+.glossary__title {
+  font-family: "Sofia Pro Light";
+  font-size: 50px;
+  color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 60px;
+  border-bottom-width: 1px;
+  border-bottom-color: var(--border-color);
+  padding-bottom: 1.5rem;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .glossary__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .glossary__page {
+    padding: 20% 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__term {
+    padding-right: 0%;
+    padding-top: 30%;
+  }
+}
+
+.glossary__description {
+  font-family: "Sofia Pro Light";
+  font-size: 20px;
+  color: var(--secondary-color);
+  line-height: 29px;
+  opacity: 0;
+  animation: fadeIn 3s forwards;
+  padding-top: 45px;
+  font-weight: lighter;
+}
+
+.glossary__img {
+  margin-right: 12px;
+  height: 60px;
+}
+
+@media (max-width: 767px) {
+  .glossary__img {
+    margin-right: 12px;
+    height: 40px;
+  }
+  .glossary__relatedTerms {
+    margin-top: 80px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.glossaryWord {
+  color: var(--primary-color-glossary);
+}
+
+.glossary__copyButton {
+  color: #979797;
+  margin-top: 80px;
+  padding: 5px 20px;
+  border: 1px solid var(--primary-color-glossary);
+  border-radius: 9999px;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.glossary__copyButton:hover {
+  color: var(--secondary-color);
+  border-color: var(--primary-color-glossary);
+}
+
+.glossary__relatedTerms {
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.relatedTerm__title {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  padding-bottom: 0.75rem;
+}
+
+.relatedTerm__description {
+  color: #919191;
+  margin-bottom: 0.75rem;
+}
+
+.learnMoreLink {
+  color: var(--primary-color-glossary);
+  margin-top: 10px;
+}
+
+.learnMoreLink:hover {
+  transform: scale(1.1);
+}
+
+.navToGlossary {
+  display: flex;
+  font-size: 14px;
+}
+
+.right__angle {
+  margin: 0px 12px;
+  color: var(--primary-color-glossary);
+}
+
+.glossary__backLink {
+  color: var(--secondary-color);
+}
+
+.glossary__backLink:hover {
+  color: var(--secondary-color);
+}
+
+.title__backLink {
+  color: #979797;
+}
+

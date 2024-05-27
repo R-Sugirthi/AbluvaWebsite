@@ -30,7 +30,7 @@
 
 .form-checkbox,
 .form-radio {
-    @apply text-violet-950;
+    @apply text-green-500;
 }
 
 .form-input:focus,

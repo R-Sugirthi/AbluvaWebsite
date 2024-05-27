@@ -1,53 +1,54 @@
 import Link from 'next/link';
-import '../style.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons';
 
 interface CardProps {
-  imageSrc: string;
-  tag1?: string; 
+  tag1?: string;
   tag2?: string;
   tag3?: string;
-  description: string;
+  tag4?: string;
   section: string;
   date: string;
   link: string;
+  description: string;
 }
 
-function Card({ imageSrc, tag1,tag2,tag3, section, date, link, description }: CardProps) {
-  
+const patterns = ['pattern-1', 'pattern-2', 'pattern-3', 'pattern-4', 'pattern-5'];
+
+function shuffleArray(array: string[]) {
+  const shuffledArray = array.slice();
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
+
+function Card({ tag1, tag2, tag3, tag4, section, date, link, description }: CardProps) {
+  const shuffledPatterns = shuffleArray(patterns);
+  const pattern = shuffledPatterns[0]; 
+
   return (
     <div>
-      <div className='image-container'>
-        <img
-          className="img2 rounded-2xl"
-          src={imageSrc}
-        
-        />
+      <div className={`image-container rounded-2xl ${pattern}`} style={{ height: '250px', width: '100%' }}>
         <div className='image-overlay rounded-2xl'></div>
       </div>
       <div className="py-4">
-      <div className='flex'>
-          <div className="text-[#d9dbe2] font-bold">{section} . </div>
-          {tag3 ? (
-            <div className='ml-2'>
-              <span className='link font-semibold'>{tag1}</span>
-              {tag2 && <span className='mx-2 link font-semibold'>{tag2}</span>}
-              {tag3 && <span className='link font-semibold'>{tag3}</span>}
-            </div>
-          ) : (
-            <div className='ml-2'>
-              {tag1 && <span className='link font-semibold'>{tag1}</span>}
-              {tag2 && <span className='mx-2 link font-semibold'>{tag2}</span>}
-            </div>
-          )}
+        <div className='flex text-xs font-semibold'>
+          <div className="text-gray-400">{section}<span className='ml-2 text-gray-500 square'>&#9642;</span> </div>
+          <div className='ml-2'>
+            {tag1 && <span className='tag'>{tag1}</span>}
+            {tag2 && <span className='mx-2 tag'>{tag2}</span>}
+            {tag3 && <span className='tag'>{tag3}</span>}
+            {tag4 && <span className='mx-2 tag'>{tag4}</span>}
+          </div>
         </div>
-        <p className="text-2xl text-white gradient-text py-5">
-          <Link href={link}>{description}</Link>
-        </p>
       </div>
-      <div className="pt-2" >
-        <span className="inline-block rounded-full text-sm text-gray-500">{date}</span>
+      <p className="text-2xl fonttext-white gradient-text py-5">
+        <Link href={link}>{description}</Link>
+      </p>
+      <div>
+        <span className="inline-block rounded-full text-xs text-gray-400">{date}</span>
       </div>
     </div>
   );
@@ -55,32 +56,32 @@ function Card({ imageSrc, tag1,tag2,tag3, section, date, link, description }: Ca
 
 export default function BlogPage() {
   return (
-    <section className='mt-30 px-4 md:px-60 py-20'>
+    <section className='mt-30 px-5 md:px-52 py-20'>
       <div>
         <div className='flex flex-col md:flex-row justify-between md:items-center py-5'>
-          <div className='text-3xl mark'>Latest</div>
-          <div><Link href="/allinsights" className='text-md all-insights mark'>All insights<span className='text-sm text-white'> <FontAwesomeIcon icon={faAngleRight}/> </span></Link></div>
+          <div className='text-3xl founder'>Latest</div>
+          <div><Link href="/insights" className='text-sm boldfont '>All insights <span className='text-xs'> <FontAwesomeIcon icon={faAngleRight} /> </span></Link></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 justify-center">
-          <Card
-           imageSrc="https://img.freepik.com/premium-photo/discussion-young-caucasian-business-woman-modern-office-with-team-meeting-tasks-giving-women-front-office-working-concept-finance-business-girl-power-inclusion-diversity-feminism_155003-39900.jpg?w=740"
-           tag1="Security"
-           tag2="Compliance"
-           section="Blog"
-           description="Changing Paradigms in Data Security"
-           date="14 Dec 2023"
-           link="/insights/blogs/changing-paradigms-data-security"
+        <Card
+            tag1="Cybersecurity"
+            tag2="Best Practices"
+            section="eBook"
+            description="A Common Sense & Collaborative Approach to Information and Cyber Security"
+            date="18 Mar 2024"
+            link="/insights/ebooks/ebook-common-sense-collaborative-approach-to-information-and-cyber-security"
           />
           <Card
-            imageSrc="https://img.freepik.com/free-photo/group-people-with-laptops_23-2147993343.jpg?w=740&t=st=1701942478~exp=1701943078~hmac=be64ef6d595dc662a8486c06cdea82c3fb4e24dbc7d8cd71017eb3a87b14eb63"
-            tag1="Access"
-            tag2="Privacy"
-            tag3="Governance"
+            tag1="AI"
+            tag2="ML"
+            tag3="IDS"
+            tag4="Datasets"
             section="Blog"
-            description="Selecting Right Data Protection Technologies"
-            date="10 Dec 2023"
-            link="/insights/blogs/selecting-right-data-protection-technologies"
+            description="Key Datasets for Anomalous Intrusion Detection Systems in 2024"
+            date="16 Feb 2024"
+            link="/insights/blogs/key-datasets-anomalous-intrusion-detection-systems-2024"
           />
+        
         </div>
       </div>
     </section>

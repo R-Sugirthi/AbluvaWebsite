@@ -43,7 +43,7 @@ const EbookForm: React.FC<EbookFormProps> = () => {
   };
 
   return (
-    <section className='sm:px-10 p-10 md:px-52 md:pb-52 sm:py-8 bg-black text-justify'>
+    <section className='sm:px-10 p-10 md:px-52 md:pb-52 sm:py-8 bg-dark text-justify'>
       <div>
         <form onSubmit={handleFormSubmit}>
           <label htmlFor='email'>Email Address :</label><br></br>

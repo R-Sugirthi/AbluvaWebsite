@@ -1,26 +1,22 @@
 import Link from 'next/link';
-import './style.css';
-
 
 export default function TopHeader() {
   return (
-    <header className="w-full z-30 bg-[#131318] top hidden-mobile">
+    <header className="w-full hidden-mobile top-header">
       <div className="max-w-8xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-10">
-          <nav className='md:flex md:grow'>
+          <nav className='md:flex md:grow topheader'>
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
                 <Link
-                  href="/company/about"
-                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
+                  href="/company/about"                 
                 >
                   About
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/company/news"
-                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
+                  href="/company/news"    
                 >
                   News & Events
                 </Link>
@@ -28,7 +24,7 @@ export default function TopHeader() {
               <li>
                 <Link
                   href="/company/careers"
-                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
+                  
                 >
                   Careers
                 </Link>
@@ -36,16 +32,14 @@ export default function TopHeader() {
               
               <li>
                 <Link
-                  href="https://abluva.freshdesk.com/support/home" rel='noopener noreferrer'
-                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white">
-                
+                  href="https://abluva.freshdesk.com/support/home" rel='noopener noreferrer' target="_blank"
+                  >
                   Support
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/company/contact"
-                  className="font-medium px-4 py-3 flex items-center transition duration-150 ease-in-out text-[#c4c8d3] hover:text-white"
+                  href="/company/contact" 
                 >
                   Contact
                 </Link>

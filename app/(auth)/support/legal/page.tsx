@@ -8,9 +8,9 @@ export default function Legal() {
   return (
     <>
       
-      <section className='p-5  md:px-72 md:pb-10  bg-[#f2f3f5] text-justify'>
+      <section className='p-5  md:px-72 md:pb-10  '>
       <div>
-          <p className='text-gray-700 py-5 border-b border-gray-500 mark text-3xl'>Legal</p>
+          <p className='text-gray-100 py-5 primary-color text-5xl'>Legal</p>
         </div>
         <div>
           <p className='mainText pt-5'>Definitions

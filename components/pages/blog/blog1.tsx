@@ -1,18 +1,18 @@
 import Link from 'next/link';
 export default function Blog1() {
   return (
-    <section className='p-5 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+    <section className='p-5 md:px-72 md:pb-10 sm:py-8'>
+      {/* <div>
+        <p className='text-gray-500 py-5 border-b border-gray-500 font'>Explore</p>
+      </div> */}
       <div>
-        <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Explore</p>
-      </div>
-      <div>
-        <p className='mainSubText pt-5'>In this article, we will explore some of the key changing paradigms in data security. We will discuss the impact of the changing nature of data, the need for compliance and regulations, and geopolitical requirements. We will also provide some best practices for developing and implementing effective data security strategies in this changing landscape.</p><br></br><br></br>
+        <p className='subText pt-5'>In this article, we will explore some of the key changing paradigms in data security. We will discuss the impact of the changing nature of data, the need for compliance and regulations, and geopolitical requirements. We will also provide some best practices for developing and implementing effective data security strategies in this changing landscape.</p><br></br><br></br>
         <p className='mainText'>The Changing Nature of Data</p><br></br>
         <p className='subText'>
           Data is becoming increasingly diverse and complex. Traditional structured data, such as data stored in relational databases, is still important. These were followed by non-relational databases (NoSQL, Document, Graph databases). The organizations are increasingly collecting and storing unstructured data, such as text, images, and video. Unstructured data can be more difficult to protect than structured data because it is often difficult to identify and classify.
         </p><br></br>
         <p className='subText'>In addition, data is increasingly being stored and processed in a variety of different data stores, including relational databases, NoSQL databases, data lakes, and cloud storage. This makes it more challenging to implement and manage security controls across all of the different data stores.</p><br></br>
-        <p className='text-violet-900 italic text-xl'>
+        <p className='primary-color italic text-lg'>
           "The changing nature of data is one of the most defining trends of our time. Data is becoming increasingly diverse, complex, and abundant. This is creating new opportunities for business and governments, but it is also posing new challenges." - BoozeAllen</p><br></br>
         <p className='subText'>Finally, many organizations are now operating in multi-cloud environments, with data stored and processed in multiple different cloud providers. This makes it even more complex to implement and manage security controls.</p><br></br><br></br>
         <p className='mainText'>The Need for Compliance and Regulations
@@ -60,9 +60,9 @@ export default function Blog1() {
             <li>Have a plan in place for responding to data breaches. Data breaches are a reality of today's world. Organizations need to have a plan in place for responding to data breaches. This plan should include steps for identifying and containing the breach, notifying affected individuals, and recovering from the breach.</li><br />
             <li>Invest in security technology. Organizations need to invest in security technology to protect their data from unauthorized access, use, disclosure, disruption, modification, or destruction. Security technology can include firewalls, intrusion detection systems, data encryption, and access control systems. A good data security should provide Access control systems, Data depersonalization, Governance and Compliance, with comprehensive Audit and reporting capabilities. Organizations need to choose the right security technology for their needs based on the size of the organization, the industry, and the budget.</li>
           </ul><br></br>
-          <p className='text-violet-900 italic text-xl'>
+          <p className='primary-color italic text-xl text-center'>
             "Security is not a cost centre, it's an investment" - Robert Gates</p><br></br>
-          <span className='mainSubText'>Abluva’s Graphene provides a comprehensive set of solutions to protect organisation’s data from breaches and protect it even after a breach. For more information on graphene, its capabilities and how it can help you against malicious data breaches, drop us a line at <Link href='mailto:connect@abluva.com' className='text-violet-800 underline'>connect@abluva.com</Link></span></p>
+          <span className='mainSubText'>Abluva’s Graphene provides a comprehensive set of solutions to protect organisation’s data from breaches and protect it even after a breach. For more information on graphene, its capabilities and how it can help you against malicious data breaches, drop us a line at <Link href='mailto:connect@abluva.com' className='primary-color underline'>connect@abluva.com</Link></span></p>
       </div>
     </section>
   )

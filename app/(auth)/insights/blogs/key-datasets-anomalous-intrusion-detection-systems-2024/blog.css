@@ -1,0 +1,20 @@
+
+
+.text-gradient {
+    background: linear-gradient(to right,rgb(124, 88, 168),rgb(235, 167, 234));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+.link {
+    background-color: rgb(144, 96, 188, 0.3);
+    color: rgb(203, 172, 233);
+    padding: 8px;
+    border-radius: 3px;
+  }
+  .link:hover {
+    background: linear-gradient(to right, rgb(43, 18, 74), rgb(115, 57, 186));
+    color: white;
+    box-shadow: 0 0 20px rgba(161, 130, 200, 0.3);
+  }

@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin
+
+# Host
+Host: https://abluva.com
+
+# Sitemaps
+Sitemap: https://abluva.com/sitemap.xml

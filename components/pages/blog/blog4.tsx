@@ -1,10 +1,10 @@
 
 export default function Blog4() {
   return (
-    <section className='p-5 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
-      <div>
-        <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Explore</p>
-      </div>
+    <section className='p-5 md:px-72 md:pb-10 sm:py-8'>
+      {/* <div>
+        <p className='text-gray-500 py-5 border-b border-gray-500 font'>Explore</p>
+      </div> */}
       <div>
         <p className='mainText'>Introduction</p><br />
         <p className='subText'>
@@ -15,7 +15,7 @@ export default function Blog4() {
           Neglect in this domain carries profound consequences—a single breach possesses the potential to undermine trust, disrupt financial stability, and tarnish reputations. In the digital landscape, where information reigns supreme, security posture emerges as the unwavering shield against the tumultuous forces that aim to disrupt the established order.
         </p><br />
 
-        <p className='subText'>As we embark on this enlightening journey, brace yourself to fortify the digital domain. It's a path marked by empowerment and protection, and it commences right here.
+        <p className='subText'>As we embark on this enlightening journey, brace yourself to fortify the digital domain. It's a path fonted by empowerment and protection, and it commences right here.
         </p><br /><br />
 
         <p className='mainText'>What Is a Security Posture?
@@ -117,7 +117,7 @@ export default function Blog4() {
         <p className='subText'>
           <span className='font-bold'>
             Compliance and Regulatory Adherence:
-          </span>Depending on your industry, compliance with specific regulations and standards is mandatory. It's not merely a matter of legal obligation; it's a fundamental aspect of your Security Posture, ensuring that your security measures align with industry benchmarks.
+          </span>Depending on your industry, compliance with specific regulations and standards is mandatory. It's not merely a matter of legal obligation; it's a fundamental aspect of your Security Posture, ensuring that your security measures align with industry benchfont s.
         </p><br />
 
         <p className='subText'>

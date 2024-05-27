@@ -1,10 +1,10 @@
 
 export default function Blog3() {
   return (
-    <section className='p-5 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
-      <div>
-        <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Explore</p>
-      </div>
+    <section className='p-5 md:px-72 md:pb-10 sm:py-8 '>
+      {/* <div>
+        <p className='text-gray-500 py-5 border-b border-gray-500 font'>Explore</p>
+      </div> */}
       <div>
         <p className='mainText pt-5'>Introduction</p><br />
         <p className='mainSubText'>The Growing Significance of Cloud Computing</p><br />

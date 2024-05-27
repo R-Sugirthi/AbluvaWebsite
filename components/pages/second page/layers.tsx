@@ -1,6 +1,5 @@
 "use client"
 import MobileLayers from "./MobileLayers";
-import "./style.css";
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
@@ -149,9 +148,9 @@ import React, { useEffect, useState } from 'react';
         <MobileLayers />
       ) : (
          <div className="flex relative index h-full" style={containerStyle}>
-          <div className="w-1/6">
-            <nav className="nav fixed py-40 mark">
-              <ul>
+          <div className="w-1/6 vertical-nav">
+            <nav className="nav fixed py-40 ">
+              <ul className="text-gray-200">
                 <li className="nav-item">
                   <Link href="#section1">Discover</Link>
                 </li>
@@ -175,8 +174,8 @@ import React, { useEffect, useState } from 'react';
                 <div>
                 Uncover strategic insights and actionable intelligence through thorough data and behaviour discovery.<br />
                   <div className="py-5">
-                    <Link href="/discover" className="btn-md text-lg text-white bg-violet-950  font-bold py-4 p-3 rounded-md mark">
-                      Learn More
+                    <Link href="/discover" className="btn">
+                      Learn more
                     </Link>
                   </div>
                 </div>
@@ -187,8 +186,8 @@ import React, { useEffect, useState } from 'react';
                 Secure your data with fine-grain access controls, dynamic masking, and advanced safeguards for unmatched protection with no performance penalty.<br />
                   <div className="py-5">
                     <Link href="/protect"
-                      className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
-                      Learn More
+                      className="btn">
+                      Learn more
                     </Link>
                   </div>
                 </div>
@@ -199,8 +198,8 @@ import React, { useEffect, useState } from 'react';
                 Comprehensive oversight, real-time reporting, and intuitive dashboards for regulatory adherence and peace of mind.
                   <br />
                   <div className="py-5">
-                    <Link href="/graphene/compliance-enablement" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
-                      Learn More
+                    <Link href="/graphene/compliance-enablement" className="btn">
+                      Learn more
                     </Link>
                   </div>
                 </div>
@@ -210,8 +209,8 @@ import React, { useEffect, useState } from 'react';
                 <div>
                 Uncover new revenue streams, optimize processes, and foster collaboration for unparalleled value extraction from every byte.<br />
                   <div className="py-5">
-                    <Link href="/extend" className="btn-md text-lg text-white bg-violet-950 font-bold py-4 p-3 rounded-md mark">
-                      Learn More
+                    <Link href="/extend" className="btn">
+                      Learn more
                     </Link>
                   </div>
                 </div>
@@ -219,28 +218,38 @@ import React, { useEffect, useState } from 'react';
             </main>
           </div>
           <div className="w-1/2 pr-10">
-            <div className='bg-[url("https://img.freepik.com/free-photo/metaverse-avatar-collage-concept_52683-96425.jpg?w=740&t=st=1701764690~exp=1701765290~hmac=16c8db539b66322b9084e469a2ac3bab74f76edc4db24f6fa4ae86ac050fd04d")] fixed image1 rounded-3xl transition-opacity'>
-              <div className="text-white description text-md">
-                <span className="text-xs font-bold">Discover</span><br></br>
-                Transform data into strategy with Graphene, unlocking insights for decisive action.
+            <div className='bg-[url("/images/pattern2.jpg")] fixed image1 rounded-3xl transition-opacity'>
+              <div className="ml-4">
+              <div className="description">
+                <p className="text-xs mb-3 text-gray-300">Discover</p>
+                <p  className=" text-md founder"> Transform data into strategy with Graphene, unlocking insights for decisive action.</p>
+              </div>
               </div>
             </div>
-            <div className='bg-[url("https://img.freepik.com/premium-photo/access-personal-financial-data-with-futuristic-biometric-fingerprint-scanner-smartphone-surveillance-security-scanning-digital-programs-cyber-applications-future-secure-identity_143683-12503.jpg?w=740")] h-96 fixed image2 rounded-3xl transition-opacity'>
-              <div className="text-white description text-md">
-                <span className="text-xs font-bold">Protect</span><br></br>
-                Guardian of Data: Graphene shields your information with precision and strength. 
+            <div className='bg-[url("/images/pattern16.jpg")] h-96 fixed image2 rounded-3xl transition-opacity'>
+              
+              <div className="ml-4">
+              <div className="description">
+                <p className="text-xs mb-3 text-gray-300 ">Protect</p>
+                <p  className="text-md founder">Guardian of Data: Graphene shields your information with precision and strength. </p>
+              </div>
+              </div>
+
+            </div>
+            <div className='bg-[url("/images/wave4.jpg")] h-96 fixed image3 rounded-3xl transition-opacity'>
+              <div className="ml-4">
+              <div className="description">
+                <p className="text-xsmb-3 text-gray-300">Monitor</p>
+                <p  className=" text-md founder">Navigate Compliance effortlessly: Graphene's real-time insights, your peace of mind.</p>
+              </div>
               </div>
             </div>
-            <div className='bg-[url("https://img.freepik.com/premium-photo/attractive-young-woman-working-home-night_688382-1477.jpg?w=740")] h-96 fixed image3 rounded-3xl transition-opacity'>
-              <div className="text-white description text-md">
-                <span className="text-xs font-bold">Monitor</span><br></br>
-                Navigate Compliance effortlessly: Graphene's real-time insights, your peace of mind.
+            <div className='bg-[url("/images/pattern8.jpg")] h-96 fixed image4 rounded-3xl transition-opacity'>
+              <div className="ml-4">
+              <div className="description">
+                <p className="text-xsmb-3 text-gray-300">Extend</p>
+                <p  className=" text-md founder"> Graphene - Elevate your data game, turning insights into opportunities.</p>
               </div>
-            </div>
-            <div className='bg-[url("https://img.freepik.com/premium-photo/beautiful-blonde-girl-pinkblue-lighting-presses-checkmark-button-virtual-display-with-neon-purple-hologram-air_136863-3535.jpg?w=740")] h-96 fixed image4 rounded-3xl transition-opacity'>
-              <div className="text-white description text-md">
-                <span className="text-xs font-bold">Extend</span><br></br>
-                Graphene - Elevate your data game, turning insights into opportunities.
               </div>
             </div>
           </div>

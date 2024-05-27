@@ -1,12 +1,12 @@
 import Link from 'next/link';
 export default function Blog2() {
   return (
-    <section className='p-5 md:px-72 md:pb-10 sm:py-8 bg-[#f2f3f5] text-justify'>
+    <section className='p-5 md:px-72 md:pb-10 sm:py-8'>
+      {/* <div>
+        <p className='text-gray-500 py-5 border-b border-gray-500 font'>Explore</p>
+      </div> */}
       <div>
-        <p className='text-gray-500 py-5 border-b border-gray-500 mark'>Explore</p>
-      </div>
-      <div>
-        <p className='mainSubText pt-5'>In today's digital world, data is more valuable than ever before, and organizations of all sizes need to have robust data protection measures in place.</p><br/><br/>
+        <p className='subText pt-5'>In today's digital world, data is more valuable than ever before, and organizations of all sizes need to have robust data protection measures in place.</p><br/><br/>
         <p className='mainText'>What are data protection technologies?</p><br/>
         <p className='subText'>
         Data protection technologies are a wide range of tools and software that can be used to protect data from unauthorized access, use, disclosure, disruption, modification, or destruction. Some of the most common data protection technologies include:
@@ -97,7 +97,7 @@ export default function Blog2() {
             <ul className='list-disc'>
               <li>The type of data you need to protect: This includes structured data (such as customer records and financial data), unstructured data (such as emails, documents, and images), and semi-structured data (such as XML and JSON files).
               </li><br />
-              <li>The level of security you need: This depends on the sensitivity of your data and the risks it faces. For example, you may need more robust data protection technologies for financial data than for marketing data.
+              <li>The level of security you need: This depends on the sensitivity of your data and the risks it faces. For example, you may need more robust data protection technologies for financial data than for fonteting data.
               </li><br />
               <li>Your budget: Data protection technologies can range in price from free to very expensive. You need to choose technologies that fit your budget and your security needs.
               </li><br />
@@ -153,7 +153,7 @@ export default function Blog2() {
           By following these tips, you can choose data protection technologies that will help you to protect your data from unauthorized access, use, disclosure, disruption, modification, or destruction.
         </p><br/>
         <p className='subText'>
-        Abluva’s Graphene provides a comprehensive set of tools for data protection across various data storage solutions. Graphene makes data protection natural and compliance and gives control of data security back in the hands of data owners and custodians removing the IT as middleman.  Graphene is developed with built in AI models to assist in Intrusion based on proprietary research and proven models. For more information on Graphene connect us at <Link href='mailto:connect@abluva.com' className='text-violet-800 underline'>connect@abluva.com</Link>
+        Abluva’s Graphene provides a comprehensive set of tools for data protection across various data storage solutions. Graphene makes data protection natural and compliance and gives control of data security back in the hands of data owners and custodians removing the IT as middleman.  Graphene is developed with built in AI models to assist in Intrusion based on proprietary research and proven models. For more information on Graphene connect us at <Link href='mailto:connect@abluva.com' className='primary-color underline'>connect@abluva.com</Link>
         </p><br/><br/>
       </div>
     </section>

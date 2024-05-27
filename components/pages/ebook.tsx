@@ -44,9 +44,9 @@ export default function EbookPage() {
             imageSrc="https://img.freepik.com/free-photo/standard-quality-control-collage-concept_23-2149595835.jpg?w=740&t=st=1700441701~exp=1700442301~hmac=3858b5506ca28bf0e0a8abb93226b033e92658b7ff66df7e38e911d0b13e067d"
             title="Data Security"
             section="eBook"
-            description="The Evolving Landscape of Data Privacy Regulations"
+            description="How to Make a Data Security Policy"
             date="03 Nov 2023"
-            link="/insights/evolving-landscape-data-privacy-regulations"
+            link="/insights/ebook-how-to-make-data-security-policy"
           />
         </div>
       </div>

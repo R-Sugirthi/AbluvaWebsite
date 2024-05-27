@@ -9,13 +9,12 @@ export const metadata = {
 export default function Cookie() {
   return (
     <>
-      
-      <section className=' p-5 md:px-72 md:pb-10 bg-[#f2f3f5] text-justify'>
+      <section className=' p-5 md:px-72 md:pb-10 '>
         <div>
-          <p className='text-gray-700 py-5 border-b border-gray-500 mark text-3xl'>Cookie Policy</p>
+          <p className='text-gray-100 py-5 primary-color text-5xl'>Cookie Policy</p>
         </div>
         <div>
-          <p className='subText pt-5'>Abluva, Inc. (“Abluva,” “we,” “our,” or “us”) is committed to transparency with respect to its data collection and use practices. This Cookie Policy (“Cookie Policy”) explains how we use cookies and related technologies throughout our Websites and your related choices. Please note that this Cookie Policy is provided as a statement about privacy and Abluva’s use of cookies and similar technologies. Capitalized terms used in this Cookie Policy but not defined herein will have the meanings given to them in Abluva’s <Link href='/privacy-policy' rel='noopener noreferrer' className='text-violet-800 underline'>Privacy Policy</Link>.
+          <p className='subText pt-5'>Abluva, Inc. (“Abluva,” “we,” “our,” or “us”) is committed to transparency with respect to its data collection and use practices. This Cookie Policy (“Cookie Policy”) explains how we use cookies and related technologies throughout our Websites and your related choices. Please note that this Cookie Policy is provided as a statement about privacy and Abluva’s use of cookies and similar technologies. Capitalized terms used in this Cookie Policy but not defined herein will have the meanings given to them in Abluva’s <Link href='/support/privacy-policy' rel='noopener noreferrer' target="_blank" className='primary-color underline'>Privacy Policy</Link>.
           </p><br /><br />
           <p className='mainText'>“Cookies” Explained and Why They are Used</p><br />
           <p className='subText'>A cookie is a small piece of data (text file) that a website – when visited by a user – asks your browser to store on your computer or device in order to remember information about you, such as your IP address, device identifier, language and/or currency preference or login information. You can find more information about cookies at: www.allaboutcookies.org or www.youronlinechoices.eu.</p><br />
@@ -72,15 +71,15 @@ export default function Cookie() {
             Please refer to the privacy policies linked below of the third party analytic providers currently utilized through our Websites:</p><br />
           <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc text-left'>
-              <li>Google (Google Analytics): <Link href="https://www.google.com/policies/privacy/partners/" rel='noopener noreferrer' className='underline text-violet-800'>https://www.google.com/policies/privacy/partners/</Link></li><br />
-              <li>Optimizely: <Link href="https://www.optimizely.com/legal/privacy-policy/" className='underline text-violet-800 ' rel='noopener noreferrer'>https://www.optimizely.com/legal/privacy-policy/</Link></li><br />
-              <li>Facebook: <Link href="facebook.com/about/privacy" className='underline text-violet-800' rel='noopener noreferrer'>facebook.com/about/privacy</Link></li><br />
-              <li>Matomo: <Link href="https://matomo.org/matomo-cloud-privacy-policy/" className='underline text-violet-800' rel='noopener noreferrer'>https://matomo.org/matomo-cloud-privacy-policy/</Link></li><br />
-              <li>Full Story: <Link href="https://www.fullstory.com/legal/privacy-policy/" className='underline text-violet-800' rel='noopener noreferrer'>https://www.fullstory.com/legal/privacy-policy/</Link></li><br />
-              <li>Hubspot: <Link href="https://legal.hubspot.com/privacy-policy" className='underline text-violet-800' rel='noopener noreferrer'>https://legal.hubspot.com/privacy-policy</Link></li><br />
-              <li>6Sense: <Link href="https://6sense.com/privacy-policy/" className='underline text-violet-800' rel='noopener noreferrer'>https://6sense.com/privacy-policy/</Link></li><br />
-              <li>Crazy Egg: <Link href="https://www.crazyegg.com/privacy" className='underline text-violet-800' rel='noopener noreferrer'>https://www.crazyegg.com/privacy</Link></li><br />
-              <li>Poptin: <Link href="https://www.poptin.com/privacy-policy/" className='underline text-violet-800' rel='noopener noreferrer'>https://www.poptin.com/privacy-policy/</Link></li>
+              <li>Google (Google Analytics): <Link href="https://www.google.com/policies/privacy/partners/" rel='noopener noreferrer' className='underline primary-color' target="_blank">https://www.google.com/policies/privacy/partners/</Link></li><br />
+              <li>Optimizely: <Link href="https://www.optimizely.com/legal/privacy-policy/" className='underline primary-color ' rel='noopener noreferrer' target="_blank">https://www.optimizely.com/legal/privacy-policy/</Link></li><br />
+              <li>Facebook: <Link href="facebook.com/about/privacy" className='underline primary-color' rel='noopener noreferrer'>facebook.com/about/privacy</Link></li><br />
+              <li>Matomo: <Link href="https://matomo.org/matomo-cloud-privacy-policy/" className='underline primary-color' rel='noopener noreferrer' target="_blank">https://matomo.org/matomo-cloud-privacy-policy/</Link></li><br />
+              <li>Full Story: <Link href="https://www.fullstory.com/legal/privacy-policy/" className='underline primary-color' rel='noopener noreferrer' target="_blank">https://www.fullstory.com/legal/privacy-policy/</Link></li><br />
+              <li>Hubspot: <Link href="https://legal.hubspot.com/privacy-policy" className='underline primary-color' rel='noopener noreferrer' target="_blank">https://legal.hubspot.com/privacy-policy</Link></li><br />
+              <li>6Sense: <Link href="https://6sense.com/privacy-policy/" className='underline primary-color' rel='noopener noreferrer' target="_blank">https://6sense.com/privacy-policy/</Link></li><br />
+              <li>Crazy Egg: <Link href="https://www.crazyegg.com/privacy" className='underline primary-color' rel='noopener noreferrer' target="_blank">https://www.crazyegg.com/privacy</Link></li><br />
+              <li>Poptin: <Link href="https://www.poptin.com/privacy-policy/" className='underline primary-color' rel='noopener noreferrer' target="_blank">https://www.poptin.com/privacy-policy/</Link></li>
             </ul>
           </p><br />
           <p className='subText'>Functionality Cookies — These cookies allow the website to remember choices you make (such as your username, language or the region you are in) and provide enhanced, more personal features. These cookies can also be used to remember changes you have made to text size, fonts and other parts of web pages that you can customize. The information these cookies collect may be anonymized and they cannot track your browsing activity on other websites. For example, we use Functionality cookies to:</p><br />
@@ -97,24 +96,24 @@ export default function Cookie() {
               <li>Advertise Abluva and is products and services across the Internet.
               </li><br />
               <li>Track the performance and efficacy of our advertisement campaigns.</li><br />
-              <li>Tailor our marketing to better suit your needs and only display ads that are relevant to you.</li>
+              <li>Tailor our fonteting to better suit your needs and only display ads that are relevant to you.</li>
             </ul>
           </p><br />
           <p className='subText'>Please refer to the privacy policies linked below of the third party advertising services currently utilized through our Websites:</p><br />
           <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
-              <li>Google (DoubleClick Digital Marketing): <Link href=" www.google.com/policies/privacy/partners/" className='underline text-violet-800' rel='noopener noreferrer'> www.google.com/policies/privacy/partners/</Link></li>
+              <li>Google (DoubleClick Digital Marketing): <Link href=" www.google.com/policies/privacy/partners/" className='underline primary-color' rel='noopener noreferrer' target="_blank"> www.google.com/policies/privacy/partners/</Link></li>
             </ul>
           </p><br /><br />
 
           <p className='mainText'>How to Manage Your Cookie Preferences</p><br />
           <p className='subText'>Where required by applicable law, we will obtain your consent prior to setting cookies (except for strictly necessary cookies). Most web and mobile device browsers automatically accept cookies, but if you prefer, you can change your browser to prevent that or to notify you each time a cookie is set.</p><br />
           <p className='subText'>In order to manage your cookie preferences, you may alter the cookie settings in your browser settings at any time. You may accept all, or certain, cookies. If you do disable our cookies in your browser settings, you may find that certain features and/or functionality of our Websites will not work.</p><br />
-          <p className='subText'>To learn more about cookies, including how to manage cookies and opt-out of cookies being placed on your device, please visit <Link href="http://www.allaboutcookies.org/manage-cookies/index.html" className='underline text-violet-800' rel='noopener noreferrer'> http://www.allaboutcookies.org/manage-cookies/index.html</Link> tracking is widespread over the internet, there are things you can do to minimize these activities with respect to browser cookies.</p><br />
+          <p className='subText'>To learn more about cookies, including how to manage cookies and opt-out of cookies being placed on your device, please visit <Link href="http://www.allaboutcookies.org/manage-cookies/index.html" className='underline primary-color' rel='noopener noreferrer' target="_blank"> http://www.allaboutcookies.org/manage-cookies/index.html</Link> tracking is widespread over the internet, there are things you can do to minimize these activities with respect to browser cookies.</p><br />
           <p className='subText'>Do Not Track Settings</p><br />
           <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
-              <li>You may turn on the Do Not Track (“DNT”) setting in your browser, which will enable your browser to send a special signal to websites, analytics companies, plug in providers, and other web services you encounter while browsing to stop tracking your activity. To turn on your DNT signal, please visit <Link href="https://allaboutdnt.com/#adjust-settings" className='underline text-violet-800' rel='noopener noreferrer'> https://allaboutdnt.com/#adjust-settings</Link>. Please note that not all companies will respond to or honor DNT signals.
+              <li>You may turn on the Do Not Track (“DNT”) setting in your browser, which will enable your browser to send a special signal to websites, analytics companies, plug in providers, and other web services you encounter while browsing to stop tracking your activity. To turn on your DNT signal, please visit <Link href="https://allaboutdnt.com/#adjust-settings" className='underline primary-color' rel='noopener noreferrer' target="_blank"> https://allaboutdnt.com/#adjust-settings</Link>. Please note that not all companies will respond to or honor DNT signals.
               </li><br />
               <li>Note that Abluva does not process or respond to web browsers’ “do not track” signals or other similar transmissions that indicate a request to disable online tracking of users who use our Websites.</li>
             </ul>
@@ -125,17 +124,17 @@ export default function Cookie() {
               <li>You can opt out of targeted advertising by:
                 <p className='subText md:ml-10 ml-5 text-left'>
                   <ul className='list-disc'>
-                    <li>Facebook : <Link href="https://www.facebook.com/settings/?tab=ads" className='underline text-violet-800' rel='noopener noreferrer'>  https://www.facebook.com/settings/?tab=ads</Link></li><br />
-                    <li>Google : <Link href="https://www.google.com/settings/ads/anonymous" className='underline text-violet-800' rel='noopener noreferrer'> https://www.google.com/settings/ads/anonymous</Link></li><br />
-                    <li>Bing : <Link href=" https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads" className='underline text-violet-800' rel='noopener noreferrer'> https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads</Link></li>
+                    <li>Facebook : <Link href="https://www.facebook.com/settings/?tab=ads" className='underline primary-color' rel='noopener noreferrer' target="_blank">  https://www.facebook.com/settings/?tab=ads</Link></li><br />
+                    <li>Google : <Link href="https://www.google.com/settings/ads/anonymous" className='underline primary-color' rel='noopener noreferrer' target="_blank"> https://www.google.com/settings/ads/anonymous</Link></li><br />
+                    <li>Bing : <Link href=" https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads" className='underline primary-color' rel='noopener noreferrer' target="_blank"> https://advertise.bingads.microsoft.com/en-us/resources/policies/personalized-ads</Link></li>
                   </ul>
                 </p></li><br />
               <li>In addition, some of our third party analytics and/or advertising/targeting partners may be members of the Network Advertising Initiative (“NAI”) or Digital Advertising Alliance (“DAA”) Self-Regulatory Program for Online Behavioral Advertising. NAI and DAA each provide information regarding procedures for opting-out of targeted online advertising from participating companies.<br />
                 <p className='subText md:ml-10 ml-5'>
                   <ul className='list-disc text-left' >
-                    <li>For information from NAI about opting out,<Link href="https://optout.networkadvertising.org/?c=1" className='underline text-violet-800' rel='noopener noreferrer'> click here</Link></li><br />
-                    <li>For information from DAA about opting out, <Link href="https://youradchoices.com/control" className='underline text-violet-800' rel='noopener noreferrer'> click here</Link> or visit: <Link href="http://optout.aboutads.info/." className='underline text-violet-800' rel='noopener noreferrer'> http://optout.aboutads.info/.</Link></li><br />
-                    <li>For information about DAA’s AppChoices application, <Link href="https://youradchoices.com/appchoices" className='underline text-violet-800' rel='noopener noreferrer'>click here</Link></li>
+                    <li>For information from NAI about opting out,<Link href="https://optout.networkadvertising.org/?c=1" className='underline primary-color' rel='noopener noreferrer' target="_blank"> click here</Link></li><br />
+                    <li>For information from DAA about opting out, <Link href="https://youradchoices.com/control" className='underline primary-color' rel='noopener noreferrer' target="_blank"> click here</Link> or visit: <Link href="http://optout.aboutads.info/." className='underline primary-color' rel='noopener noreferrer'> http://optout.aboutads.info/.</Link></li><br />
+                    <li>For information about DAA’s AppChoices application, <Link href="https://youradchoices.com/appchoices" className='underline primary-color' rel='noopener noreferrer' target="_blank">click here</Link></li>
                   </ul>
                 </p>
               </li>

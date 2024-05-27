@@ -10,9 +10,9 @@ export default function privacyPolicy() {
   return (
     <>
       
-      <section className='p-5 md:px-72 md:pb-10 bg-[#f2f3f5] text-justify'>
+      <section className='p-5 md:px-72 md:pb-10 '>
         <div>
-          <p className='text-gray-700 py-5 border-b border-gray-500 mark text-3xl'>Abluva Privacy Policy</p>
+          <p className='text-gray-100 py-5 text-5xl primary-color'>Abluva Privacy Policy</p>
         </div>
         <div>
           <p className='subText pt-5'>
@@ -83,7 +83,7 @@ export default function privacyPolicy() {
               <li><span className='font-bold'>To provide You </span>with news, special offers, and general information about other goods, services, and events that we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</li><br />
               <li><span className='font-bold'>For business transfers: </span>We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganisation, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</li><br />
               <li><span className='font-bold'>For business transfers: </span>We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganisation, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</li><br />
-              <li><span className='font-bold'>For other purposes: </span>We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns, and evaluating and improving our Service, products, services, marketing, and your experience.</li><br />
+              <li><span className='font-bold'>For other purposes: </span>We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns, and evaluating and improving our Service, products, services, fonteting, and your experience.</li><br />
             </ul>
           </p><br /><br />
 
@@ -93,8 +93,8 @@ export default function privacyPolicy() {
           </p><br />
           <p className='subText md:ml-10 ml-5'>
             <ul className='list-disc'>
-              <li><span className='font-bold'>Sharing with Service Providers: </span>We share your Personal Data with our service providers. These are companies who provide services on our behalf, such as hosting our Services, marketing, advertising, social, analytics, support ticketing, Cloud Service providers, security, and other similar services. These companies are subject to contractual requirements that govern the security and confidentiality of your information.
-                For example, we use analytics providers, such as Google Analytics, to help us understand the operation and performance of our Services. To learn about how Google uses and shares data it collects through its services, please visit <Link href="https://www.google.com/policies/privacy/partners/"  className='underline text-violet-800' rel='noopener noreferrer'>https://www.google.com/policies/privacy/partners/</Link>.
+              <li><span className='font-bold'>Sharing with Service Providers: </span>We share your Personal Data with our service providers. These are companies who provide services on our behalf, such as hosting our Services, fonteting, advertising, social, analytics, support ticketing, Cloud Service providers, security, and other similar services. These companies are subject to contractual requirements that govern the security and confidentiality of your information.
+                For example, we use analytics providers, such as Google Analytics, to help us understand the operation and performance of our Services. To learn about how Google uses and shares data it collects through its services, please visit <Link href="https://www.google.com/policies/privacy/partners/"  className='underline primary-color' rel='noopener noreferrer' target="_blank">https://www.google.com/policies/privacy/partners/</Link>.
               </li><br />
               <li><span className='font-bold'>Business transfer: </span>We may share your Personal Data if we are involved in a merger, sale, or acquisition of corporate entities or business units. If any such change of ownership happens, we will ensure that it is under terms that preserve the confidentiality of your Personal Data, and we will notify you on our website or by email before any transfer of your Personal Data
               </li><br />
@@ -128,9 +128,9 @@ export default function privacyPolicy() {
           </p><br />
           <p className='subText'><span className='font-bold'>Withdrawing Consent: </span>You have the right to revoke any consent you may have previously given us at any time, if we have collected and processed your personal information with your consent. Withdrawing your consent will not affect the lawfulness of any processing we conducted prior to your withdrawal, nor will it affect processing of your personal information conducted in reliance on lawful processing grounds other than consent.
           </p><br />
-          <p className='subText'><span className='font-bold'>The right to object: </span>You have the right to object to us processing your personal data (for example, if you object to us processing your data for direct marketing).
+          <p className='subText'><span className='font-bold'>The right to object: </span>You have the right to object to us processing your personal data (for example, if you object to us processing your data for direct fonteting).
           </p><br />
-          <p className='subText'><span className='font-bold'>Restrict: </span>You may choose to restrict the collection or use of your personal information. If you have previously agreed to us using your personal information for direct marketing purposes, you may change your mind at any time by contacting us using the details below. If you ask us to restrict or limit how we process your personal information, we will let you know how the restriction affects your use of our Websites.
+          <p className='subText'><span className='font-bold'>Restrict: </span>You may choose to restrict the collection or use of your personal information. If you have previously agreed to us using your personal information for direct fonteting purposes, you may change your mind at any time by contacting us using the details below. If you ask us to restrict or limit how we process your personal information, we will let you know how the restriction affects your use of our Websites.
           </p><br />
           <p className='subText'><span className='font-bold'>Access and data portability: </span>You may request details of the personal information that we hold about you. You may request a copy of the personal information we hold about you. Where possible, we will provide this information in CSV format or other easily readable machine format. You may request that we erase the personal information we hold about you at any time. You may also request that we transfer this personal information to another third party.
           </p><br />
@@ -141,7 +141,7 @@ export default function privacyPolicy() {
           </p><br />
           <p className='subText'><span className='font-bold'>Complaints: </span>If you believe that we have breached a relevant data protection law and wish to make a complaint, please contact us using the details below and provide us with full details of the alleged breach. We will promptly investigate your complaint and respond to you, in writing, setting out the outcome of our investigation and the steps we will take to deal with your complaint. You also have the right to contact a regulatory body or data protection authority in relation to your complaint.
           </p><br />
-          <p className='subText'><span className='font-bold'>unsubscribe: </span>To unsubscribe from our e-mail database or opt-out of marketing communications, please contact us using the details below or opt-out using the opt-out facilities provided in the communication. We will use commercially reasonable efforts to process such requests in a timely manner. Note that you cannot opt out of receiving service-related communications relating to your use of the Websites (for e.g., updates regarding changes to this Privacy Policy).
+          <p className='subText'><span className='font-bold'>unsubscribe: </span>To unsubscribe from our e-mail database or opt-out of fonteting communications, please contact us using the details below or opt-out using the opt-out facilities provided in the communication. We will use commercially reasonable efforts to process such requests in a timely manner. Note that you cannot opt out of receiving service-related communications relating to your use of the Websites (for e.g., updates regarding changes to this Privacy Policy).
           </p><br /><br />
 
           <p className='mainText'>With Whom does Abluva share my Personal Data?<br />How does Abluva Secure my Personal Data?
@@ -165,14 +165,14 @@ export default function privacyPolicy() {
           </p><br />
           <p className='subText'>
             You have the right to access and correct your personal data with Abluva Inc. To request access to your personal data or to request a correction to your personal data, please contact us at{' '}
-            <Link href='mailto:privacy@abluva.com' className='text-violet-800 underline'>privacy@abluva.com</Link> with the subject line “Data Access/Correction”.
+            <Link href='mailto:privacy@abluva.com' className='primary-color underline' target="_blank">privacy@abluva.com</Link> with the subject line “Data Access/Correction”.
           </p><br /><br />
 
           <p className='mainText'>Data Dispute Resolution at Abluva
           </p><br />
           <p className='subText'>
             Complaint Resolution Process: If you have a complaint about the way we have handled your personal data, please contact us at{' '}
-            <Link href='mailto:privacy@abluva.com' className='text-violet-800 underline'>privacy@abluva.com</Link>. We take all complaints seriously and will work with you to resolve your complaint promptly and fairly.
+            <Link href='mailto:privacy@abluva.com' className='primary-color underline' target="_blank">privacy@abluva.com</Link>. We take all complaints seriously and will work with you to resolve your complaint promptly and fairly.
           </p>
 
           <p className='subText'>Escalation Procedure If you are not satisfied with our response or believe that your complaint has not been adequately resolved, you have the right to file a complaint with the appropriate regulatory authority. In the United States, you can file a complaint with the US Department of Commerce.
@@ -185,7 +185,7 @@ export default function privacyPolicy() {
           <p className='mainSubText'>Contact Us</p><br />
           <p className='subText'>
             Your information is controlled by Abluva Inc. If you have questions or concerns about the way we are handling your Personal Data, please email us with the subject line "Privacy Concern" at{' '}
-            <Link href='mailto:privacy@abluva.com' className='text-violet-800 underline'>privacy@abluva.com</Link>.
+            <Link href='mailto:privacy@abluva.com' className='primary-color underline' target="_blank">privacy@abluva.com</Link>.
           </p>
         </div>
       </section>

@@ -1,87 +1,113 @@
-import Link from 'next/link';
-import './research.css';
-import Leaderboards from './leaderboards/page';
+"use client"
+// Research.tsx
+import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
+import Leaderboard from './leaderboard/page';
 import Datasets from './datasets/page';
-import Patents from './patents/page';
 import ResearchPapers from './research-papers/page';
+import Patents from './patents/page';
+import BgLanding from '@/components/widgets/bgLandingPage';
 
 
-export const metadata = {
+const metadata = {
   title: 'Research | ABLUVA',
   description: 'Unveiling Innovation: Explore ABLUVA\'s research in AI, machine learning, and cybersecurity.',
-};
+}
 
-export default function Research() {
+const Research: React.FC = () => {
+  const [activeSection, setActiveSection] = useState<string>('Leaderboards');
+  const [menuOpacity, setMenuOpacity] = useState<number>(0);
+
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+    const pageHeight = document.body.scrollHeight - window.innerHeight;
+
+    const getOffset = (id: string) => (document.getElementById(id)?.offsetTop || 0) - 150;
+
+    const leaderboardsOffset = getOffset('Leaderboards');
+    const datasetsOffset = getOffset('Synthetic Datasets');
+    const researchPapersOffset = getOffset('Research Papers');
+    const patentsOffset = getOffset('Patents');
+
+    if (scrollY >= leaderboardsOffset && scrollY < datasetsOffset) {
+      setActiveSection('Leaderboards');
+    } else if (scrollY >= datasetsOffset && scrollY < researchPapersOffset) {
+      setActiveSection('Synthetic Datasets');
+    } else if (scrollY >= researchPapersOffset && scrollY < patentsOffset) {
+      setActiveSection('Research Papers');
+    } else if (scrollY >= patentsOffset) {
+      setActiveSection('Patents');
+    }
+
+    const scrollThreshold = windowHeight * 0.20;
+    const opacity = Math.min(1, scrollY / scrollThreshold);
+    setMenuOpacity(opacity);
+
+    if (opacity === 1 && scrollY > pageHeight * 0.96) {
+      setMenuOpacity(0);
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleItemClick = (item: string) => {
+    setActiveSection(item);
+
+    const element = document.getElementById(item);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const renderMenuItems = () => {
+    const menuItems = ['Leaderboards', 'Synthetic Datasets', 'Research Papers', 'Patents'];
+
+    return menuItems.map((item) => (
+      <li
+        key={item}
+        className={`md:px-5 md:py-2 px-4 py-1 text-center cursor-pointer ${activeSection === item ? 'menu-bg rounded-full' : ''}`}
+        onClick={() => handleItemClick(item)}
+      >
+        {item}
+      </li>
+    ));
+  };
+
   return (
     <>
-      <div className="py-32 md:py-10 md:pl-48 md:pr-12 lg:pr-32 sm:px-10 bg">
-        <div className="container mx-auto px-5 flex flex-col md:flex-row items-center">
-          <div className="w-full text-white pt-20  pb-40 w-3/4">
-            <p className="text-5xl font-bold text-gray-100 founder">Research</p>
-            <p className="text-3xl founder text-gray-300">Unveiling Innovation: Our Research Odyssey</p>
-          </div>
+      <Helmet>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+      </Helmet>
+      <BgLanding
+        bgImage="bg-research"
+        title="research"
+        subtitle="Unveiling Innovation: Our Research Odyssey"
+      />
+      <div className=''>      
+        <div className='flex items-center justify-center research-menu ' style={{ opacity: menuOpacity }} >
+          <nav className='border border-gray-700 rounded-full text-gray-200 menu-bg1 font'>
+            <ul className='flex items-center justify-center space-x-1 md:py-3 md:px-5 py-2 px-1'>{renderMenuItems()}</ul>
+          </nav>
+        </div>
+      
+        <div className="fade-up">
+          <Leaderboard/>
+          <Datasets />
+          <ResearchPapers />
+          <Patents />
         </div>
       </div>
-      <div className='bg-black text-center pt-10'>
-        <div className="container mx-auto md:px-20">
-          <div className='grid md:grid-cols-4 text-lg text-gray-200 pb-20'>
-
-            <div className='flex flex-col items-center justify-center pb-5'>
-              <img src="/icons/leaderboard.png" className='h-8' />
-              <div className='link-wrapper' >
-                <Link href="#leaderboards" className='hover'>
-                  <div className='flex'>
-                    <p>Leaderboards</p>
-                    <img src="/icons/downArrow.png" className='h-4 mt-2 mx-1' alt="Down Arrow" />
-                  </div>
-                </Link>
-              </div>
-
-            </div>
-
-            <div className='flex flex-col items-center justify-center pb-5'>
-              <img src="/icons/dataset.png" className='h-8' />
-              <div className='link-wrapper'>
-              <Link href="#datasets" className='hover'>
-                  <div className='flex'>
-                    <p>Synthetic Datasets</p>
-                    <img src="/icons/downArrow.png" className='h-4 mt-2 mx-1' alt="Down Arrow" />
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className='flex flex-col items-center justify-center pb-5'>
-              <img src="/icons/research.png" className='h-8' />
-              <div className='link-wrapper'>
-                <Link
-                  href="#research-papers" className='hover'>  <div className='flex'>
-                  <p>Research Papers</p>
-                  <img src="/icons/downArrow.png" className='h-4 mt-2 mx-1' alt="Down Arrow" />
-                </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className='flex flex-col items-center justify-center pb-5'>
-              <img src="/icons/patent.png" className='h-8' />
-              <div className='link-wrapper'>
-                <Link
-                  href="#patents" className='hover'><div className='flex'>
-                  <p>Patents</p>
-                  <img src="/icons/downArrow.png" className='h-4 mt-2 mx-1' alt="Down Arrow" />
-                </div>
-                </Link>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      <Leaderboards/>
-      <Datasets/>
-      <ResearchPapers/>
-      <Patents/>
     </>
   );
-}
+};
+
+export default Research;
